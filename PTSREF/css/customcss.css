@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2016, 10:01:09 PM
+    Author     : Paul
+*/
+
+/* new fonts */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+@font-face {
+  font-family: 'Nobel Regular';
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/f1086663-a5a8-438e-b043-39b37d497ec4/f1086663-a5a8-438e-b043-39b37d497ec4-2.eot');
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/f1086663-a5a8-438e-b043-39b37d497ec4/f1086663-a5a8-438e-b043-39b37d497ec4-2.eot?') format('embedded-opentype'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/f1086663-a5a8-438e-b043-39b37d497ec4/f1086663-a5a8-438e-b043-39b37d497ec4-3.woff') format('woff'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/f1086663-a5a8-438e-b043-39b37d497ec4/f1086663-a5a8-438e-b043-39b37d497ec4-1.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nobel Book';
+    src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/93c51000-86ff-4e1b-b119-8cf7c5161f03/93c51000-86ff-4e1b-b119-8cf7c5161f03-2.eot');
+    src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/93c51000-86ff-4e1b-b119-8cf7c5161f03/93c51000-86ff-4e1b-b119-8cf7c5161f03-2.eot?') format('embedded-opentype'),
+         url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/93c51000-86ff-4e1b-b119-8cf7c5161f03/93c51000-86ff-4e1b-b119-8cf7c5161f03-3.woff') format('woff'),
+         url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/93c51000-86ff-4e1b-b119-8cf7c5161f03/93c51000-86ff-4e1b-b119-8cf7c5161f03-1.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nobel Light';
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/7eb5eacf-4e8c-455d-85b2-b50b25631340/7eb5eacf-4e8c-455d-85b2-b50b25631340-2.eot');
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/7eb5eacf-4e8c-455d-85b2-b50b25631340/7eb5eacf-4e8c-455d-85b2-b50b25631340-2.eot?') format('embedded-opentype'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/7eb5eacf-4e8c-455d-85b2-b50b25631340/7eb5eacf-4e8c-455d-85b2-b50b25631340-3.woff') format('woff'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/7eb5eacf-4e8c-455d-85b2-b50b25631340/7eb5eacf-4e8c-455d-85b2-b50b25631340-1.ttf') format('truetype');
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nobel Bold';
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3-2.eot');
+  src: url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3-2.eot?') format('embedded-opentype'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3-3.woff') format('woff'),
+       url('http://assets.cobaltnitra.com/websites/4.16.5.1-1024185/websitesEar/websitesWebApp/font-face/WebType/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3/a9d7cdf1-d21c-4737-baf8-9a2ebe45d5e3-1.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
