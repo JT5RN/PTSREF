@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Lexus Parts King!!!!@!</title>
+  <!-- Bootstrap -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lexus arrays vin decoder.js"></script>
+  <script src="js/lexus arrays.js"></script>
+  <script src="js/npm.js"></script>
+  <script src="js/ppp.js"></script>
+  <link rel="stylesheet" href="css/customcss.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Lexus Parts Reference</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a id="RX2" href="#" onclick="DisplayVehicle('RX');return false;">RX models<span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Lexus PV <span class="caret"></span></a>
+          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <li class="divider"></li>
+       
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">ES</a>
+              <ul class="dropdown-menu">
+                <li><a id="ES" href="#" onclick="DisplayVehicle('ES');return false;">all ES models<span class="sr-only">(current)</span></a></li>
+                <li><a id="ESA" href="#" onclick="DisplayVehicle('1GG');return false;">5th Gen</a></li>                
+                <li><a id="ESB" href="#" onclick="DisplayVehicle('SV4');return false;">4th Gen</a></li>
+                <li><a id="ESC" href="#" onclick="DisplayVehicle('CV3');return false;">3rd Gen</a></li>
+                <li><a id="ESD" href="#" onclick="DisplayVehicle('CV2');return false;">2nd Gen</a></li>
+                <li><a id="ESE" href="#" onclick="DisplayVehicle('CV1');return false;">1st Gen </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">LS</a>
+              <ul class="dropdown-menu">
+                <li><a id="LS" href="#" onclick="DisplayVehicle('LS');return false;">all LS models<span class="sr-only">(current)</span></a></li>
+                <li><a id="LSA" href="#" onclick="DisplayVehicle('SF4');return false;">3rd Gen</a></li>
+                <li><a id="LSB" href="#" onclick="DisplayVehicle('CF3');return false;">2nd Gen</a></li>
+                <li><a id="LSC" href="#" onclick="DisplayVehicle('CF2');return false;">1.5 Gen </a></li>
+                <li><a id="LSD" href="#" onclick="DisplayVehicle('CV1');return false;">1st Gen </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">GS</a>
+              <ul class="dropdown-menu">
+                <li><a id="GS" href="#" onclick="DisplayVehicle('GS');return false;">all GS models<span class="sr-only">(current)</span></a></li>
+                <li><a id="GSA" href="#" onclick="DisplayVehicle('RL1');return false;">4th Gen</a></li>
+                <li><a id="GSB" href="#" onclick="DisplayVehicle('RS1');return false;">3rd Gen</a></li>
+                <li><a id="GSC" href="#" onclick="DisplayVehicle('ZS1');return false;">1st & 2nd Gen</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">IS</a>
+              <ul class="dropdown-menu">
+                <li><a id="IS" href="#" onclick="DisplayVehicle('IS');return false;">all IS models<span class="sr-only">(current)</span></a></li>
+                <li><a id="ISA" href="#" onclick="DisplayVehicle('SE3');return false;">3rd Gen</a></li>
+                <li><a id="ISB" href="#" onclick="DisplayVehicle('SE2');return false;">2nd Gen</a></li>
+                <li><a id="ISC" href="#" onclick="DisplayVehicle('CE1');return false;">1st Gen </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Hybrids</a>
+              <ul class="dropdown-menu">
+                <li><a id="CTH" href="#" onclick="DisplayVehicle('CT');return false;">CT200h</a></li>
+                <li><a id="HSH" href="#" onclick="DisplayVehicle('HS');return false;">HS250h</a></li>
+                <li><a id="ESH" href="#" onclick="DisplayVehicle('AVV60');return false;">ES300h</a></li>
+                <li><a id="GSH" href="#" onclick="DisplayVehicle('GWS191');return false;">GS4500h</a></li>
+                <li><a id="LSH" href="#" onclick="DisplayVehicle('UVF46');return false;">LS600hL</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Coupes</a>
+              <ul class="dropdown-menu">
+                <li><a id="RC" href="#" onclick="DisplayVehicle('RC');return false;">RC</a></li>
+                <li><a id="SC" href="#" onclick="DisplayVehicle('SC');return false;">SC</a></li>
+              </ul>
+            </li>
+                        <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Convertibles</a>
+              <ul class="dropdown-menu">
+                <li><a id="RCC" href="#" onclick="DisplayVehicle('2C2');return false;">IS-C</a></li>
+                <li><a id="SCC" href="#" onclick="DisplayVehicle('UZZ40');return false;">SC430</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Lexus MPV <span class="caret"></span></a>
+          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <li class="divider"></li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">RX</a>
+              <ul class="dropdown-menu">
+                <li><a id="RX" href="#" onclick="DisplayVehicle('RX');return false;">all RX models<span class="sr-only">(current)</span></a></li>
+                <li><a id="RXA" href="#" onclick="DisplayVehicle('MCA');return false;">4th Gen</a></li>
+                <li><a id="RXB" href="#" onclick="DisplayVehicle('1BA');return false;">3rd Gen</a></li>
+                <li><a id="RXC" href="#" onclick="DisplayVehicle('31U');return false;">2nd Gen</a></li>
+                <li><a id="RXD" href="#" onclick="DisplayVehicle('10U');return false;">1st Gen </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">GX</a>
+              <ul class="dropdown-menu">
+                <li><a id="GX" href="#" onclick="DisplayVehicle('GX');return false;">all GX models<span class="sr-only">(current)</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">LX</a>
+              <ul class="dropdown-menu">
+                <li><a id="LX" href="#" onclick="DisplayVehicle('LX');return false;">all LX models<span class="sr-only">(current)</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">NX</a>
+              <ul class="dropdown-menu">
+                <li><a id="NX" href="#" onclick="DisplayVehicle('NX');return false;">all NX models<span class="sr-only">(current)</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Hybrids</a>
+              <ul class="dropdown-menu">
+                <li><a id="RXH1" href="#" onclick="DisplayVehicle('MHU3');return false;">RX400h</a></li>
+                <li><a id="RXH2" href="#" onclick="DisplayVehicle('GYL1');return false;">RX450h (10-15)</a></li>
+                <li><a id="RXH2" href="#" onclick="DisplayVehicle('GYL2');return false;">RX450h (16-20)</a></li>
+                <li><a id="NXH1" href="#" onclick="DisplayVehicle('AYZ1');return false;">NX300h</a></li>
+              </ul>
+            </li>
+          </ul>
+            
+        </li>
+          
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" id="getInputString" placeholder="IS-F, USE20 or JTHBP262 ">
+          </div>
+          <input type="button" class="btn btn-default" id="addButton" value="(press) Enter a model name, model, or partial VIN">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="LFA" href="#" onclick="DisplayVehicle('LF');return false;">LFA</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+
+
+  <ul id="ppp"></ul>
+</body>
+
+</html>
