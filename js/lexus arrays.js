@@ -186,7 +186,7 @@ var lexusRc = [
     {'1d':3, 'vds': 'BA5BC', 'model': 'ASC10', 'name': 'RC200t', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af': myAF[6]}];
 
 var lexusCt = [
-    {'1d':0, 'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'engine': myEngine[18], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[5], 'af': myAF[10]}];
+    {'1d':0, 'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'engine': myEngine[18], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[7], 'af': myAF[10]}];
 
 var lexusHs = [
     {'1d':0, 'vds': 'BB1BA', 'model': 'ANF10', 'name': 'HS250H', 'engine': myEngine[7], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[8], 'af': myAF[4]}];
