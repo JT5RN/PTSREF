@@ -146,7 +146,7 @@ var lexusGs = [
     {'1d':19, 'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460', 'engine': myEngine[4], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': '17801-38040'},
     {'1d':20, 'vds': 'BN96S', 'model': 'UZS190', 'name': 'GS430', 'engine': myEngine[22], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[16]},
     {'1d':21, 'vds': 'CH96S', 'model': 'GRS195', 'name': 'GS300', 'engine': myEngine[19], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[12]},
-    {'1d':22, 'vds': 'BA1BL', 'model': 'ARL10', 'name': 'GS200T', 'engine': myEngine[25], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[6]}];
+    {'1d':22, 'vds': 'BA1BL', 'model': 'ARL10', 'name': 'GS200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]}];
 
 var lexusLs = [
     {'1d':0, 'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400', 'engine': myEngine[5], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[2], 'af': '17801-50010-83'},
