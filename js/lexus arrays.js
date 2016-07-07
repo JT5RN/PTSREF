@@ -195,9 +195,39 @@ var lexusLFA = [
     {'1d':0, 'vds': 'HX8BH', 'model': 'LFA10', 'name': 'LFA', 'engine': myEngine[2], 'drive':drivetrain[3], 'body': mybs[5], 'battery': 'idk', 'af': 'idk'}];
 
     
+//B&E TOYOTA 7-7-2016
+var toyotaCamry = [
+    {'id':0, 'vds': 'VK13E', 'model': 'MCAMRY1', 'name': "CAMRY"},
+    {'id':0, 'vds': 'VK12E', 'model': 'MCAMRY2', 'name': "CAMRY"},
+    {'id':0, 'vds': 'SK12E', 'model': 'MCAMRY3', 'name': "CAMRY"},
+    {'id':0, 'vds': 'GK13E', 'model': 'MCAMRY4', 'name': "CAMRY"},
+    {'id':0, 'vds': 'GK12W', 'model': 'MCAMRY5', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF12K', 'model': 'MCAMRY6', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BG12K', 'model': 'MCAMRY7', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF22K', 'model': 'MCAMRY8', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BG22K', 'model': 'MCAMRY9', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF28K', 'model': 'MCAMRY10', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF22K', 'model': 'MCAMRY11', 'name': "CAMRY"},
+    {'id':0, 'vds': 'CF22P', 'model': 'MCAMRY12', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE30K', 'model': 'MCAMRY13', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF30K', 'model': 'MCAMRY14', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE32K', 'model': 'MCAMRY15', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF32K', 'model': 'MCAMRY16', 'name': "CAMRY"},
+    {'id':0, 'vds': 'CA30P', 'model': 'MCAMRY17', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BA32K', 'model': 'MCAMRY18', 'name': "CAMRY"},
+    {'id':0, 'vds': 'FA38P', 'model': 'MCAMRY19', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BB46K', 'model': 'MCAMRY20', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE46K', 'model': 'MCAMRY21', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BK46K', 'model': 'MCAMRY22', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF3EK', 'model': 'MCAMRY23', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BK3EK', 'model': 'MCAMRY24', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BD1FK', 'model': 'MCAMRY25', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF1FK', 'model': 'MCAMRY26', 'name': "CAMRY"}
+
+];
 //top level arrays
-var lexusModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
-var l = lexusModels;
+var allModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, toyotaCamry];
+var l = allModels;
 
 
 function getData(v) { // give model number, get oil filter number.
