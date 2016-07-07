@@ -204,9 +204,9 @@ function getData(v) { // give model number, get oil filter number.
     for (i=0; i<l.length; i++) {
         for (var j=0; j < l[i].length; j++) {
             if (l[i][j].model === v) {
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].name === v) {
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
             }
         }
     }
@@ -218,19 +218,19 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
         for (var j=0; j < l[i].length; j++) {
             
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "name substring 0-2");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "model full ");
             }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
               console.log(l[i][j].model + " model 0-4 ");
-              DisplayVehicleData(l[i][j]);
+              PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
               console.log(l[i][j].model  + "model 1 4");  
-              DisplayVehicleData(l[i][j]);
+              PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "VDS 2..5 ");
             }
         }
