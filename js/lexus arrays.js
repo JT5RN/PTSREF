@@ -122,7 +122,7 @@ var lexusIs = [
     {'1d':16, 'vds': 'BE1D2', 'model': 'GSE31', 'name': 'IS350', 'engine': myEngine[9], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':17, 'vds': 'CE1D2', 'model': 'GSE36', 'name': 'IS350', 'engine': myEngine[9], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':18, 'vds': 'CM1D2', 'model': 'GSE37', 'name': 'IS300', 'engine': myEngine[9], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[6]},
-    {'1d':19, 'vds': 'BA1D2', 'model': 'ASE30', 'name': 'IS200t', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]}];
+    {'1d':19, 'vds': 'BA1D2', 'model': 'ASE30', 'name': 'IS200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]}];
 var lexusGs = [
     {'1d':0, 'vds': 'BE1BL', 'model': 'GRL10', 'name': 'GS350', 'engine': myEngine[9], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':1, 'vds': 'BZ1BL', 'model': 'GRL12', 'name': 'GS350', 'engine': myEngine[11], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]},
@@ -146,7 +146,7 @@ var lexusGs = [
     {'1d':19, 'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460', 'engine': myEngine[4], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': '17801-38040'},
     {'1d':20, 'vds': 'BN96S', 'model': 'UZS190', 'name': 'GS430', 'engine': myEngine[22], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[16]},
     {'1d':21, 'vds': 'CH96S', 'model': 'GRS195', 'name': 'GS300', 'engine': myEngine[19], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[12]},
-    {'1d':22, 'vds': 'BA1BL', 'model': 'ARL10', 'name': 'GS2000t', 'engine': myEngine[25], 'drive':drivetrain[0], 'body': mybs[1], 'battery': myBatt[1], 'af': myAF[6]}];
+    {'1d':22, 'vds': 'BA1BL', 'model': 'ARL10', 'name': 'GS200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[1], 'af': myAF[6]}];
 
 var lexusLs = [
     {'1d':0, 'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400', 'engine': myEngine[5], 'drive':drivetrain[3], 'body': mybs[2], 'battery': myBatt[2], 'af': '17801-50010-83'},
@@ -182,10 +182,11 @@ var lexusSc = [
 var lexusRc = [
     {'1d':0, 'vds': 'SE5BC', 'model': 'GSC15', 'name': 'RC350', 'engine': myEngine[9], 'drive':drivetrain[0], 'body': mybs[6], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':1, 'vds': 'SM5BC', 'model': 'GSC16', 'name': 'RC300', 'engine': myEngine[11], 'drive':drivetrain[0], 'body': mybs[6], 'battery': myBatt[1], 'af': myAF[6]},
-    {'1d':2, 'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F', 'engine': myEngine[14], 'drive':drivetrain[0], 'body': mybs[6], 'battery': myBatt[4], 'af':  '17801-38021'}];
+    {'1d':2, 'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F', 'engine': myEngine[14], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af':  '17801-38021'},
+    {'1d':3, 'vds': 'HA5BC', 'model': 'ASC10', 'name': 'RC200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af': myAF[6]}];
 
 var lexusCt = [
-    {'1d':0, 'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'engine': myEngine[18], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[5], 'af': myAF[10]}];
+    {'1d':0, 'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'engine': myEngine[18], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[7], 'af': myAF[10]}];
 
 var lexusHs = [
     {'1d':0, 'vds': 'BB1BA', 'model': 'ANF10', 'name': 'HS250H', 'engine': myEngine[7], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[8], 'af': myAF[4]}];
@@ -194,18 +195,48 @@ var lexusLFA = [
     {'1d':0, 'vds': 'HX8BH', 'model': 'LFA10', 'name': 'LFA', 'engine': myEngine[2], 'drive':drivetrain[3], 'body': mybs[5], 'battery': 'idk', 'af': 'idk'}];
 
     
+//B&E TOYOTA 7-7-2016
+var toyotaCamry = [
+    {'id':0, 'vds': 'VK13E', 'model': 'MCAMRY1', 'name': "CAMRY"},
+    {'id':0, 'vds': 'VK12E', 'model': 'MCAMRY2', 'name': "CAMRY"},
+    {'id':0, 'vds': 'SK12E', 'model': 'MCAMRY3', 'name': "CAMRY"},
+    {'id':0, 'vds': 'GK13E', 'model': 'MCAMRY4', 'name': "CAMRY"},
+    {'id':0, 'vds': 'GK12W', 'model': 'MCAMRY5', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF12K', 'model': 'MCAMRY6', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BG12K', 'model': 'MCAMRY7', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF22K', 'model': 'MCAMRY8', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BG22K', 'model': 'MCAMRY9', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF28K', 'model': 'MCAMRY10', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF22K', 'model': 'MCAMRY11', 'name': "CAMRY"},
+    {'id':0, 'vds': 'CF22P', 'model': 'MCAMRY12', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE30K', 'model': 'MCAMRY13', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF30K', 'model': 'MCAMRY14', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE32K', 'model': 'MCAMRY15', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF32K', 'model': 'MCAMRY16', 'name': "CAMRY"},
+    {'id':0, 'vds': 'CA30P', 'model': 'MCAMRY17', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BA32K', 'model': 'MCAMRY18', 'name': "CAMRY"},
+    {'id':0, 'vds': 'FA38P', 'model': 'MCAMRY19', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BB46K', 'model': 'MCAMRY20', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BE46K', 'model': 'MCAMRY21', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BK46K', 'model': 'MCAMRY22', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF3EK', 'model': 'MCAMRY23', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BK3EK', 'model': 'MCAMRY24', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BD1FK', 'model': 'MCAMRY25', 'name': "CAMRY"},
+    {'id':0, 'vds': 'BF1FK', 'model': 'MCAMRY26', 'name': "CAMRY"}
+
+];
 //top level arrays
-var lexusModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
-var l = lexusModels;
+var allModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, toyotaCamry];
+var l = allModels;
 
 
 function getData(v) { // give model number, get oil filter number.
     for (i=0; i<l.length; i++) {
         for (var j=0; j < l[i].length; j++) {
             if (l[i][j].model === v) {
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].name === v) {
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
             }
         }
     }
@@ -217,19 +248,19 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
         for (var j=0; j < l[i].length; j++) {
             
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "name substring 0-2");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "model full ");
             }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
               console.log(l[i][j].model + " model 0-4 ");
-              DisplayVehicleData(l[i][j]);
+              PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
               console.log(l[i][j].model  + "model 1 4");  
-              DisplayVehicleData(l[i][j]);
+              PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
-                DisplayVehicleData(l[i][j]);
+                PrintHTMLVehicleData(l[i][j]);
               console.log(l[i][j].model + "VDS 2..5 ");
             }
         }
