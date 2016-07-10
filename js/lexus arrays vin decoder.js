@@ -184,8 +184,8 @@ var toyotampv = {
   "11F": "FJCruiser",
   "11R": "Previa",
   "13C": "Sienna",
-  "14R": "4Runner_14R",
-  "17R": "4Runner_17R",
+  "14R": "FourRunner_14R",
+  "17R": "FourRunner_17R",
   "20V": "Rav4",
   "21A": "Highlander",
   "22C": "Sienna",
@@ -198,20 +198,20 @@ var toyotampv = {
   "41A": "Highlander",
   "42A": "Highlander",
   "43A": "Highlander",  
-  "44A": "Sequoia-Highlander",
+  "44A": "Sequoia_Highlander",
   "48A": "Sequoia",
   "4BF": "FJCruiser",
   "4CC": "Sienna",
   "4DV": "Rav4_4dv",
   "5G1": "Sequoia",
-  "5JR": "4Runner",
+  "5JR": "FourRunner",
   "64A": "Sequoia",
   "67A": "Sequoia",
   "68A": "Sequoia",
   "7AJ": "Landcruiser",
   "85J": "Landcruiser",
-  "86R": "4Runner_86R",
-  "87R": "4Runner_87R",
+  "86R": "FourRunner_86R",
+  "87R": "FourRunner_87R",
   "REV": "Rav4_rev"
 };
 
@@ -334,27 +334,27 @@ var Tundra5F1 = {
   "UY": "901"
 };
 
-var 4Runner_14R = {
+var FourRunner_14R = {
   "BT": "1234",
   "BU": "5678",
   "ZU": "9012"
 };
 
-var 4Runner_17R = {
+var FourRunner_17R = {
   "BT": "0123",
   "BU": "4567"
 };
 
-var 4Runner_86R = {
+var FourRunner_86R = {
   "GN": "1234",
   "HN": "123"
 };
 
-var 4Runner_87R = {
+var FourRunner_87R = {
   "HN": "123456"
 };
 
-var 4Runner = {
+var FourRunner = {
   "BU": "012",
 };
 
@@ -393,12 +393,12 @@ var Previa = {
 
 
 var Rav4 = {
-  "HP" = "VDS2_10V",
-  "HD" = "VDS2_20V",
-  "HH" = "VDS2_20V",
-  "BD" = "VDS2_31V or 33V",
-  "BF" = "VDS2_31V or 33V",
-  "BK" = "VDS2_31V"
+  "HP": "VDS2_10V",
+  "HD": "VDS2_20V",
+  "HH": "VDS2_20V",
+  "BD": "VDS2_31V or 33V",
+  "BF": "VDS2_31V or 33V",
+  "BK": "VDS2_31V"
 };
 
 
@@ -419,11 +419,15 @@ var Rav4_rev = {
 };
 
 var Sequoia = {
-  "BT" = "ZZXY",
-  "DY" = "ZZXY2",
-  "BY" = "ZZXY3"
+  "BT": "ZZXY",
+  "DY": "ZZXY2",
+  "BY": "ZZXY3"
 };
 
+var Sequoia_Highlander = {
+  "EW": "Hlander EW44A",
+  "BT": "Seq BT 44A"
+}
 var Sienna = {
   "ZF": "SIENNA1",
   "BA": "SIENNA2",
@@ -729,6 +733,7 @@ function decodeVinNo(vin) {
         
     var thisCarsBodystyle = window[thisCarsWmi][vin678]; //pv or mpv with 3 digits in
     var thisCarsvds1 = window[thisCarsBodystyle][vin45]; //engine designation with known bodystyle
+      console.log(thisCarsvds1);
     var thisCarModelYear = modelyearmap[vin_my];
     var thisCarEngine = findTheEngine(vin_my, vin5); // I really need to figure out how to do these calls with 1 vin variable
     var thisCarBodyStyle = findTheBodyStyle(vin_my, vin4, thisCarsWmi);
@@ -744,6 +749,7 @@ function decodeVinNo(vin) {
         thiscar.bodystyle = thisCarBodyStyle;
 }
 return(thiscar.modelkatacode); // This is the output
+console.log(thiscar.modelkatacode + " is the product of vinDecode()");//put it to the screen for debugging
 }
  
  
