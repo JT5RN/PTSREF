@@ -50,7 +50,8 @@ var myEngine = [
     {'id': 24, 'name': '4GR-FSE', 'displacement': '2.5L IS250', 'oilfilter': myEngineOF[2], 'oil': myEngineOil[3]},
     {'id': 25, 'name': '8AR-FTS', 'displacement': '2.0 Turbo', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[4]},
     {'id': 26, 'name': '8AR-FXE', 'displacement': '2.0 Turbo', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[4]},
-    {'id': 27, 'name': '2GR-FKS', 'displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[0]}];//ENGINES.
+    {'id': 27, 'name': '2GR-FKS', 'displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[0]},
+    {'id': 28, 'name': '2AZ', 'displacement': 'ToyotaEngine#1', 'oilfilter': myEngineOF[6], 'oil': myEngineOil[4]}];//ENGINES.
          
 
 //model definitions
@@ -183,7 +184,7 @@ var lexusRc = [
     {'1d':0, 'vds': 'SE5BC', 'model': 'GSC15', 'name': 'RC350', 'engine': myEngine[9], 'drive':drivetrain[0], 'body': mybs[6], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':1, 'vds': 'SM5BC', 'model': 'GSC16', 'name': 'RC300', 'engine': myEngine[11], 'drive':drivetrain[0], 'body': mybs[6], 'battery': myBatt[1], 'af': myAF[6]},
     {'1d':2, 'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F', 'engine': myEngine[14], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af':  '17801-38021'},
-    {'1d':3, 'vds': 'BA5BC', 'model': 'ASC10', 'name': 'RC200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af': myAF[6]}];
+    {'1d':3, 'vds': 'HA5BC', 'model': 'ASC10', 'name': 'RC200T', 'engine': myEngine[25], 'drive':drivetrain[3], 'body': mybs[5], 'battery': myBatt[4], 'af': myAF[6]}];
 
 var lexusCt = [
     {'1d':0, 'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'engine': myEngine[18], 'drive':drivetrain[1], 'body': mybs[0], 'battery': myBatt[7], 'af': myAF[10]}];
@@ -195,9 +196,63 @@ var lexusLFA = [
     {'1d':0, 'vds': 'HX8BH', 'model': 'LFA10', 'name': 'LFA', 'engine': myEngine[2], 'drive':drivetrain[3], 'body': mybs[5], 'battery': 'idk', 'af': 'idk'}];
 
     
-//top level arrays
-var lexusModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
-var l = lexusModels;
+//B&E TOYOTA 7-7-2016
+var toyotaCamry = [
+    {'id':0, 'vds': 'VK13E', 'model': 'MCAMRY001', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':1, 'vds': 'VK12E', 'model': 'MCAMRY002', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':2, 'vds': 'SK12E', 'model': 'MCAMRY003', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':3, 'vds': 'GK13E', 'model': 'MCAMRY004', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':4, 'vds': 'GK12W', 'model': 'MCAMRY005', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':5, 'vds': 'BF12K', 'model': 'MCAMRY006', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':6, 'vds': 'BG12K', 'model': 'MCAMRY007', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':7, 'vds': 'BF22K', 'model': 'MCAMRY008', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':8, 'vds': 'BG22K', 'model': 'MCAMRY009', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':9, 'vds': 'BF28K', 'model': 'MCAMRY010', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':10, 'vds': 'BF22K', 'model': 'MCAMRY11', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':11, 'vds': 'CF22P', 'model': 'MCAMRY12', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':12, 'vds': 'BE30K', 'model': 'MCAMRY13', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':13, 'vds': 'BF30K', 'model': 'MCAMRY14', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':14, 'vds': 'BE32K', 'model': 'MCAMRY15', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':15, 'vds': 'BF32K', 'model': 'MCAMRY16', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':16, 'vds': 'CA30P', 'model': 'MCAMRY17', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':17, 'vds': 'BA32K', 'model': 'MCAMRY18', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':18, 'vds': 'FA38P', 'model': 'MCAMRY19', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':19, 'vds': 'BB46K', 'model': 'MCAMRY20', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':20, 'vds': 'BE46K', 'model': 'MCAMRY21', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':21, 'vds': 'BK46K', 'model': 'MCAMRY22', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':22, 'vds': 'BF3EK', 'model': 'MCAMRY23', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':23, 'vds': 'BK3EK', 'model': 'MCAMRY24', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':24, 'vds': 'BD1FK', 'model': 'MCAMRY25', 'name': "CAMRY", 'engine': myEngine[28],'drive':drivetrain[1]},
+    {'id':25, 'vds': 'BF1FK', 'model': 'MCAMRY26', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]}
+];
+
+
+var toyotaHighlander = [
+    {'id':0, 'vds': 'GD21A', 'model': 'THU10', 'name': "HIGHLANDER", 'engine': myEngine[28],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'HD21A', 'model': 'THU15', 'name': "HIGHLANDER", 'engine': myEngine[28],'drive':drivetrain[0]},
+    {'id':0, 'vds': 'GF21A', 'model': 'THU11', 'name': "HIGHLANDER", 'engine': myEngine[3],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'HF21A', 'model': 'THU16', 'name': "HIGHLANDER", 'engine': myEngine[3],'drive':drivetrain[0]},
+    {'id':0, 'vds': 'DP21A', 'model': 'THH10', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EP21A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EW21A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'ES41A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EW41A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'ES42A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EW42A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'ES43A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EW43A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'ES44A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EW44A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'BKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'DKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'EKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'JKEW3', 'model': 'THEW4', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},  
+    {'id':0, 'vds': 'JWEW3', 'model': 'THEW5', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]}
+];
+//top level arrays{'id':0, 'vds': 'BKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
+
+var allModels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, toyotaCamry,toyotaHighlander];
+var l = allModels;
 
 
 function getData(v) { // give model number, get oil filter number.
@@ -216,22 +271,21 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
     for (i=0; i<l.length; i++) {
       console.log(mod);
         for (var j=0; j < l[i].length; j++) {
-            
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
                 PrintHTMLVehicleData(l[i][j]);
-              console.log(l[i][j].model + "name substring 0-2");  
+                console.log(l[i][j].model + "GD2 2Digit Model Name");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
-              console.log(l[i][j].model + "model full ");
+                console.log(l[i][j].model + "GD2 model full ");
             }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
-              console.log(l[i][j].model + " model 0-4 ");
-              PrintHTMLVehicleData(l[i][j]);
+                console.log(l[i][j].model + "GD2  model 0 4 ");
+                PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
-              console.log(l[i][j].model  + "model 1 4");  
-              PrintHTMLVehicleData(l[i][j]);
+                console.log(l[i][j].model  + "GD2 model 1 4");  
+                PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
-              console.log(l[i][j].model + "VDS 2..5 ");
+                console.log(l[i][j].model + "GD2 vds 2 5 ");
             }
         }
     }
