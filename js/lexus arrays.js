@@ -50,7 +50,8 @@ var myEngine = [
     {'id': 24, 'name': '4GR-FSE', 'displacement': '2.5L IS250', 'oilfilter': myEngineOF[2], 'oil': myEngineOil[3]},
     {'id': 25, 'name': '8AR-FTS', 'displacement': '2.0 Turbo', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[4]},
     {'id': 26, 'name': '8AR-FXE', 'displacement': '2.0 Turbo', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[4]},
-    {'id': 27, 'name': '2GR-FKS', 'displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[0]}];//ENGINES.
+    {'id': 27, 'name': '2GR-FKS', 'displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': myEngineOF[0], 'oil': myEngineOil[0]},
+    {'id': 28, 'name': '2AZ', 'displacement': 'ToyotaEngine#1', 'oilfilter': myEngineOF[6], 'oil': myEngineOil[4]}];//ENGINES.
          
 
 //model definitions
@@ -202,13 +203,13 @@ var toyotaCamry = [
     {'id':2, 'vds': 'SK12E', 'model': 'MCAMRY003', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':3, 'vds': 'GK13E', 'model': 'MCAMRY004', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':4, 'vds': 'GK12W', 'model': 'MCAMRY005', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':5, 'vds': 'BF12K', 'model': 'MCAMRY006', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':5, 'vds': 'BF12K', 'model': 'MCAMRY006', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
     {'id':6, 'vds': 'BG12K', 'model': 'MCAMRY007', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':7, 'vds': 'BF22K', 'model': 'MCAMRY008', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':7, 'vds': 'BF22K', 'model': 'MCAMRY008', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
     {'id':8, 'vds': 'BG22K', 'model': 'MCAMRY009', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':9, 'vds': 'BF28K', 'model': 'MCAMRY010', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':10, 'vds': 'BF22K', 'model': 'MCAMRY11', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':11, 'vds': 'CF22P', 'model': 'MCAMRY12', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':9, 'vds': 'BF28K', 'model': 'MCAMRY010', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':10, 'vds': 'BF22K', 'model': 'MCAMRY11', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
+    {'id':11, 'vds': 'CF22P', 'model': 'MCAMRY12', 'name': "CAMRY", 'engine': myEngine[3],'drive':drivetrain[1]},
     {'id':12, 'vds': 'BE30K', 'model': 'MCAMRY13', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':13, 'vds': 'BF30K', 'model': 'MCAMRY14', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':14, 'vds': 'BE32K', 'model': 'MCAMRY15', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
@@ -221,16 +222,16 @@ var toyotaCamry = [
     {'id':21, 'vds': 'BK46K', 'model': 'MCAMRY22', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':22, 'vds': 'BF3EK', 'model': 'MCAMRY23', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
     {'id':23, 'vds': 'BK3EK', 'model': 'MCAMRY24', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
-    {'id':24, 'vds': 'BD1FK', 'model': 'MCAMRY25', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]},
+    {'id':24, 'vds': 'BD1FK', 'model': 'MCAMRY25', 'name': "CAMRY", 'engine': myEngine[28],'drive':drivetrain[1]},
     {'id':25, 'vds': 'BF1FK', 'model': 'MCAMRY26', 'name': "CAMRY", 'engine': myEngine[23],'drive':drivetrain[1]}
 ];
 
 
 var toyotaHighlander = [
-    {'id':0, 'vds': 'GD21A', 'model': 'THU10', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
-    {'id':0, 'vds': 'HD21A', 'model': 'THU15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[0]},
-    {'id':0, 'vds': 'GF21A', 'model': 'THU11', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
-    {'id':0, 'vds': 'HF21A', 'model': 'THU16', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[0]},
+    {'id':0, 'vds': 'GD21A', 'model': 'THU10', 'name': "HIGHLANDER", 'engine': myEngine[28],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'HD21A', 'model': 'THU15', 'name': "HIGHLANDER", 'engine': myEngine[28],'drive':drivetrain[0]},
+    {'id':0, 'vds': 'GF21A', 'model': 'THU11', 'name': "HIGHLANDER", 'engine': myEngine[3],'drive':drivetrain[3]},
+    {'id':0, 'vds': 'HF21A', 'model': 'THU16', 'name': "HIGHLANDER", 'engine': myEngine[3],'drive':drivetrain[0]},
     {'id':0, 'vds': 'DP21A', 'model': 'THH10', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
     {'id':0, 'vds': 'EP21A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
     {'id':0, 'vds': 'EW21A', 'model': 'THH15', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
@@ -245,8 +246,8 @@ var toyotaHighlander = [
     {'id':0, 'vds': 'BKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
     {'id':0, 'vds': 'DKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
     {'id':0, 'vds': 'EKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
-    {'id':0, 'vds': 'JKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},  
-    {'id':0, 'vds': 'JWEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]}
+    {'id':0, 'vds': 'JKEW3', 'model': 'THEW4', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},  
+    {'id':0, 'vds': 'JWEW3', 'model': 'THEW5', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]}
 ];
 //top level arrays{'id':0, 'vds': 'BKEW3', 'model': 'THEW3', 'name': "HIGHLANDER", 'engine': myEngine[0],'drive':drivetrain[3]},
 
