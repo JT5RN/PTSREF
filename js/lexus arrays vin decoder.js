@@ -15,6 +15,7 @@ var veh = { // highest level direction for this.  would be 500 long with maps si
   "JT3": "toyotampv",
   "JTE": "toyotampv",
   "JTM": "toyotampv",
+  "1NX": "toyotapv",
   "2T1": "toyotapv",
   "4T4": "toyotapv",
   "JT1": "toyotapv",
@@ -315,25 +316,37 @@ var Avalon_b = {
   "BD": "AVALON_HYBRID"
 };
 
+var Camry = { //22K / '97	'
+	"BG": "22K#1",
+	"BF": "22K#2"
+};
+
 var Camry_1fk = {
-  "BD": "1FK CAMRY BD",
-  "BF": "1FK CAMRY BF",
-  "BK": "1FK CAMRY BK"
+  "BD": "AVV50",
+  "BF": "ASV50",
+  "BK": "GSV50"
 };
 
 var Camry_46k = {
-  "BB": "46K_BB",
-  "BE": "46K_BE",
-  "BK": "46K_BK"
+  "BB": "AHV40", // hybrid
+  "BE": "ACV42", //could be ACV40 
+  "BK": "GSV42" // could be GSV42
 };
 
-var Camry_32k = {
-  "BA": "123",
-  "BE": "456",
-  "BF": "789",
-  "CA": "CA_30P",
-  "CF": "012",
-  "FA": "345_FA30P"
+var Camry_32k = {  //30k 32k 32P
+  "BA": "MCV31",
+  "BE": "ACV30",
+  "BF": "MCV30",
+  "CA": "MCV31", //idk1
+  "CE": "ACV30", // 30P - SOLARA
+  "CF": "CF_MCV30", //idk2
+  "FA": "MCV31" //solara convertible
+};
+
+var Corolla = {
+	"BA": "Corolla ba (02E) 1.6l",
+	"BB": "Corolla ba (02E) 1.8l",
+	"BR": "ZZE1" // zze10 vs zze13 argh
 };
 
 /*
