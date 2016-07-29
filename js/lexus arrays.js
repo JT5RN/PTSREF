@@ -273,22 +273,20 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
         for (var j=0; j < l[i].length; j++) {
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
                 PrintHTMLVehicleData(l[i][j]);
-<<<<<<< HEAD
                 console.log(l[i][j].model + "GD2 2Digit Model Name");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "GD2 model full ");
             }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
+                PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "GD2  model 0 4 ");
-                PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
-                console.log(l[i][j].model  + "GD2 model 1 4");  
                 PrintHTMLVehicleData(l[i][j]);
+                console.log(l[i][j].model  + "GD2 model 1 4");  
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "GD2 vds 2 5 ");
-=======
-                console.log(l[i][j].model + "~name 0 2");  
+                console.log(l[i][j].model + "~name 0 2");  //???WTFH
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "^model full "); //WHY DOESNT THIS CATCH CAMRY&HIGHLANDER?
@@ -301,7 +299,6 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "!vds 2 5 ");
->>>>>>> refs/remotes/origin/Toyota_Add
             }
         }
     }
