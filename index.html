@@ -171,18 +171,40 @@ and open the template in the editor.
           </ul>
             
         </li>
+
+        ****
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Other<span class="caret"></span></a>
+          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <li class="divider"></li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Toyota Models</a>
+              <ul class="dropdown-menu">
+                <li><a id="RX" href="#" onclick="DisplayVehicle('HI');return false;">Highlander<span class="sr-only">(current)</span></a></li>
+                <li><a id="RXA" href="#" onclick="DisplayVehicle('CA');return false;">Camry</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">LFA</a>
+              <ul class="dropdown-menu">
+                <li><a id="GX" href="#" onclick="DisplayVehicle('LF');return false;">2012 LFA<span class="sr-only">(current)</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+        ****
           
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" id="getInputString" placeholder="IS-F, USE20 or JTHBP262 ">
+            <input type="text" class="form-control" id="getInputString" placeholder="IS-F, USE20 or JTHBP262">
           </div>
-          <input type="button" class="btn btn-default" id="addButton" value="(press) Enter a model name, model, or partial VIN">
+          <input type="button" class="btn btn-default" id="addButton" value="(press) Enter a model name, model, or beginning VIN number">
         </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a id="LFA" href="#" onclick="DisplayVehicle('LF');return false;">LFA</a></li>
-        </ul>
-      </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
@@ -192,6 +214,6 @@ and open the template in the editor.
 
 
     <ul id="ppp"></ul>
-  web page inteded to be used by toyota parts professionals for reference in filters etc.  I Am in the process of adding Toyotas too. 
+ intended for Toy/Lex parts professionals and service technicians. 
   </body>
 </html>
