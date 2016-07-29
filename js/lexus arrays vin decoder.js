@@ -1,153 +1,7 @@
 //4-15-2016 coppied from read-csv file // 4-25 coppied from LexusVinDecoder file
 // 7-2-2016 coppied onto Laptop and down cape cod...
-var thiscar = {
-  modelyear: "",
-  modelprefix: "",
-  modelkatacode: "",
-  wmi: "",
-  vds1: "",
-  vds2: "",
-  vin: "",
-  model: "",
-  vin4: "",
-  vin5: "",
-  vin10: "",
-  engine: "",
-  bodystyle: ""
-};
-var engine_family_1990_1993 = {//90 THRU '93'
-    F: "1UZ-FE (Early)",
-    V: "2VZ-FE (Early)",
-    K: "3VZ-FE (Early)",
-    Z: "2JZ-GE OR 1UZ-FE (Early)",
-    S: "2JZ-GE (Early)"        
-};
-var engine_family_1994_1995 = {//90 THRU '93'
-    F: "1UZ-FE (Early)",
-    K: "1MZ-FE",
-    Z: "2JZ-GE OR 1UZ-FE (Early)",
-    S: "2JZ-GE (Early)"  
-};
-var engine_family_1996_2005 = { // THRU 2005
-    A: "3MZ-FE",
-    F: "1MZ-FE",
-    D: "2JZ-GE",
-    H: "1UZ-FE",
-    J: "1FZ-FE",
-    L: "3UZ-FE",
-    N: "3UZ-FE",
-    T: "2UZ-FE"  
-};
-var engine_family_2006_2009 = { // THRU 2009
-    A: "3MZ-FE",
-    C: "2GR-FSE + L110",
-    E: "2GR-FSE",
-    H: "3GR-FSE",
-    J: "2GR-FE",
-    K: "4GR-FSE OR 2GR-FE",
-    L: "1UR-FSE",
-    N: "3UZ-FE",
-    P: "2UR-GSE",
-    T: "2UZ-FE",
-    U: "2UR-FSE",
-    W: "3MZ-FE",
-    Y: "3UR-FE"
-};
-
-var engine_family_2010_2013 = { // THRU 2013
-    B: "2AZ-FXE OR 2GR-FXE",
-    C: "2GR-FSE",
-    D: "2ZR-FXE",
-    E: "2GR-FSE",
-    F: "4GR-FSE",
-    K: "2GR-FE",
-    L: "1UR-FSE",
-    M: "1UR-FE",
-    N: "3UZ-FE",
-    P: "2UR-GSE",
-    S: "2GR-FXE",
-    U: "2UR-FSE",
-    X: "1LR-GUE", //LFA Motor. VDS:  HX8BH (#8 LETTER " B " BACK TO BACK- CUTE.)
-    W: "2AR-FXE 2.8L Hybrid",
-    Y: "3UR-FE"   
-};
-
-var engine_family_2014_2017 = { //2014-2016 the 2016 map 
-    A: "8AR-FTS 2.0 Turbo",
-    B: "2GR-FXE",
-    C: "2GR-FXE",
-    D: "2ZR-FXE",
-    E: "2GR-FSE",
-    F: "2GR-FXS or 4GR-FSE",
-    G: "2GR-FXS",
-    J: "2AR-FXE",
-    K: "2GR-FE",
-    L: "1UR-FSE",
-    M: "2GR-FSE or 1UR-FE",
-    P: "2UR-GSE",
-    S: "2GR-FXE",
-    U: "2UR-FSE",
-    W: "2AR-FXE 2.8L Hybrid",
-    Y: "3UR-FE",
-    Z: "2GR-FKS"
-    
-};
 
 
-var pv_bodytype_2016 = {
-    B: "4 Door Sedan 2WD",
-    C: "4 Door Sedan AWD",
-    D: "4 Door Sedan AWD (LS460L, LS600hL)",
-    E: "5 Door Hatchback 2WD", // made up for IS-SportCXross
-    F: "2 Door Convertible 2WD",
-    G: "4 Door Sedan 2WD (LS460L)",
-    H: "2 Door Coupe 2WD",
-    K: "5 Door Hatchback 2WD",
-    S: "2 Door Coupe AWD"
-    
-};
-
-var mpv_bodytype_2016 = {
-    B: "5 Door Wagon AWD",
-    J: "5 Door Wagon AWD",
-    Y: "5 Door Wagon 2WD",
-    Z: "5 Door Wagon 2WD",
-    G: "4 Door Wagon 2WD",
-    H: "4 Door Wagon 4WD"
-};
-
-var modelyearmap = {
-  A: 2010,
-  B: 2011,
-  C: 2012,
-  D: 2013,
-  E: 2014,
-  F: 2015,
-  G: 2016,
-  H: 2017,
-  J: 2018,
-  K: 2019,
-  L: 1990,
-  M: 1991,
-  N: 1992,
-  P: 1993,
-  R: 1994,
-  S: 1995,
-  T: 1996,
-  V: 1997,
-  W: 1998,
-  X: 1999,
-  Y: 2000,
-  1: 2001,
-  2: 2002,
-  3: 2003,
-  4: 2004,
-  5: 2005,
-  6: 2006,
-  7: 2007,
-  8: 2008,
-  9: 2009
-};
 var veh = { // highest level direction for this.  would be 500 long with maps similar to these others.
   "JTH": "lexuspv",
   "58A": "lexuspv",
@@ -161,6 +15,7 @@ var veh = { // highest level direction for this.  would be 500 long with maps si
   "JT3": "toyotampv",
   "JTE": "toyotampv",
   "JTM": "toyotampv",
+  "1NX": "toyotapv",
   "2T1": "toyotapv",
   "4T4": "toyotapv",
   "JT1": "toyotapv",
@@ -461,25 +316,37 @@ var Avalon_b = {
   "BD": "AVALON_HYBRID"
 };
 
+var Camry = { //22K / '97	'
+	"BG": "22K#1",
+	"BF": "22K#2"
+};
+
 var Camry_1fk = {
-  "BD": "1FK CAMRY BD",
-  "BF": "1FK CAMRY BF",
-  "BK": "1FK CAMRY BK"
+  "BD": "AVV50",
+  "BF": "ASV50",
+  "BK": "GSV50"
 };
 
 var Camry_46k = {
-  "BB": "46K_BB",
-  "BE": "46K_BE",
-  "BK": "46K_BK"
+  "BB": "AHV40", // hybrid
+  "BE": "ACV42", //could be ACV40 
+  "BK": "GSV42" // could be GSV42
 };
 
-var Camry_32k = {
-  "BA": "123",
-  "BE": "456",
-  "BF": "789",
-  "CA": "CA_30P",
-  "CF": "012",
-  "FA": "345_FA30P"
+var Camry_32k = {  //30k 32k 32P
+  "BA": "MCV31",
+  "BE": "ACV30",
+  "BF": "MCV30",
+  "CA": "MCV31", //idk1
+  "CE": "ACV30", // 30P - SOLARA
+  "CF": "CF_MCV30", //idk2
+  "FA": "MCV31" //solara convertible
+};
+
+var Corolla = {
+	"BA": "Corolla ba (02E) 1.6l",
+	"BB": "Corolla ba (02E) 1.8l",
+	"BR": "ZZE1" // zze10 vs zze13 argh
 };
 
 /*
@@ -711,141 +578,44 @@ var Sc = {
   UZ: "UZZ30"
 };
 
+//
+
+
+// makes it all work
+// this is simplified from original function 7-9-2016
+
+var thiscar = { 
+  modelprefix: "",
+  modelkatacode: "",
+  wmi: "",
+  vds1: "",
+  vds2: "",
+  vin: ""
+};
 
 function decodeVinNo(vin) {
     var wmi = vin.toString().substring(0, 3);
     var vin678 = vin.toString().substring(5, 8);
     var vin45 = vin.toString().substring(3, 5);
-    var vin4 = vin.toString().substring(3,4);
-    var vin5 = vin.toString().substring(4,5);
-    var vin_my = vin.toString().substring(9, 10);
-    
     var thisCarsWmi = veh[wmi];// the intitail direction it takes
-  
-  
   if (!thisCarsWmi) 
   { ///COULD Expound on this logic some..
     return(vin); // PUNTS if its not a valid vin to decode
-    console.log(vin.toString() + " errors out");
+    console.log(vin.toString() + " errors out during decodeVinNo.");
  }  else {
-        
         thiscar.vin = vin;          // moved this up trying to catch errors. 
-        
     var thisCarsBodystyle = window[thisCarsWmi][vin678]; //pv or mpv with 3 digits in
     var thisCarsvds1 = window[thisCarsBodystyle][vin45]; //engine designation with known bodystyle
-      console.log(thisCarsvds1);
-    var thisCarModelYear = modelyearmap[vin_my];
-    var thisCarEngine = findTheEngine(vin_my, vin5); // I really need to figure out how to do these calls with 1 vin variable
-    var thisCarBodyStyle = findTheBodyStyle(vin_my, vin4, thisCarsWmi);
 
         thiscar.wmi = wmi; // not thisCarsWmi ;  that variable drives driection.
         thiscar.vds1 = vin45;
         thiscar.vds2 = vin678;
         thiscar.modelprefix = thisCarsBodystyle;
         thiscar.modelkatacode = thisCarsvds1;
-        thiscar.modelyear = thisCarModelYear;
-        thiscar.model = thisCarsBodystyle.substring(0,2).toUpperCase();
-        thiscar.engine = thisCarEngine;
-        thiscar.bodystyle = thisCarBodyStyle;
 }
+console.log(thiscar.modelkatacode + " Successful decodeVinNo");//put it to the screen for debugging
 return(thiscar.modelkatacode); // This is the output
-console.log(thiscar.modelkatacode + " is the product of vinDecode()");//put it to the screen for debugging
+
 }
  
  
- 
- 
- 
- //functions
-    
-var findTheEngine = function(vin_my, vin5) {  // this is the best way i could figure to map like this...
-    switch(vin_my) {
-        case "L":
-        case "M":
-        case "N":
-        case "P":
-            var thisCarEngine = engine_family_1990_1993[vin5];
-            return thisCarEngine;       
-        case "R":
-        case "S":
-            var thisCarEngine = engine_family_1994_1995[vin5];
-            return thisCarEngine;         
-        case "T":
-        case "V":
-        case "W":
-        case "Y":
-        case "X":
-        case "1":
-        case "2":
-        case "3":
-        case "4":
-        case "5":
-            var thisCarEngine = engine_family_1996_2005[vin5];
-            return thisCarEngine;      
-
-        case "6":
-        case "7":
-        case "8":
-        case "9": 
-            var thisCarEngine = engine_family_2006_2009[vin5];
-            return thisCarEngine;
-        case 'A' :
-        case 'B' :
-        case 'C' :
-        case 'D' :
-            //do something
-            var thisCarEngine = engine_family_2010_2013[vin5];
-            return thisCarEngine;
-        case 'E' :
-        case 'F' :
-        case 'G' :
-        case 'H' :
-            var thisCarEngine = engine_family_2014_2017[vin5];
-            return thisCarEngine;
-        };
-    };
-    
-    
-var findTheBodyStyle = function(vin_my, vin4, thisCarsWmi) {
-    switch(vin_my) {
-        case "L":
-        case "M":
-        case "N":
-        case "P":
-        case "R":
-        case "S":
-            var thisCarBodyStyle = "";
-            return thisCarBodyStyle;
-        case "T":
-        case "V":
-        case "W":
-        case "Y":
-        case "X":
-        case "1":
-        case "2":
-        case "3":
-        case "4":
-        case "5":
-        case "6":
-        case "7":
-        case "8":
-        case "9": 
-        case 'A':
-        case 'B':
-        case 'C':
-        case 'D':
-        case 'E':
-        case 'F':
-        case 'G':
-        case 'H':
-            switch(thisCarsWmi) {
-                case "lexuspv": 
-                    var thisCarBodyStyle = pv_bodytype_2016[vin4];
-                    return thisCarBodyStyle;
-                case "lexusmpv": 
-                    var thisCarBodyStyle = mpv_bodytype_2016[vin4];
-                    return thisCarBodyStyle;                    
-            }
-        };
-    };
-    
