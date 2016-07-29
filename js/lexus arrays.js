@@ -273,7 +273,6 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
         for (var j=0; j < l[i].length; j++) {
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
                 PrintHTMLVehicleData(l[i][j]);
-<<<<<<< HEAD
                 console.log(l[i][j].model + "GD2 2Digit Model Name");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
@@ -286,8 +285,6 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
                 PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + "GD2 vds 2 5 ");
-=======
                 console.log(l[i][j].model + "~name 0 2");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
@@ -301,7 +298,6 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
                 console.log(l[i][j].model + "!vds 2 5 ");
->>>>>>> refs/remotes/origin/Toyota_Add
             }
         }
     }
