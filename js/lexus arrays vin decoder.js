@@ -1,5 +1,6 @@
 //4-15-2016 coppied from read-csv file // 4-25 coppied from LexusVinDecoder file
 // 7-2-2016 coppied onto Laptop and down cape cod...
+// 1-4-2017 trying to slice this up and make it better.
 
 
 var veh = { // highest level direction for this.  would be 500 long with maps similar to these others.
