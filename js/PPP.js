@@ -22,7 +22,7 @@ function DisplayVehicle(model) { // menue driven data
 //PrintHTMLVehicleData(l[i][j]); ("l" being lexusModels array in the lexus Heihachi file. )
 var PrintHTMLVehicleData = function(data) { 
   var li = document.createElement("li"); 
-  li.innerHTML = (data.name.substring(0, 2) + " model.  If the vin contains " + data.vds + " it would be an " + data.name + " " + data.drive.name + "  (model code " + data.model + ") Engine: " + data.engine.name + ".  Oil Filter: " +
+  li.innerHTML = (data.name.substring(0, 2) + " model.  If the VIN# contains " + data.vds + " it would be an " + data.name + " " + data.drive.name + "  (model code " + data.model + ") Engine: " + data.engine.name + ".  Oil Filter: " +
     data.engine.oilfilter + '.  Battery: ' + data.battery + ". Air Filter:  " + data.af );
   var ul = document.getElementById("ppp"); 
   ul.appendChild(li);

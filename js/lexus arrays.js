@@ -1,7 +1,7 @@
             
 
 //paul's lexus digestion 2.0
-var myFb = [    {'id':0, '04465': "48100", '04945': "0E020", '04947': "48050",'43512':"0E021"},//04-09 RX
+var myFb = [    {'id':0, '04465': "48100", '04945': "0E020", '04947': "48050",'43512':"0E021"},//04-09 RX // 1 4 17
                 {'id':1, '04465': "0E010", '04945': "0E040", '04947': "0E0#0",'43512':"0E030"},//10-15 RX
                 {'id':2, '04465': "33471", '04945': "...", '04947': "...",'43512':"06150"}];//07-16 ES
 
@@ -273,19 +273,19 @@ function getData2(mod) {  // called from web page, PPP  // name 0-2 ie  RX LS mo
         for (var j=0; j < l[i].length; j++) {
             if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + " GetData2 2Digit Model Name");  
+                console.log(l[i][j].model + " 21 GetData2 2Digit Model Name");  
             }if(l[i][j].model === mod) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + " GetData2 model full ");
+                console.log(l[i][j].model + " 22 GetData2 model full ");
             }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
-                console.log(l[i][j].model + "^model 0 4 ");
+                console.log(l[i][j].model + " 23 GetData2 model 0 4 ");
                 PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
-                console.log(l[i][j].model  + "^model 1 4");  
+                console.log(l[i][j].model  + " 24 GetData2 model 1 4");  
                 PrintHTMLVehicleData(l[i][j]);
             }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + "!vds 2 5 ");
+                console.log(l[i][j].model + " 25 GetData2 vds 2 5 ");
             }
         }
     }
