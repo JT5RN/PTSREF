@@ -53,47 +53,47 @@ var en_id = [{'id':  0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': e
             {'id': 27, 'name': '2GR-FKS','displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]}];
 
 var tyr_id = [{'id': 0, 'size': "225-60R16"},
-            {'id': 1, 'size': "235-55R18 OR 225-65R17"}, 
-            {'id': 2, 'size': "235-60R18 OR 235-55R19"},
-            {'id': 3, 'size': "235-65R18 OR 235-50R20"},
-            {'id': 4, 'size': "265-65R17"},
-            {'id': 5, 'size': "265-60R18"},
-            {'id': 6, 'size': "225-60R18 OR 225-65R17"},
-            {'id': 7, 'size': "275-70R16 OR 275-60R18"},
-            {'id': 8, 'size': "285-50R20"},
-            {'id': 9, 'size': "205-65R15 OR 205-60R16"},
-            {'id': 10,'size': "215-60R16 OR 215-55R17"},
-            {'id': 11,'size': "215-55R17 OR 225-45R18"},
-            {'id': 12,'size': "215-45R17"},
-            {'id': 13,'size': "UNKNOWN"},
-            {'id': 14,'size': "2GENIS250 TIRES"},
-            {'id': 15,'size': "3GENIS250 TIRES"},
-            {'id': 16,'size': "215-60R16 or 225-55R16 or 235-45R17"},
-            {'id': 17,'size': "225-50R17 or 245-40R18"},
-            {'id': 18,'size': "235-45R18 or 235-40R19"},
-            {'id': 19,'size': "205-65R16 or 225-60R16"},
-            {'id': 20,'size': "225-60R16 or 225-55R17 or 245-45R18"},
-            {'id': 21,'size': "235-45R18 or 245-45R19"},
-            {'id': 22,'size': "245-40R18"},    
-            {'id': 23,'size': "275-35R19 AND 295-35R19"},    
-            {'id': 24,'size': "215-45R17"}
+{'id': 1, 'size': "235-55R18 OR 225-65R17"}, 
+{'id': 2, 'size': "235-60R18 OR 235-55R19"},
+{'id': 3, 'size': "235-65R18 OR 235-50R20"},
+{'id': 4, 'size': "265-65R17"},
+{'id': 5, 'size': "265-60R18"},
+{'id': 6, 'size': "225-60R18 OR 225-65R17"},
+{'id': 7, 'size': "275-70R16 OR 275-60R18"},
+{'id': 8, 'size': "285-50R20"},
+{'id': 9, 'size': "205-65R15 OR 205-60R16"},
+{'id': 10,'size': "215-60R16 OR 215-55R17"},
+{'id': 11,'size': "215-55R17 OR 225-45R18"},
+{'id': 12,'size': "215-45R17"},
+{'id': 13,'size': "UNKNOWN"},
+{'id': 14,'size': "2GENIS250 TIRES"},
+{'id': 15,'size': "3GENIS250 TIRES"},
+{'id': 16,'size': "215-60R16 or 225-55R16 or 235-45R17"},
+{'id': 17,'size': "225-50R17 or 245-40R18"},
+{'id': 18,'size': "235-45R18 or 235-40R19"},
+{'id': 19,'size': "205-65R16 or 225-60R16"},
+{'id': 20,'size': "225-60R16 or 225-55R17 or 245-45R18"},
+{'id': 21,'size': "235-45R18 or 245-45R19"},
+{'id': 22,'size': "245-40R18"},    
+{'id': 23,'size': "275-35R19 AND 295-35R19"},    
+{'id': 24,'size': "215-45R17"}
             ];
 
 var wyp_id = [
-    {'id': 0, 'sizes': "LH: 26, RH: 22"},
-    {'id': 1, 'sizes': "LH: 24, RH: 19"},
-    {'id': 2, 'sizes': "LH: 26, RH: 22 PTB"},
-    {'id': 3, 'sizes': "LH: 24, RH: 21"},
-    {'id': 4, 'sizes': "LH: 26, RH: 18"},
-    {'id': 5, 'sizes': "LH: 22, RH: 21"},
-    {'id': 6, 'sizes': "LH: 26, RH: 16 PTB"},
-    {'id': 7, 'sizes': "LH: 24, RH: 22"},
-    {'id': 8, 'sizes': "LH: 24, RH: 20"},
-    {'id': 9, 'sizes': "LH: 22, RH: 20"},
-    {'id':10, 'sizes': "LH: 24, RH: 18"},
-    {'id':11, 'sizes': "LH: 24, RH: 16"},
-    {'id':12, 'sizes': "LH: 24, RH: 17"}, //ls460
-    {'id':13, 'sizes': "idk"}
+{'id': 0, 'sizes': "LH: 26, RH: 22"},
+{'id': 1, 'sizes': "LH: 24, RH: 19"},
+{'id': 2, 'sizes': "LH: 26, RH: 22 PTB"},
+{'id': 3, 'sizes': "LH: 24, RH: 21"},
+{'id': 4, 'sizes': "LH: 26, RH: 18"},
+{'id': 5, 'sizes': "LH: 22, RH: 21"},
+{'id': 6, 'sizes': "LH: 26, RH: 16 PTB"},
+{'id': 7, 'sizes': "LH: 24, RH: 22"},
+{'id': 8, 'sizes': "LH: 24, RH: 20"},
+{'id': 9, 'sizes': "LH: 22, RH: 20"},
+{'id':10, 'sizes': "LH: 24, RH: 18"},
+{'id':11, 'sizes': "LH: 24, RH: 16"},
+{'id':12, 'sizes': "LH: 24, RH: 17"}, //ls460
+{'id':13, 'sizes': "idk"}
 ];
 //model definitions
 
@@ -287,19 +287,13 @@ function getData2(mod) {  // refined searches called from HTML web page // name 
 }  
 
 
-//PrintHTMLVehicleData(l[i][j]); ("l" being lexusModels array in the lexus Heihachi file. )
 var PrintHTMLVehicleData = function(data) { 
   var li = document.createElement("li"); 
     li.innerHTML = 
   (
-//  data.name.substring(0, 2) + " model.  VIN: " + 
+
     "^^^ " + data.vds + " is an " + data.name  + " " + data.dln.name + "  Chasis Bodystyle: " + data.bdy.name + " " + "<p>" +
-
     "| Engine : " + data.eng.name + " " + data.eng.displacement + " capacity  " + data.eng.oil + " engine oil Filter: " + data.eng.oilfilter +
-    
-
-
-    
     "<p>" + 
     "| Tire size: " +
     data.tyr.size + " | " + 
@@ -308,32 +302,14 @@ var PrintHTMLVehicleData = function(data) {
     " Battery Group: " + 
     data.bat + " | " + "<p>" + 
     " ---> | engine air: " +  data.eaf + " | cabin air " + data.caf + " | <---" 
+
     );
-    /*data.dln.name + "  ( " + 
-    data.model + " ) Engine: ( " + 
-    data.eng.name + " )  Oil Filter: " +
-    data.eng.oilfilter + '.  Battery: ' + 
-    data.bat + ". Air Filter:  " + 
-    data.af + " . Cabin Filter: " + 
-    data.caf + " wipers: " + 
-    data.wyp.sizes)*/  // + " TireSize: " + data.tyr.size
-
-
-
   var ul = document.getElementById("ppp"); 
-
-
   ul.appendChild(li);
-
-
 };
 
 
 
-
-
-
-// PRINT data = function(data) {
 
 
 window.onload = init; // js for search box
