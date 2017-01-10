@@ -97,3 +97,14 @@ and open the template in the editor.
   font-style: normal;
   font-weight: bold;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    height: 40px;
+    vertical-align: bottom;
+    text-align: center;
+}

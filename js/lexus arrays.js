@@ -9,21 +9,21 @@ var bt_id = ['24F-575','240-575','27F-710','270-750', 'H5', 'H6','51R', 'Unique#
 var dl_id = [{'id':0, 'name': "AWD"}, {'id':1, 'name': "FWD"}, {'id':2, 'name': "4WD"}, {'id':3, 'name': "RWD"}];
 
 var bs_id = [{'id':0,'name': "4 Door Sedan FWD transverse engine"},
-            {'id':1, 'name': "4 Door Sedan AWD longitudinal engine"},
-            {'id':2, 'name': "4 Door Sedan RWD longitudinal engine"},
-            {'id':3, 'name': "5 Door Hatchback 2WD longitudinal engine"}, // SportCXross//CT
-            {'id':4, 'name': "2 Door Convertible 2WD longitudinal engine"},
-            {'id':5, 'name': "2 Door Coupe RWD longitudinal engine"},
-            {'id':6, 'name': "2 Door Coupe AWD longitudinal engine"},
-            {'id':7, 'name': "5 Door Wagon FWD transverse engine"},   //RX
-            {'id':8, 'name': "5 Door Wagon AWD transverse engine"},   //RX/NX
-            {'id':9, 'name': "5 Door Wagon 4WD longitudinal engine"}];  //LX/GX
+            {'id' :1, 'name': "4 Door Sedan AWD longitudinal engine"},
+            {'id' :2, 'name': "4 Door Sedan RWD longitudinal engine"},
+            {'id' :3, 'name': "5 Door Hatchback 2WD longitudinal engine"}, // SportCXross//CT
+            {'id' :4, 'name': "2 Door Convertible 2WD longitudinal engine"},
+            {'id' :5, 'name': "2 Door Coupe RWD longitudinal engine"},
+            {'id' :6, 'name': "2 Door Coupe AWD longitudinal engine"},
+            {'id' :7, 'name': "5 Door Wagon FWD transverse engine"},   //RX
+            {'id' :8, 'name': "5 Door Wagon AWD transverse engine"},   //RX/NX
+            {'id' :9, 'name': "5 Door Wagon 4WD longitudinal engine"}];  //LX/GX
 
 
 var en_id_oil = ['7.2Quarts(0)','5.5Quarts(1)', '6.3Quarts(2)', '6.2Quarts(3)', 'about 6 quarts(4)', 'About 10 quarts (5)'];
 var en_id_of = ['04152-YZZA1','04152-YZZA4','04152-YZZA5','04152-YZZA6','90915-YZZD1','90915-YZZD3','90915-YZZF1'];
 
-var en_id = [{'id':  0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
+var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
             {'id':  1, 'name': '1FZ-FE', 'displacement': '4.5L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[1]},
             {'id':  2, 'name': '1LR-GUE','displacement': '4.8L', 'oilfilter': '04909-45010', 'oil': '15Quarts Mobil 1 (x)'},//lfa
             {'id':  3, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
@@ -37,12 +37,12 @@ var en_id = [{'id':  0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': e
             {'id': 11, 'name': '2GR-FKS','displacement': '3.5L Gas 2015+ (longitudinal) (4) ', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},
             {'id': 12, 'name': '2GR-FXS','displacement': '3.5L Hybrid 450h 2015+ (5) ', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]},
             {'id': 13, 'name': '2JZ-GE', 'displacement': '3.0L Straight 6', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
-            {'id': 14, 'name': '2UR-GSE','displacement': '5.0L', 'oilfilter': en_id_of[1], 'oil': '10Quarts Mobil 1 5-30 (x)'},
+            {'id': 14, 'name': '2UR-GSE','displacement': '5.0L', 'oilfilter': en_id_of[1], 'oil': '10+Quarts(y)'},
             {'id': 15, 'name': '2UR-FSE','displacement': '5.0L Hybrid 600hL', 'oilfilter': en_id_of[1], 'oil': en_id_oil[0]},
             {'id': 16, 'name': '2UZ-FE', 'displacement': '4.7L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
             {'id': 17, 'name': '2VZ-FE', 'displacement': '2.5L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
             {'id': 18, 'name': '2ZR-FXE','displacement': '1.8L', 'oilfilter': en_id_of[3], 'oil': en_id_oil[4]},
-            {'id': 19, 'name': '3GR-FSE','displacement': '3.0L 2006GS Only motor', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},
+            {'id': 19, 'name': '3GR-FSE','displacement': '3.0L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},// 2006GS Only motor
             {'id': 20, 'name': '3MZ-FE', 'displacement': '3.3L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},//how do i account for an '08 Rx Hybrid???
             {'id': 21, 'name': '3UR-FE', 'displacement': '5.7L', 'oilfilter': en_id_of[1], 'oil': en_id_oil[5]},
             {'id': 22, 'name': '3UZ-FE', 'displacement': '4.3L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
@@ -65,7 +65,7 @@ var tyr_id = [{'id': 0, 'size': "225-60R16"},
 {'id': 10,'size': "215-60R16 OR 215-55R17"},
 {'id': 11,'size': "215-55R17 OR 225-45R18"},
 {'id': 12,'size': "215-45R17"},
-{'id': 13,'size': "UNKNOWN"},
+{'id': 13,'size': "UN-KNOWN"},
 {'id': 14,'size': "2GENIS250 TIRES"},
 {'id': 15,'size': "3GENIS250 TIRES"},
 {'id': 16,'size': "215-60R16 or 225-55R16 or 235-45R17"},
@@ -115,7 +115,7 @@ var lexusRx = [
 
 var lexusGx = [
 {'vds': 'BT20X', 'model': 'UZJ120', 'name': 'GX470', 'eng': en_id[16],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[9],'caf': caf_id[2], 'wyp': wyp_id[5],'tyr': tyr_id[4]},
-{'vds': 'BM7FX', 'model': 'UZJ150', 'name': 'GX460', 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[4], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]},
+{'vds': 'BM7FX', 'model': 'UZJ150', 'name': 'GX460', 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]},
 {'vds': 'JM7FX', 'model': 'UZJ150', 'name': 'GX460', 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]}];
 
 var lexusNx = [
@@ -262,29 +262,37 @@ function getData(v) { // Original call - search box - I give model number, get P
     }
 } 
 
-function getData2(mod) {  // refined searches called from HTML web page // name 0-2 ie  RX LS model 0-3 ie MCU1
+function getData2(v) {  // refined searches called from HTML web page // name 0-2 ie  RX LS model 0-3 ie MCU1
     for (i=0; i<l.length; i++) {
-      console.log(mod);
+      console.log(v);
         for (var j=0; j < l[i].length; j++) {
-            if(l[i][j].name.substring(0,2) === mod) {  //If called by 2 letter name, display all itterations
+            if(l[i][j].name.substring(0,2) === v) {  //If called by 2 letter name, display all itterations
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + " 21 GetData2 2Digit Model Name");  
-            }if(l[i][j].model === mod) {  // CATCH FULL MODEL
+            }if(l[i][j].model === v) {  // CATCH FULL MODEL
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + " 22 GetData2 model full ");
-            }if(l[i][j].model.substring(0,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
-                console.log(l[i][j].model + " 23 GetData2 model 0 4 ");
+            }if(l[i][j].model.substring(0,4).toString() === v) {  //CATCH PARTIAL MODEL CODE (GYL1) OR (MCU1)
                 PrintHTMLVehicleData(l[i][j]);
-            }if(l[i][j].model.substring(1,4).toString() === mod) {  //CATCH PARTIAL MODEL CODE   (CV1)
-                console.log(l[i][j].model  + " 24 GetData2 model 1 4");  
+            }if(l[i][j].model.substring(1,4).toString() === v) {  //CATCH PARTIAL MODEL CODE   (CV1)
                 PrintHTMLVehicleData(l[i][j]);
-            }if(l[i][j].vds.substring(2,5).toString() === mod) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
+            }if(l[i][j].vds.substring(2,5).toString() === v) {  //CATCH VDS 678 match for RX models L MODEL, digits 2 3 & 4 (^123^)
                 PrintHTMLVehicleData(l[i][j]);
-                console.log(l[i][j].model + " 25 GetData2 vds 2 5 ");
             }
         }
     }
 }  
+
+function getData3(v) { // new call 
+    for (i=0; i<l.length; i++) {
+        for (var j=0; j < l[i].length; j++) {
+            if (l[i][j].model === v) {
+                PrintHTMLVehicleData(l[i][j]);
+                PrintHTMLItemData(l[i][j]);
+            }
+        }
+    }
+} 
+//what tod o thou.
+
 
 
 var PrintHTMLVehicleData = function(data) { 
@@ -292,51 +300,68 @@ var PrintHTMLVehicleData = function(data) {
     li.innerHTML = 
   (
 
-    "^^^ " + data.vds + " is an " + data.name  + " " + data.dln.name + "  Chasis Bodystyle: " + data.bdy.name + " " + "<p>" +
-    "| Engine : " + data.eng.name + " " + data.eng.displacement + " capacity  " + data.eng.oil + " engine oil Filter: " + data.eng.oilfilter +
-    "<p>" + 
-    "| Tire size: " +
-    data.tyr.size + " | " + 
-    " Wipers: " + 
-    data.wyp.sizes + " | " +
-    " Battery Group: " + 
-    data.bat + " | " + "<p>" + 
-    " ---> | engine air: " +  data.eaf + " | cabin air " + data.caf + " | <---" 
+    "<table>" + 
+  "<colgroup>" + 
+    
+    
+  "</colgroup>" + 
+  "<tr>" + 
+    "<th>VIN :</th>" +
+    "<th>MODEL</th>"+ 
+    "<th>MODELNAME</th>"+
+    
+    "<th>EngineNAME</th>"+
+    "<th>EngineSIZE</th>"+
+    "<th>EngineOIL-FILTER</th>"+
+    "<th>EngineOIL</th>"+
+    "<th>WIPER-SBLADES</th>"+
+    "<th>ENGINE AIR FILTER</th>"+
+    "<th>CABIN  AIR FILTER</th>"+
+    "<th>BATTERY</th>"+
+    "<th>TIRES  </th>"+
+  "</tr><tr>"+
+    "<td>" + data.vds + "</td>"+ 
+    "<td>" + data.model + "</td>"+
+    "<td>" + data.name +"</td>"+
+    
+    "<td>" + data.eng.name + "</td>"+
+    "<td>" + data.eng.displacement + "</td>"+
+    "<td>" + data.eng.oilfilter + "</td>"+
+    "<td>" + data.eng.oil + "</td>"+
+    "<td>" + data.wyp.sizes + "</td>" +
+    "<td>" + data.eaf + "</td>"+
+    "<td>" + data.caf + "</td>" +
+    "<td>" + data.bat + "</td>" +
+    "<td>" + data.tyr.size + "</td>"
 
     );
-  var ul = document.getElementById("ppp"); 
-  ul.appendChild(li);
-};
-
-
-
-
+  
+var ul = document.getElementById("ppp"); 
+  ul.appendChild(li);};
 
 window.onload = init; // js for search box
 function init() { 
   var button = document.getElementById("addButton"); 
-  button.onclick = handleButtonClick;
-}
+  button.onclick = handleButtonClick;}
 
 function handleButtonClick() { // search box
   document.getElementById("ppp").innerHTML = "";
   var textInput = document.getElementById("getInputString");
   var v2 = textInput.value.toUpperCase();
   var v3 = decodeVinNo(v2); 
-  getData(v3);
-};
+  getData(v3);};
 
 function DisplayVehicle(model) { // HTML menue driven data call
   document.getElementById("ppp").innerHTML = "";
   var v2 = model.toUpperCase();
   var v3 = decodeVinNo(v2);
-  getData2(v3);
-  
-}; 
+  getData2(v3);}; 
 
-
-
-
+function DisplayItem(model) { // HTML menue driven data call v2.0
+  document.getElementById("ppp").innerHTML = "";
+  var v2 = model.toUpperCase();
+  var v3 = decodeVinNo(v2);
+  getData3(v3);}; 
 
 
 
