@@ -52,203 +52,281 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 26, 'name': '8AR-FXE','displacement': '2.0 Turbo', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
             {'id': 27, 'name': '2GR-FKS','displacement': '3.5L Gas 2015+ (Transverse) (6) ', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]}];
 
-var tyr_id = [{'id': 0, 'size': "225-60R16"},
-{'id': 1, 'size': "235-55R18 OR 225-65R17"}, 
-{'id': 2, 'size': "235-60R18 OR 235-55R19"},
-{'id': 3, 'size': "235-65R18 OR 235-50R20"},
-{'id': 4, 'size': "265-65R17"},
-{'id': 5, 'size': "265-60R18"},
-{'id': 6, 'size': "225-60R18 OR 225-65R17"},
-{'id': 7, 'size': "275-70R16 OR 275-60R18"},
-{'id': 8, 'size': "285-50R20"},
-{'id': 9, 'size': "205-65R15 OR 205-60R16"},
-{'id': 10,'size': "215-60R16 OR 215-55R17"},
-{'id': 11,'size': "215-55R17 OR 225-45R18"},
-{'id': 12,'size': "215-45R17"},
+
+
+var ty_sz = [ // defined in tyr_id - each tyr_id has many ty_sz's
+
+"235-60R18",//0
+"235-55R18",//1
+"215-55R17",//2
+"235-55R19",//3
+"215-45R17",//4
+"235-45R18",//5
+"235-50R20",//6
+"235-65R18",//7
+"265-65R17",//8
+"265-60R18",//9
+"225-65R17",//10
+"225-60R16",//11
+"225-60R18",//12
+"275-70R16",//13
+"275-60R18",//14
+"285-50R20",//15
+"205-65R15",//16
+"205-60R16",//17
+"215-60R16",//18
+"225-45R18",//19
+"225-50R17",//20
+"245-40R18",//21
+"225-55R16",//22
+"235-45R17",//23
+"225-40R18",//24 // IS TIRES
+"255-40R18",//25
+"255-35R18",//26
+"235-45R18",//27
+"245-45R19",//28
+];
+
+
+var tyr_id = [ //the map of what cars get what size tires defined in the main hash. order is important!
+{'id': 0, 'size': ty_sz[11]},  // this is the map - car to size(s) 
+{'id': 1, 'size': ty_sz[1] + " or " + ty_sz[10]},
+{'id': 2, 'size': ty_sz[0] + " or " + ty_sz[3]},
+{'id': 3, 'size': ty_sz[6] + " or " + ty_sz[7]},
+{'id': 4, 'size': ty_sz[8]},
+{'id': 5, 'size': ty_sz[9]},
+{'id': 6, 'size': ty_sz[12] + " or " + ty_sz[10]},
+{'id': 7, 'size': ty_sz[13] + " or " + ty_sz[14]},//"275-70R16 OR 275-60R18"},
+{'id': 8, 'size': ty_sz[15]},
+{'id': 9, 'size': ty_sz[16] + " or " + ty_sz[17]},//"205-65R15 OR 205-60R16"},
+{'id': 10,'size': ty_sz[18] + " or " + ty_sz[2]},//"215-60R16 OR 215-55R17"},
+{'id': 11,'size': ty_sz[2] + " or " + ty_sz[19]},//"215-55R17 OR 225-45R18"},
+{'id': 12,'size': ty_sz[4]},
 {'id': 13,'size': "UN-KNOWN"},
-{'id': 14,'size': "2GENIS250 TIRES"},
-{'id': 15,'size': "3GENIS250 TIRES"},
-{'id': 16,'size': "215-60R16 or 225-55R16 or 235-45R17"},
-{'id': 17,'size': "225-50R17 or 245-40R18"},
-{'id': 18,'size': "235-45R18 or 235-40R19"},
+{'id': 14,'size': ty_sz[24] + " and " + ty_sz[25]},
+{'id': 15,'size': ty_sz[21] + " and " + ty_sz[26]},
+{'id': 16,'size': ty_sz[18] + ", " + ty_sz[22] + " or " + ty_sz[23]},
+{'id': 17,'size': ty_sz[20] + " and " + ty_sz[21]},
+{'id': 18,'size': ty_sz[27] + " and " + ty_sz[28]},
 {'id': 19,'size': "205-65R16 or 225-60R16"},
 {'id': 20,'size': "225-60R16 or 225-55R17 or 245-45R18"},
 {'id': 21,'size': "235-45R18 or 245-45R19"},
 {'id': 22,'size': "245-40R18"},    
 {'id': 23,'size': "275-35R19 AND 295-35R19"},    
-{'id': 24,'size': "215-45R17"}
-            ];
+{'id': 24,'size': ty_sz[4]}
+];
+
+
 
 var wyp_id = [
-{'id': 0, 'sizes': "LH: 26, RH: 22"},
-{'id': 1, 'sizes': "LH: 24, RH: 19"},
-{'id': 2, 'sizes': "LH: 26, RH: 22 PTB"},
-{'id': 3, 'sizes': "LH: 24, RH: 21"},
-{'id': 4, 'sizes': "LH: 26, RH: 18"},
-{'id': 5, 'sizes': "LH: 22, RH: 21"},
-{'id': 6, 'sizes': "LH: 26, RH: 16 PTB"},
-{'id': 7, 'sizes': "LH: 24, RH: 22"},
-{'id': 8, 'sizes': "LH: 24, RH: 20"},
-{'id': 9, 'sizes': "LH: 22, RH: 20"},
-{'id':10, 'sizes': "LH: 24, RH: 18"},
-{'id':11, 'sizes': "LH: 24, RH: 16"},
-{'id':12, 'sizes': "LH: 24, RH: 17"}, //ls460
-{'id':13, 'sizes': "idk"}
+{'id': 0, 'sizes': displayWipers(26, 22)},
+{'id': 1, 'sizes': displayWipers(24, 19)},
+//{'id': 2, 'sizes': displayWipers("26PTB", "22PTB")}, 
+{'id': 2, 'sizes': myr(1999, 2003 , 1)}, 
+{'id': 3, 'sizes': displayWipers(24, 21)},
+{'id': 4, 'sizes': displayWipers(21, 18)},
+{'id': 5, 'sizes': displayWipers(22, 21)},
+{'id': 6, 'sizes': displayWipers("26PTB2", "16PTB2")},
+{'id': 7, 'sizes': displayWipers(24, 22)},
+{'id': 8, 'sizes': displayWipers(24, 20)},
+{'id': 9, 'sizes': displayWipers(22, 20)},
+{'id':10, 'sizes': displayWipers(24, 18)},
+{'id':11, 'sizes': displayWipers(24, 16)},
+{'id':12, 'sizes': displayWipers(24, 17)},
+{'id':13, 'sizes': displayWipers(26, 22)}
 ];
+
+
+function displayWipers(left,right){
+    return("Left: " + left + " Right: " + right);
+
+};
+
+
+//{'id': 2, 'sizes': myr(1999, 2003)}, 
+
+
 //model definitions
 
 var lexusRx = [
-{'vds': 'GF10U', 'model': 'MCU10', 'name': 'RX300', 'eng': en_id[0], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[14], 'caf': caf_id[4], 'wyp': wyp_id[3], 'tyr': tyr_id[0]},
-{'vds': 'HF10U', 'model': 'MCU15', 'name': 'RX300', 'eng': en_id[0], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[14], 'caf': caf_id[4], 'wyp': wyp_id[3], 'tyr': tyr_id[0]},
-{'vds': 'GA31U', 'model': 'MCU33', 'name': 'RX330', 'eng': en_id[20],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2], 'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'HA31U', 'model': 'MCU38', 'name': 'RX330', 'eng': en_id[20],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2], 'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'GK31U', 'model': 'GSU30', 'name': 'RX350', 'eng': en_id[8], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'HK31U', 'model': 'GSU35', 'name': 'RX350', 'eng': en_id[8], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','eng': en_id[20],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','eng': en_id[20],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'vds': 'ZK1BA', 'model': 'GGL10', 'name': 'RX350', 'eng': en_id[8], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
-{'vds': 'BK1BA', 'model': 'GGL15', 'name': 'RX350', 'eng': en_id[8], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
-{'vds': 'ZB1BA', 'model': 'GYL10', 'name': 'RX450H','eng': en_id[10],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[8], 'eaf': eaf_id[5],'caf': caf_id[0], 'wyp': wyp_id[0], 'tyr': tyr_id[2]},
-{'vds': 'BC1BA', 'model': 'GYL15', 'name': 'RX450H','eng': en_id[10],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf': eaf_id[5], 'caf': caf_id[0],'wyp': wyp_id[0],'tyr': tyr_id[2]},
-{'vds': 'BZMCA', 'model': 'GGL25', 'name': 'RX350', 'eng': en_id[27],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[5], 'wyp': wyp_id[2],'tyr': tyr_id[3]},
-{'vds': 'BGMCA', 'model': 'GYL25', 'name': 'RX450H','eng': en_id[10],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf':'17801-0P090','caf': caf_id[5],'wyp':wyp_id[2],'tyr': tyr_id[3]}];//fwd missing
+{'vds': 'GF10U', 'model': 'MCU10', 'name': 'RX300', 'yrs': myr(1999,2003), 'eng': en_id[0], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[14], 'caf': caf_id[4], 'wyp': wyp_id[3], 'tyr': tyr_id[0]},
+{'vds': 'HF10U', 'model': 'MCU15', 'name': 'RX300', 'yrs': myr(1999,2003),'eng': en_id[0], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[14], 'caf': caf_id[4], 'wyp': wyp_id[3], 'tyr': tyr_id[0]},
+{'vds': 'GA31U', 'model': 'MCU33', 'name': 'RX330', 'yrs': myr(2004,2006), 'eng': en_id[20],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2], 'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'HA31U', 'model': 'MCU38', 'name': 'RX330', 'yrs': myr(2004,2006),  'eng': en_id[20],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2], 'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'GK31U', 'model': 'GSU30', 'name': 'RX350', 'yrs': myr(2007,2009), 'eng': en_id[8], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'HK31U', 'model': 'GSU35', 'name': 'RX350', 'yrs': myr(2007,2009),  'eng': en_id[8], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','yrs': myr(2006,2008), 'eng': en_id[20],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','yrs': myr(2006,2008), 'eng': en_id[20],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'vds': 'ZK1BA', 'model': 'GGL10', 'name': 'RX350', 'yrs': myr(2010,2015), 'eng': en_id[8], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
+{'vds': 'BK1BA', 'model': 'GGL15', 'name': 'RX350', 'yrs': myr(2010,2015), 'eng': en_id[8], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
+{'vds': 'ZB1BA', 'model': 'GYL10', 'name': 'RX450H','yrs': myr(2010,2015), 'eng': en_id[10],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[8], 'eaf': eaf_id[5],'caf': caf_id[0], 'wyp': wyp_id[0], 'tyr': tyr_id[2]},
+{'vds': 'BC1BA', 'model': 'GYL15', 'name': 'RX450H','yrs': myr(2010,2015), 'eng': en_id[10],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf': eaf_id[5], 'caf': caf_id[0],'wyp': wyp_id[0],'tyr': tyr_id[2]},
+{'vds': 'BZMCA', 'model': 'GGL25', 'name': 'RX350', 'yrs': myr(2016,2020), 'eng': en_id[27],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[5], 'wyp': wyp_id[2],'tyr': tyr_id[3]},
+{'vds': 'BGMCA', 'model': 'GYL25', 'name': 'RX450H','yrs': myr(2016,2020), 'eng': en_id[10],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf':'17801-0P090','caf': caf_id[5],'wyp':wyp_id[2],'tyr': tyr_id[3]}];//fwd missing
+
+
 
 var lexusGx = [
-{'vds': 'BT20X', 'model': 'UZJ120', 'name': 'GX470', 'eng': en_id[16],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[9],'caf': caf_id[2], 'wyp': wyp_id[5],'tyr': tyr_id[4]},
-{'vds': 'BM7FX', 'model': 'UZJ150', 'name': 'GX460', 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]},
-{'vds': 'JM7FX', 'model': 'UZJ150', 'name': 'GX460', 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]}];
+{'vds': 'BT20X', 'model': 'UZJ120', 'name': 'GX470','yrs': myr(2003,2009), 'eng': en_id[16],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[9],'caf': caf_id[2], 'wyp': wyp_id[5],'tyr': tyr_id[4]},
+{'vds': 'BM7FX', 'model': 'UZJ150', 'name': 'GX460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]},
+{'vds': 'JM7FX', 'model': 'UZJ150', 'name': 'GX460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[0], 'eaf': eaf_id[7],'caf': caf_id[0], 'wyp': wyp_id[5],'tyr': tyr_id[5]}];
+
+
+//var lexusGx = [//GX500
+//REPLACING OLD FORMAT.
+//vds, model, name, yrs, eng, dln, bdy, bat, eaf, caf, wyp,tyr
+//{'vds': 'BT20X', 'model': 'UZJ120', 'name': 'GX470', myr(2003-2009),en_id[16],dln_id[2],bs_id[9,],bt_id[2],eaf_id[9],caf_id[2],wyp_id[5],tyr_id[4]}
+//];//ends rebuilt GX500
+
 
 var lexusNx = [
-{'vds': 'YARBZ', 'model': 'AGZ10', 'name': 'NX200T', 'eng': en_id[25],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
-{'vds': 'BARBZ', 'model': 'AGZ15', 'name': 'NX200T', 'eng': en_id[25],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
-{'vds': 'YWRBZ', 'model': 'AYZ10', 'name': 'NX300H', 'eng': en_id[6], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[8], 'eaf': eaf_id[11],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
-{'vds': 'BJRBZ', 'model': 'AYZ15', 'name': 'NX300H', 'eng': en_id[6], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf': eaf_id[11],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]}];
+{'vds': 'YARBZ', 'model': 'AGZ10', 'name': 'NX200T','yrs': myr(2015,2020), 'eng': en_id[25],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
+{'vds': 'BARBZ', 'model': 'AGZ15', 'name': 'NX200T','yrs': myr(2015,2020), 'eng': en_id[25],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
+{'vds': 'YWRBZ', 'model': 'AYZ10', 'name': 'NX300H','yrs': myr(2015,2020), 'eng': en_id[6], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[8], 'eaf': eaf_id[11],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
+{'vds': 'BJRBZ', 'model': 'AYZ15', 'name': 'NX300H','yrs': myr(2015,2020), 'eng': en_id[6], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[8], 'eaf': eaf_id[11],'caf': caf_id[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]}];
 
 var lexusLx = [
-{'vds': 'HT00W', 'model': 'UZJ100', 'name': 'LX470', 'eng': en_id[16],'dln':dl_id[2], 'bdy': bs_id[9],'bat': bt_id[2], 'eaf': eaf_id[9],'caf':'2x88568-60010','wyp': wyp_id[7],'tyr': tyr_id[7]},
-{'vds': 'HY00W', 'model': 'URJ201', 'name': 'LX570', 'eng': en_id[21],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[13], 'caf': caf_id[0], 'wyp': wyp_id[7],'tyr': tyr_id[8]},
-{'vds': 'HY7AX', 'model': 'URJ201', 'name': 'LX570', 'eng': en_id[21],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[13], 'caf': caf_id[0], 'wyp': wyp_id[7],'tyr': tyr_id[8]},
-{'vds': 'HJ88J', 'model': 'FZJ80', 'name': 'LX450',  'eng': en_id[1], 'dln':dl_id[2], 'bdy': bs_id[9],'bat': bt_id[2], 'eaf': '17801-FJZ80','caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[7]}];
+{'vds': 'HT00W', 'model': 'UZJ100', 'name': 'LX470','yrs': myr(1998,2007), 'eng': en_id[16],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[9],'caf':'2x88568-60010','wyp': wyp_id[7],'tyr': tyr_id[7]},
+{'vds': 'HY00W', 'model': 'URJ201', 'name': 'LX570','yrs': myr(2008,2009), 'eng': en_id[21],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[13], 'caf': caf_id[0], 'wyp': wyp_id[7],'tyr': tyr_id[8]},
+{'vds': 'HY7AX', 'model': 'URJ201', 'name': 'LX570','yrs': myr(2010,2020), 'eng': en_id[21],'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': eaf_id[13], 'caf': caf_id[0], 'wyp': wyp_id[7],'tyr': tyr_id[8]},
+{'vds': 'HJ88J', 'model': 'FZJ80',  'name': 'LX450','yrs': myr(1995,1997), 'eng': en_id[1], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': '17801-FJZ80','caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[7]}];
 
 var lexusEs = [
-{'vds': 'VV22T', 'model': 'VZV21', 'name': 'ES250', 'eng': en_id[17], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[15],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'VK13T', 'model': 'VCV10', 'name': 'ES300', 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'GK13T', 'model': 'MCV10', 'name': 'ES300', 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'BF12G', 'model': 'MCV10', 'name': 'ES300', 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'BF22G', 'model': 'MCV20', 'name': 'ES300', 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'BF28G', 'model': 'MCV20', 'name': 'ES300', 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'BF30G', 'model': 'MCV30', 'name': 'ES300', 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
-{'vds': 'BA30G', 'model': 'MCV31', 'name': 'ES330', 'eng': en_id[20], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
-{'vds': 'BJ46G', 'model': 'GSV40', 'name': 'ES350', 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
-{'vds': 'BK1EG', 'model': 'GSV40', 'name': 'ES350', 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
-{'vds': 'BW1GG', 'model': 'AVV60', 'name': 'ES300H','eng': en_id[6],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[8], 'eaf': eaf_id[4],'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]},
-{'vds': 'BK1GG', 'model': 'GSV60', 'name': 'ES350', 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]}];
+{'vds': 'VV22T', 'model': 'VZV21', 'name': 'ES250','yrs': myr(1990,1991), 'eng': en_id[17], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[15],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'VK13T', 'model': 'VCV10', 'name': 'ES300','yrs': myr(1992,1993), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'GK13T', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1994,1995), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'BF12G', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1996,1996), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'BF22G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1997,1997), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'BF28G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1998,2001), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'BF30G', 'model': 'MCV30', 'name': 'ES300','yrs': myr(2002,2003), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
+{'vds': 'BA30G', 'model': 'MCV31', 'name': 'ES330','yrs': myr(2004,2006), 'eng': en_id[20], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
+{'vds': 'BJ46G', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2007,2009), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
+{'vds': 'BK1EG', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2010,2012), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
+{'vds': 'BW1GG', 'model': 'AVV60', 'name': 'ES300H','yrs':myr(2013,2018), 'eng': en_id[6],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[8], 'eaf': eaf_id[4],'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]},
+{'vds': 'BK1GG', 'model': 'GSV60', 'name': 'ES350','yrs': myr(2013,2018), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[0],'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]}];
     
 var lexusIs = [
-{'vds': 'BD182', 'model': 'JCE10', 'name': 'IS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[4], 'wyp': wyp_id[9],'tyr': tyr_id[12]},
-{'vds': 'BD192', 'model': 'JCE10', 'name': 'IS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[4], 'wyp': wyp_id[9],'tyr': tyr_id[12]},
-{'vds': 'ED192', 'model': 'JCE10', 'name': 'IS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[13]},
+{'vds': 'BD182', 'model': 'JCE10', 'name': 'IS300','yrs': myr(2001,2001), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[4], 'wyp': wyp_id[9],'tyr': tyr_id[12]},
+{'vds': 'BD192', 'model': 'JCE10', 'name': 'IS300','yrs': myr(2002,2005), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[4], 'wyp': wyp_id[9],'tyr': tyr_id[12]},
+{'vds': 'ED192', 'model': 'JCE10', 'name': 'IS300','yrs': myr(2003,2005), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[13]},
 
-{'vds': 'BK262', 'model': 'GSE20', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'BE262', 'model': 'GSE21', 'name': 'IS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'CK262', 'model': 'GSE25', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'BP262', 'model': 'USE20', 'name': 'IS-F',  'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf':'17801-38021', 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'BP5C2', 'model': 'USE20', 'name': 'IS-F',  'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf':'17801-38021', 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'BF5C2', 'model': 'GSE20', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'BE5C2', 'model': 'GSE21', 'name': 'IS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'CF5C2', 'model': 'GSE25', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'FF2C2', 'model': 'GSE20', 'name':'IS250-C','eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'FE2C2', 'model': 'GSE21', 'name':'IS350-C','eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
-{'vds': 'CE5C2', 'model': 'GSE26', 'name': 'IS350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BK262', 'model': 'GSE20', 'name': 'IS250','yrs': myr(2006,2009),'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BE262', 'model': 'GSE21', 'name': 'IS350','yrs': myr(2006,2009), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'CK262', 'model': 'GSE25', 'name': 'IS250','yrs': myr(2006,2009), 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BP262', 'model': 'USE20', 'name': 'IS-F', 'yrs': myr(2008,2009), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf':'17801-38021', 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BP5C2', 'model': 'USE20', 'name': 'IS-F', 'yrs': myr(2010,2013), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf':'17801-38021', 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BF5C2', 'model': 'GSE20', 'name': 'IS250','yrs': myr(2010,2013), 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'BE5C2', 'model': 'GSE21', 'name': 'IS350','yrs': myr(2010,2013), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'CF5C2', 'model': 'GSE25', 'name': 'IS250','yrs': myr(2010,2013), 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'FF2C2', 'model': 'GSE20', 'name':'IS250-C','yrs':myr(2010,2015), 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'FE2C2', 'model': 'GSE21', 'name':'IS350-C','yrs':myr(2010,2015), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
+{'vds': 'CE5C2', 'model': 'GSE26', 'name': 'IS350', 'yrs':myr(2010,2013), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
 
-{'vds': 'CF1D2', 'model': 'GSE35', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'vds': 'BF1D2', 'model': 'GSE30', 'name': 'IS250', 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'vds': 'BE1D2', 'model': 'GSE31', 'name': 'IS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'vds': 'CE1D2', 'model': 'GSE36', 'name': 'IS350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'vds': 'CM1D2', 'model': 'GSE37', 'name': 'IS300', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'vds': 'BA1D2', 'model': 'ASE30', 'name': 'IS200T','eng': en_id[25], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]}];
+{'vds': 'BF1D2', 'model': 'GSE30', 'name': 'IS250','yrs': myr(2014,2020), 'eng': en_id[24], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'vds': 'CF1D2', 'model': 'GSE35', 'name': 'IS250','yrs': myr(2014,2020), 'eng': en_id[24], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'vds': 'BE1D2', 'model': 'GSE31', 'name': 'IS350','yrs': myr(2014,2020), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'vds': 'CE1D2', 'model': 'GSE36', 'name': 'IS350','yrs': myr(2014,2020), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'vds': 'CM1D2', 'model': 'GSE37', 'name': 'IS300','yrs': myr(2016,2020), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'vds': 'BA1D2', 'model': 'ASE30', 'name':'IS200T','yrs': myr(2016,2020), 'eng': en_id[25], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]}];
 
 var lexusGs = [
-{'vds': 'JS47E', 'model': 'JZS147', 'name': 'GS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-50020', 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'BD42S', 'model': 'JZS147', 'name': 'GS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-50020', 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'JS47E', 'model': 'JZS147', 'name': 'GS300','yrs': myr(1994,1994), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-50020', 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'BD42S', 'model': 'JZS147', 'name': 'GS300','yrs': myr(1995,1997), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-50020', 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
     
-{'vds': 'BD68S', 'model': 'JZS160', 'name': 'GS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
-{'vds': 'BD69S', 'model': 'JZS160', 'name': 'GS300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
-{'vds': 'BH68X', 'model': 'UZS160', 'name': 'GS400', 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[11], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
-{'vds': 'BL69S', 'model': 'UZS161', 'name': 'GS430', 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
+{'vds': 'BD68S', 'model': 'JZS160', 'name': 'GS300','yrs': myr(1998,1999), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
+{'vds': 'BH68X', 'model': 'UZS160', 'name': 'GS400','yrs': myr(1998,2000), 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[11], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
+{'vds': 'BD69S', 'model': 'JZS160', 'name': 'GS300','yrs': myr(2000,2005), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[15], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
+{'vds': 'BL69S', 'model': 'UZS161', 'name': 'GS430','yrs': myr(2001,2005), 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': 'idk', 'wyp': wyp_id[8],'tyr': tyr_id[16]},
     
-{'vds': 'BH96S', 'model': 'GRS190', 'name': 'GS300', 'eng': en_id[19], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'CH96S', 'model': 'GRS195', 'name': 'GS300', 'eng': en_id[19], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BE96S', 'model': 'GRS191', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'CE96S', 'model': 'GRS196', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BN96S', 'model': 'UZS190', 'name': 'GS430', 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BE1KS', 'model': 'GRS191', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'CE1KS', 'model': 'GRS196', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BC96S', 'model': 'GWS191', 'name': 'GS450H','eng': en_id[10], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BC1KS', 'model': 'GWS191', 'name': 'GS450H','eng': en_id[10], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BL96S', 'model': 'URS190', 'name': 'GS460', 'eng': en_id[4],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-38040', 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460', 'eng': en_id[4],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-38040', 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BH96S', 'model': 'GRS190', 'name': 'GS300','yrs': myr(2006,2006), 'eng': en_id[19], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'CH96S', 'model': 'GRS195', 'name': 'GS300','yrs': myr(2006,2006), 'eng': en_id[19], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BE96S', 'model': 'GRS191', 'name': 'GS350','yrs': myr(2006,2006), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'CE96S', 'model': 'GRS196', 'name': 'GS350','yrs': myr(2007,2009), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BN96S', 'model': 'UZS190', 'name': 'GS430','yrs': myr(2006,2007), 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BE1KS', 'model': 'GRS191', 'name': 'GS350','yrs': myr(2010,2011), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'CE1KS', 'model': 'GRS196', 'name': 'GS350','yrs': myr(2010,2011), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[3], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BC96S', 'model': 'GWS191', 'name':'GS450H','yrs': myr(2007,2009), 'eng': en_id[10], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BC1KS', 'model': 'GWS191', 'name':'GS450H','yrs': myr(2010,2011), 'eng': en_id[10], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[12], 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BL96S', 'model': 'URS190', 'name': 'GS460','yrs': myr(2008,2009), 'eng': en_id[4],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-38040', 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460','yrs': myr(2010,2011), 'eng': en_id[4],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': '17801-38040', 'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
     
-{'vds': 'BA1BL', 'model': 'ARL10', 'name': 'GS200T','eng': en_id[25], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'vds': 'BE1BL', 'model': 'GRL10', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'vds': 'BZ1BL', 'model': 'GRL12', 'name': 'GS350', 'eng': en_id[11], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'vds': 'CE1BL', 'model': 'GRL15', 'name': 'GS350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'vds': 'CZ1BL', 'model': 'GRL16', 'name': 'GS350', 'eng': en_id[11], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'vds': 'BP1BL', 'model': 'URL10', 'name': 'GS-F',  'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[4], 'eaf': '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[23]}];
+{'vds': 'BA1BL', 'model': 'ARL10', 'name':'GS200T','yrs': myr(2016,2020), 'eng': en_id[25], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'vds': 'BE1BL', 'model': 'GRL10', 'name': 'GS350','yrs': myr(2013,2015), 'eng': en_id[9],  'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'vds': 'BZ1BL', 'model': 'GRL12', 'name': 'GS350','yrs': myr(2015,2017), 'eng': en_id[11], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'vds': 'CE1BL', 'model': 'GRL15', 'name': 'GS350','yrs': myr(2013,2015), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'vds': 'CZ1BL', 'model': 'GRL16', 'name': 'GS350','yrs': myr(2015,2017), 'eng': en_id[11], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'vds': 'BP1BL', 'model': 'URL10', 'name': 'GS-F', 'yrs': myr(2016,2017), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[4], 'eaf': '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[23]}];
 
 var lexusLs = [
-{'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400', 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[2], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
-{'vds': 'UF22E', 'model': 'UCF20', 'name': 'LS400', 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
-{'vds': 'BH28F', 'model': 'UCF20', 'name': 'LS400', 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
+{'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400','yrs': myr(1990,1994), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[2], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
+{'vds': 'UF22E', 'model': 'UCF20', 'name': 'LS400','yrs': myr(1995,1997), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
+{'vds': 'BH28F', 'model': 'UCF20', 'name': 'LS400','yrs': myr(1998,2000), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
 
-{'vds': 'BN30F', 'model': 'UCF30', 'name': 'LS430', 'eng': en_id[22],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': eaf_id[11], 'caf': caf_id[3], 'wyp': wyp_id[11],'tyr': tyr_id[20]},
-{'vds': 'BN36F', 'model': 'UCF30', 'name': 'LS430', 'eng': en_id[22],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': eaf_id[11], 'caf': caf_id[3], 'wyp': wyp_id[11],'tyr': tyr_id[20]},
+{'vds': 'BN30F', 'model': 'UCF30', 'name': 'LS430','yrs': myr(2001,2003), 'eng': en_id[22],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': eaf_id[11], 'caf': caf_id[3], 'wyp': wyp_id[11],'tyr': tyr_id[20]},
+{'vds': 'BN36F', 'model': 'UCF30', 'name': 'LS430','yrs': myr(2004,2006), 'eng': en_id[22],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': eaf_id[11], 'caf': caf_id[3], 'wyp': wyp_id[11],'tyr': tyr_id[20]},
 
-{'vds': 'BL46F', 'model': 'USF40', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'BL5EF', 'model': 'USF40', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'BL1EF', 'model': 'USF40', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'GL46F', 'model': 'USF41', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'GL1EF', 'model': 'USF41', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'GL5EF', 'model': 'USF41', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'CL46F', 'model': 'USF45', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'CL5EF', 'model': 'USF45', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'DL46F', 'model': 'USF46', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'DL5EF', 'model': 'USF46', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'DL1EF', 'model': 'USF46', 'name': 'LS460', 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'DU46F', 'model': 'UVF46', 'name':'LS600HL','eng': en_id[15],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'vds': 'DU1EF', 'model': 'UVF46', 'name':'LS600HL','eng': en_id[15],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]}];
+{'vds': 'BL46F', 'model': 'USF40', 'name': 'LS460','yrs': myr(2007,2009), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[1], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'BL5EF', 'model': 'USF40', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'BL1EF', 'model': 'USF40', 'name': 'LS460','yrs': myr(2007,2009), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'GL46F', 'model': 'USF41', 'name': 'LS460','yrs': myr(2007,2009), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'GL1EF', 'model': 'USF41', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'GL5EF', 'model': 'USF41', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'CL46F', 'model': 'USF45', 'name': 'LS460','yrs': myr(2008,2009), 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'CL5EF', 'model': 'USF45', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'DL46F', 'model': 'USF46', 'name': 'LS460','yrs': myr(2007,2009), 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'DL5EF', 'model': 'USF46', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'DL1EF', 'model': 'USF46', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[3], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'DU46F', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2008,2009), 'eng': en_id[15],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'vds': 'DU1EF', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2010,2015), 'eng': en_id[15],'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]}];
 
 var lexusSc = [
-{'vds': 'JZ31C', 'model': 'JZZ31', 'name': 'SC300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'CD32Z', 'model': 'JZZ31', 'name': 'SC300', 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'UZ30C', 'model': 'UZZ30', 'name': 'SC400', 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'CH32Y', 'model': 'UZZ30', 'name': 'SC400', 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[0], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'CH32Y', 'model': 'UZZ30', 'name': 'SC400', 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[0], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'vds': 'FN48Y', 'model': 'UZZ40', 'name': 'SC430', 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]},
-{'vds': 'FN45Y', 'model': 'UZZ40', 'name': 'SC430', 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]},
-{'vds': 'FN2EY', 'model': 'UZZ40', 'name': 'SC430', 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]}];
+{'vds': 'JZ31C', 'model': 'JZZ31', 'name': 'SC300','yrs': myr(1992,2006), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'CD32Z', 'model': 'JZZ31', 'name': 'SC300','yrs': myr(1997,1999), 'eng': en_id[13], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'UZ30C', 'model': 'UZZ30', 'name': 'SC400','yrs': myr(1992,1996), 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[2], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'CH32Y', 'model': 'UZZ30', 'name': 'SC400','yrs': myr(1997,1999), 'eng': en_id[5],  'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[0], 'eaf': eaf_id[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'vds': 'FN48Y', 'model': 'UZZ40', 'name': 'SC430','yrs': myr(2001,2006), 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]},
+{'vds': 'FN45Y', 'model': 'UZZ40', 'name': 'SC430','yrs': myr(2007,2009), 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]},
+{'vds': 'FN2EY', 'model': 'UZZ40', 'name': 'SC430','yrs': myr(2010,2010), 'eng': en_id[22], 'dln':dl_id[3], 'bdy': bs_id[4], 'bat': bt_id[5], 'eaf': eaf_id[12], 'caf': caf_id[3], 'wyp': wyp_id[8],'tyr': tyr_id[22]}];
 
 var lexusRc = [
-{'vds': 'SE5BC', 'model': 'GSC15', 'name': 'RC350', 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[6], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
-{'vds': 'SM5BC', 'model': 'GSC16', 'name': 'RC300', 'eng': en_id[11], 'dln':dl_id[0], 'bdy': bs_id[6], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
-{'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F',  'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[4], 'eaf':  '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[23]},
-{'vds': 'HA5BC', 'model': 'ASC10', 'name': 'RC200T', 'eng': en_id[25],'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[4], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]}];
+{'vds': 'SE5BC', 'model': 'GSC15', 'name': 'RC350','yrs': myr(2015,2020), 'eng': en_id[9],  'dln':dl_id[0], 'bdy': bs_id[6], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
+{'vds': 'SM5BC', 'model': 'GSC16', 'name': 'RC300','yrs': myr(2015,2020), 'eng': en_id[11], 'dln':dl_id[0], 'bdy': bs_id[6], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
+{'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F' ,'yrs': myr(2015,2020),  'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[4], 'eaf':  '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[23]},
+{'vds': 'HA5BC', 'model': 'ASC10', 'name':'RC200T','yrs': myr(2015,2020), 'eng': en_id[25],'dln':dl_id[3], 'bdy': bs_id[5], 'bat': bt_id[4], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]}];
 
 var lexusCt = [
-{'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H', 'eng': en_id[18], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[7], 'eaf': eaf_id[10], 'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[24]}];
+{'vds': 'KD5BH', 'model': 'ZWA10', 'name': 'CT200H','yrs':myr(2011,2017), 'eng': en_id[18], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[7], 'eaf': eaf_id[10], 'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[24]}];
 
 var lexusHs = [
-{'vds': 'BB1BA', 'model': 'ANF10', 'name': 'HS250H', 'eng': en_id[7], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]}];
+{'vds': 'BB1BA', 'model': 'ANF10', 'name': 'HS250H','yrs':myr(2010,2012), 'eng': en_id[7], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[8], 'eaf': eaf_id[4], 'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]}];
 
 var lexusLFA = [
-{'vds': 'HX8BH', 'model': 'LFA10', 'name': 'LFA', 'eng': en_id[2], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'idk', 'eaf': 'idk', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': 'UNK'}];
+{'vds': 'HX8BH', 'model': 'LFA10', 'name':  'LFA', 'yrs': myr(2012,2012), 'eng': en_id[2], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'idk', 'eaf': 'idk', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': 'UNK'}];
     
 
 
 var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
+var allpv = [lexusEs, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
+var allmpv = [lexusNx, lexusGx, lexusRx, lexusLx];
 var l = allmodels; // l rules.
 
+/*
+function displayFirstThree(v) { // ATTEMPTING TO print the possible WMI on the output page.  this call would return the answer(s) to the ?? "What might these WMI be"
+    for (i=0; i<l.length; i++) {
+        for var j=0; j < l[i].length; j++) {
+            if(l[i][j].model === v) {
+                PrintWMI(l[i][j]); // what does this do.  PrintWMI displays either of the possibilities for the vehicles
+                console.log(l[i][j].tyr);
+            }else
+        }// closes j=0 loop
 
+
+    } //closes i=0
+
+
+
+}//ends displayFirstThree
+*/
 
 function getData(v) { // Original call - search box - I give model number, get PrintHTMLVehicleData
     for (i=0; i<l.length; i++) {
@@ -306,11 +384,14 @@ var PrintHTMLVehicleData = function(data) {
     
   "</colgroup>" + 
   "<tr>" + 
-    "<th>VIN :</th>" +
+    "<th>VIN123</size=</th>" +
+
+    "<th> VDS: <p>digits 4-8</th>" +
     "<th>MODEL</th>"+ 
     "<th>MODELNAME</th>"+
-    
+    "<th>MODEL YEARS</th>"+
     "<th>EngineNAME</th>"+
+    
     "<th>EngineSIZE</th>"+
     "<th>EngineOIL-FILTER</th>"+
     "<th>EngineOIL</th>"+
@@ -320,9 +401,15 @@ var PrintHTMLVehicleData = function(data) {
     "<th>BATTERY</th>"+
     "<th>TIRES  </th>"+
   "</tr><tr>"+
+    "<td>" + " <small>JT6 JTJ 2T2 = mpv ~RX350<p>58A JT8 JTH = pv ~ES350</small></td>"+ 
+   
+    
+
     "<td>" + data.vds + "</td>"+ 
     "<td>" + data.model + "</td>"+
     "<td>" + data.name +"</td>"+
+
+    "<td>" + data.yrs +"</td>"+
     
     "<td>" + data.eng.name + "</td>"+
     "<td>" + data.eng.displacement + "</td>"+
@@ -333,6 +420,9 @@ var PrintHTMLVehicleData = function(data) {
     "<td>" + data.caf + "</td>" +
     "<td>" + data.bat + "</td>" +
     "<td>" + data.tyr.size + "</td>"
+
+
+
 
     );
   
@@ -362,6 +452,14 @@ function DisplayItem(model) { // HTML menue driven data call v2.0
   var v2 = model.toUpperCase();
   var v3 = decodeVinNo(v2);
   getData3(v3);}; 
+
+function myr(start, stop){
+  var a=[start], b=start;
+  while(b<stop){b++;a.push(b)}
+  return a;
+  
+};
+
 
 
 
