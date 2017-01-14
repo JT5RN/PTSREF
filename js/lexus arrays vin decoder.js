@@ -1,6 +1,7 @@
 //4-15-2016 coppied from read-csv file // 4-25 coppied from LexusVinDecoder file
 // 7-2-2016 coppied onto Laptop and down cape cod...
-// 1-4-2017 trying to slice this up and make it better.
+// 1-4-2017 trying to slice this up and make it better.  
+// 1-14-217 have added wmi and model years dispaly to tabled html-good progress
 
 
 var veh = { // highest level direction for this.  would be 500 long with maps similar to these others.
@@ -96,15 +97,15 @@ var Es2 = {
   BF: "MCV20"  
 };
 var Gs = {
-  BD: "JZS160",
-  BH: "UZS160",
-  BL: "UZS161",
-  CE: "GRS196",
-  CH: "GRS195",
-  JS: "JZS147"
+  BD: "JZS160",//GS30098-05
+  BH: "UZS160",//GS40098-00
+  BL: "UZS161",//GS43001-05
+  CE: "GRS196",//GS35007-11
+  CH: "GRS195",//GS300AWD06
+  JS: "JZS147"//GS30094-97
 };
 var Gs1 = {
-  BD: "JZS147"
+  BD: "JZS147"//GS30094-97 BD is so common
 };
 var Gs3 = { //1KS AND 96S 3rd gen cars
   BC: "GWS191",
@@ -164,10 +165,13 @@ var Ls = {
   BH: "UCF20",
   BN: "UCF30",
   BL: "USF40",
+  BM: "USF5#", //PROJ 1 14 17
   CL: "USF45",
+  CM: "USF5#", //PROJ500 1 14 17
   DL: "USF46",
   GL: "USF41",
   DU: "UVF46",
+  EU: "UVF5#", //PROJ Hybrid#
   UF: "UCF20"
 };
 var Ls1 = {
@@ -216,7 +220,9 @@ var Sc = {
   FN: "UZZ40",
   UZ: "UZZ30"
 };
-
+var Lc = { //2018MY
+  UP: "UZZ50" // guessing~
+};
 //
 
 
@@ -236,13 +242,14 @@ function decodeVinNo(vin) {
     var wmi = vin.toString().substring(0, 3);
     var vin678 = vin.toString().substring(5, 8);
     var vin45 = vin.toString().substring(3, 5);
-    var thisCarsWmi = veh[wmi];// the intitail direction it takes
+    var thisCarsWmi = veh[wmi];// the intitail direction it takes - wolrd manufacturer index
   if (!thisCarsWmi) 
-  { ///COULD Expound on this logic some..
-    return(vin); // PUNTS if its not a valid vin to decode
+  { ///COULD Expound on this logic some.. nah!
+    return(vin); // PUNTS if its not a valid vin to decode - vehicle identification number
     console.log(vin.toString() + " errors out during decodeVinNo.");
  }  else {
         thiscar.vin = vin;          // moved this up trying to catch errors. 
+        console.log(vin.toString() + " errors out during else of decodeVinNo.");
     var thisCarsBodystyle = window[thisCarsWmi][vin678]; //pv or mpv with 3 digits in
     var thisCarsvds1 = window[thisCarsBodystyle][vin45]; //engine designation with known bodystyle
 
