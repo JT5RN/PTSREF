@@ -108,3 +108,16 @@ table, th, td {
     vertical-align: bottom;
     text-align: center;
 }
+
+
+th {
+    
+    text-align: center;
+    vertical-align: center;
+}
+
+tr {
+    
+    text-align: center;
+    vertical-align: center;
+}
