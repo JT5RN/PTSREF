@@ -71,7 +71,7 @@ var eaf_id = ['17801-0P051','17801-0H010','17801-AD010','17801-31110','17801-0V0
 
 var caf_id = ['87139-YZZ10', '87139-<B>30100</B>', '87139-<B>YZZ03</B>', '87139-<B><LARGE>YZZ01</LARGE></B>', '87139-48020-83', '87139-<B>0E030</B>'];
 
-var bt_id = ['24F-575','240-575','27F-710','270-750', 'H5', 'H6','51R', 'Unique# small posts', 'OEM 28100'];
+var bt_id = ['24F_575','240_575','27F_710','270_750', 'H5', 'H6','51R', 'Unique# small posts', 'OEM 28100'];
             
 var dl_id = [{'id':0, 'name': "AWD"}, {'id':1, 'name': "FWD"}, {'id':2, 'name': "4WD"}, {'id':3, 'name': "RWD"}];
 
@@ -89,7 +89,7 @@ var bs_id = [{'id':0, 'name': "4 Door Sedan FWD_transverse"},
             ];  //LX/GX
 
 
-var en_id_oil = ['~7.2Quarts(*)','~5.5Quarts(1*)', '~6.3Quarts(2*)', '~6.2Quarts(3*)', '~6quarts(4*)', '~10quarts(5*)', '~5.5quarts (08 uses 0W20)(6*)'];
+var en_id_oil = ['~7.2Quarts(*)','~5.5Quarts(1*)', '~6.3Quarts(2*)', '~6.2Quarts(3*)', '~6quarts(4*)', '~10quarts(5*)', '~5.5quarts 5-30 (08 uses 0W20)(6*)'];
 var en_id_of = ['04152-YZZA1','04152-YZZA4','04152-YZZA5','04152-YZZA6','90915-YZZD1','90915-YZZD3','90915-YZZF1'];
 
 var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
@@ -98,8 +98,8 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id':  3, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
             {'id':  4, 'name': '1UR-FSE','displacement': '4.6L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[5]},
             {'id':  5, 'name': '1UZ-FE', 'displacement': '4.0L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
-            {'id':  6, 'name': '2AR-FXE','displacement': '2.8L(H)', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},//NX/ES300Hybrid
-            {'id':  7, 'name': '2AZ-FXE','displacement': '2.4L(H)', 'oilfilter': en_id_of[6], 'oil': en_id_oil[4]},//HShit
+            {'id':  6, 'name': '2AR-FXE','displacement':'2.8L(H)','oilfilter':en_id_of[0], 'oil': en_id_oil[4]},//NX/ES300Hybrid
+            {'id':  7, 'name': '2AZ-FXE','displacement':'2.4L(H)','oilfilter':en_id_of[6], 'oil': en_id_oil[4]},//HShit
             {'id':  8, 'name': '2GR-FE', 'displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[2]},// (1) (Transverse)
             {'id':  9, 'name': '2GR-FSE','displacement': '3.5L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},// Gas 350 (2) (Longitudinal)
             {'id': 10, 'name': '2GR-FXE','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]},
@@ -107,10 +107,10 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 12, 'name': '2GR-FXS','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]},
             {'id': 13, 'name': '2JZ-GE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},// Straight 6
             {'id': 14, 'name': '2UR-GSE','displacement': '5.0L', 'oilfilter': en_id_of[1], 'oil': '10+Quarts(***)'},
-            {'id': 15, 'name': '2UR-FSE','displacement': '5.0L(H)', 'oilfilter': en_id_of[1], 'oil': en_id_oil[0]},// Hybrid 600hL
+            {'id': 15, 'name': '2UR-FSE','displacement':'5.0L(H)','oilfilter':en_id_of[1], 'oil': en_id_oil[0]},// Hybrid 600hL
             {'id': 16, 'name': '2UZ-FE', 'displacement': '4.7L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
             {'id': 17, 'name': '2VZ-FE', 'displacement': '2.5L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
-            {'id': 18, 'name': '2ZR-FXE','displacement': '1.8L(H)', 'oilfilter': en_id_of[3], 'oil': en_id_oil[4]},
+            {'id': 18, 'name': '2ZR-FXE','displacement':'1.8L(H)','oilfilter':en_id_of[3], 'oil': en_id_oil[4]},
             {'id': 19, 'name': '3GR-FSE','displacement': '3.0L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},// 2006GS Only motor
             {'id': 20, 'name': '3MZ-FE', 'displacement': '3.3L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},//how do i account for an '08 Rx Hybrid???
             {'id': 21, 'name': '3UR-FE', 'displacement': '5.7L', 'oilfilter': en_id_of[1], 'oil': en_id_oil[5]},
@@ -120,7 +120,7 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 25, 'name': '8AR-FTS','displacement': '2.0T', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
             {'id': 26, 'name': '8AR-FXE','displacement': '2.0T', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
             {'id': 27, 'name': '2GR-FKS','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[0]},
-            {'id': 28, 'name': '3MZ-FE', 'displacement': '3.3L(H)', 'oilfilter': en_id_of[4], 'oil': en_id_oil[6]},//this is how
+            {'id': 28, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':en_id_of[4], 'oil': en_id_oil[6]},//this is how
             ];
 
 
@@ -384,9 +384,9 @@ var PrintHTMLVehicleData = function(data) {
   "<colgroup>" + 
   "</colgroup>" + 
   "<tr>" + 
-    "<th>VIN</th>" +
+    "<th>VIN123</th>" +
 
-    "<th>The_VDS</th>" +
+    "<th>45678</th>" +
     "<th>Model</th>"+ 
     "<th>ModelName</th>"+
     "<th>Bodystyle</th>"+
@@ -397,8 +397,8 @@ var PrintHTMLVehicleData = function(data) {
     "<th>Oil_Filter</th>"+
     "<th>EngineOil</th>"+
     "<th>Wipers</th>"+
-    "<th>Engine__A/F_</th>"+
-    "<th>_Cabin__A/F_</th>"+
+    "<th>Engine_air_Filter</th>"+
+    "<th>_Cabin_air_Filter</th>"+
     "<th>Battery</th>"+
     "<th>Tire_Center___</th>"+
   "</tr><tr>"+
