@@ -44,10 +44,10 @@ var ty_sz = [ // defined in tyr_id - each tyr_id has many ty_sz's
 "225-45R17 x2rear",//30 awd17
 "235-50R18 x4",//31 LS460? I guess. 1-18-17
 "235-40R19 x4",//32 GS350F-Sport 
-"235-40R20 x2",//33 LCh f/r
-"275-35R20 x2",//34 LCh f/r
-"235-40R21 x2",//35 LCh f/r
-"275-35R21 x2",//36 LCh f/r
+"235-40R20",//33 LCh f/r
+"275-35R20",//34 LCh f/r
+"235-40R21",//35 LCh f/r
+"275-35R21",//36 LCh f/r 2/8/17
 
 ];
 
@@ -168,7 +168,8 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 17, 'name': '2VZ-FE', 'displacement': '2.5L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
             {'id': 18, 'name': '2ZR-FXE','displacement':'1.8L(H)','oilfilter':en_id_of[3], 'oil': en_id_oil[4]},
             {'id': 19, 'name': '3GR-FSE(!)','displacement': '3.0L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},// 2006GS Only motor
-            {'id': 20, 'name': '8GR-FKS','displacement': '4.6L(H)(??)', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},// LCh
+            {'id': 20, 'name': '3MZ-FE', 'displacement': '3.3L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
+            
             {'id': 21, 'name': '3UR-FE', 'displacement': '5.7L', 'oilfilter': en_id_of[1], 'oil': en_id_oil[5]},
             {'id': 22, 'name': '3UZ-FE', 'displacement': '4.3L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
             {'id': 23, 'name': '3VZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
@@ -176,7 +177,8 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 25, 'name': '8AR-FTS','displacement': '2.0T', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
             {'id': 26, 'name': '8AR-FXE','displacement': '2.0T', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
             {'id': 27, 'name': '2GR-FKS(5)','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[4]},
- /*USE28*/  {'id': 28, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':en_id_of[4], 'oil': en_id_oil[6]},//trying to fix '08 hybrid'//REDUNDANT AND UNUSED
+            {'id': 28, 'name': '8GR-FKS','displacement': '4.6L(H)(??)', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},// LCh
+ ///*USE28*/  {'id': 28, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':en_id_of[4], 'oil': en_id_oil[6]},//trying to fix '08 hybrid'//REDUNDANT AND UNUSED
             {'id': 29, 'name':'2GR-FKS(6)','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},//this is how//2016-17+gs350RWDMFSOB
             {'id': 30, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':en_id_of[4], 'oil': en_id_oil[7]},//fixes '08mybrid'
             {'id': 31, 'name': '2GR-FE(7)', 'displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},// (1.1) (Transverse) //Dup for oil purposes 1-17
@@ -301,7 +303,7 @@ var lexusGs = [
 {'wmi': dw_id[4], 'vds': 'BP1BL', 'model': 'URL10', 'name': 'GS-F', 'yrs': myr(2016,2017), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[4], 'eaf': '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[23]}];
 
 var lexusLc = [
-{'wmi': dw_id[4], 'vds': 'BR1LC(?)', 'model': 'GWZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[20], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
+{'wmi': dw_id[4], 'vds': 'BR1LC(?)', 'model': 'GWZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[28], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
 
 var lexusLs = [
 {'wmi': dw_id[5], 'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400','yrs': myr(1990,1994), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[2], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
