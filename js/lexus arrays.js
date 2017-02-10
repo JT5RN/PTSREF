@@ -302,9 +302,6 @@ var lexusGs = [
 {'wmi': dw_id[4], 'vds': 'CZ1BL', 'model': 'GRL16', 'name': 'GS350','yrs': myr(2015,2017), 'eng': en_id[11], 'dln':dl_id[0], 'bdy': bs_id[1], 'bat': bt_id[1], 'eaf': eaf_id[6], 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'BP1BL', 'model': 'URL10', 'name': 'GS-F', 'yrs': myr(2016,2017), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[4], 'eaf': '17801-38021', 'caf': caf_id[1], 'wyp': wyp_id[4],'tyr': tyr_id[23]}];
 
-var lexusLc = [
-{'wmi': dw_id[4], 'vds': 'BR1LC(?)', 'model': 'GWZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[28], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
-
 var lexusLs = [
 {'wmi': dw_id[5], 'vds': 'UF11E', 'model': 'UCV10', 'name': 'LS400','yrs': myr(1990,1994), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[2], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
 {'wmi': dw_id[5], 'vds': 'UF22E', 'model': 'UCF20', 'name': 'LS400','yrs': myr(1995,1997), 'eng': en_id[5], 'dln':dl_id[3], 'bdy': bs_id[2], 'bat': bt_id[0], 'eaf': '17801-50010-83', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[19]},
@@ -351,6 +348,8 @@ var lexusHs = [
 var lexusLFA = [
 {'wmi': dw_id[4], 'vds': 'HX8BH', 'model': 'LFA10', 'name':  'LFA', 'yrs': myr(2012,2012), 'eng': en_id[2], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'idk', 'eaf': 'idk', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': 'UNK'}];
     
+var lexusLc = [ // the fucking LC!
+{'wmi': dw_id[4], 'vds': 'BR1LC(?)', 'model': 'GWZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[28], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
 
 
 var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, lexusLc];
