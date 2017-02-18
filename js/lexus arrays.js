@@ -169,7 +169,6 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 18, 'name': '2ZR-FXE','displacement':'1.8L(H)','oilfilter':en_id_of[3], 'oil': en_id_oil[4]},
             {'id': 19, 'name': '3GR-FSE(!)','displacement': '3.0L', 'oilfilter': en_id_of[2], 'oil': en_id_oil[0]},// 2006GS Only motor
             {'id': 20, 'name': '3MZ-FE', 'displacement': '3.3L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
-            
             {'id': 21, 'name': '3UR-FE', 'displacement': '5.7L', 'oilfilter': en_id_of[1], 'oil': en_id_oil[5]},
             {'id': 22, 'name': '3UZ-FE', 'displacement': '4.3L', 'oilfilter': en_id_of[5], 'oil': en_id_oil[3]},
             {'id': 23, 'name': '3VZ-FE', 'displacement': '3.0L', 'oilfilter': en_id_of[4], 'oil': en_id_oil[1]},
@@ -182,7 +181,10 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 29, 'name':'2GR-FKS(6)','displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},//this is how//2016-17+gs350RWDMFSOB
             {'id': 30, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':en_id_of[4], 'oil': en_id_oil[7]},//fixes '08mybrid'
             {'id': 31, 'name': '2GR-FE(7)', 'displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},// (1.1) (Transverse) //Dup for oil purposes 1-17
+            
             {'id': 32, 'name': '2GR-FSE(8)','displacement': '3.5L', 'oilfilter': en_id_of[2], 'oil': "idk."},// Gas 350 (2) (Longitudinal 2013GS+)
+            {'id': 33, 'name': 'MYhYBRID', 'displacement': '3.3(H)', 'oilfilter': en_id_of[0], 'oil': "IF MODEL YEAR" + myr(2006,2007) + en_id_oil[1] + "IF its a " + myr(2008,2008) + en_id_oil[7]},
+
 ];
 
 //var lexusGx = [//GX500
@@ -203,10 +205,10 @@ var lexusRx = [
 {'wmi': dw_id[1], 'vds': 'HA31U', 'model': 'MCU38', 'name': 'RX330', 'yrs': myr(2004,2006), 'eng': en_id[20],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2], 'wyp': wyp_id[0], 'tyr': tyr_id[1]},
 {'wmi': dw_id[1], 'vds': 'GK31U', 'model': 'GSU30', 'name': 'RX350', 'yrs': myr(2007,2009), 'eng': en_id[8], 'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
 {'wmi': dw_id[1], 'vds': 'HK31U', 'model': 'GSU35', 'name': 'RX350', 'yrs': myr(2007,2009), 'eng': en_id[8], 'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[1], 'caf': caf_id[2],  'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'wmi': dw_id[2], 'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','yrs': myr(2006,2007), 'eng': en_id[28],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'wmi': dw_id[2], 'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','yrs': myr(2008,2008), 'eng': en_id[30],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'wmi': dw_id[2], 'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','yrs': myr(2006,2007), 'eng': en_id[28],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
-{'wmi': dw_id[2], 'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','yrs': myr(2008,2008), 'eng': en_id[30],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'wmi': dw_id[2], 'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','yrs': myr(2006,2008), 'eng': en_id[33],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+//{'wmi': dw_id[2], 'vds': 'GW31U', 'model': 'MHU33', 'name': 'RX400H','yrs': myr(2008,2008), 'eng': en_id[30],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+{'wmi': dw_id[2], 'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','yrs': myr(2006,2008), 'eng': en_id[33],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
+//{'wmi': dw_id[2], 'vds': 'HW31U', 'model': 'MHU38', 'name': 'RX400H','yrs': myr(2008,2008), 'eng': en_id[30],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[6], 'eaf': eaf_id[8], 'caf': caf_id[2],'wyp': wyp_id[0], 'tyr': tyr_id[1]},
 
 {'wmi': dw_id[1], 'vds': 'ZK1BA', 'model': 'GGL10', 'name': 'RX350', 'yrs': myr(2010,2015), 'eng': en_id[31],'dln':dl_id[1], 'bdy': bs_id[7], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
 {'wmi': dw_id[1], 'vds': 'BK1BA', 'model': 'GGL15', 'name': 'RX350', 'yrs': myr(2010,2015), 'eng': en_id[31],'dln':dl_id[0], 'bdy': bs_id[8], 'bat': bt_id[0], 'eaf': eaf_id[0], 'caf': caf_id[0],  'wyp': wyp_id[0], 'tyr': tyr_id[2]},
