@@ -183,7 +183,7 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': en
             {'id': 31, 'name': '2GR-FE(7)', 'displacement': '3.5L', 'oilfilter': en_id_of[0], 'oil': en_id_oil[6]},// (1.1) (Transverse) //Dup for oil purposes 1-17
             
             {'id': 32, 'name': '2GR-FSE(8)','displacement': '3.5L', 'oilfilter': en_id_of[2], 'oil': "idk."},// Gas 350 (2) (Longitudinal 2013GS+)
-            {'id': 33, 'name': 'MYhYBRID', 'displacement': '3.3(H)', 'oilfilter': en_id_of[0], 'oil': "IF MODEL YEAR" + myr(2006,2007) + en_id_oil[1] + "IF its a " + myr(2008,2008) + en_id_oil[7]},
+            {'id': 33, 'name': '3MZ-FE', 'displacement': '3.3(H)', 'oilfilter': en_id_of[4], 'oil': "IF MODEL YEAR" + myr(2006,2007) + en_id_oil[1] + "IF its a " + myr(2008,2008) + en_id_oil[7]},
 
 ];
 
@@ -244,8 +244,8 @@ var lexusEs = [
 {'wmi': dw_id[5], 'vds': 'BF12G', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1996,1996), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
 {'wmi': dw_id[5], 'vds': 'BF22G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1997,1997), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
 {'wmi': dw_id[5], 'vds': 'BF28G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1998,2001), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[4], 'vds': 'BF30G', 'model': 'MCV30', 'name': 'ES300','yrs': myr(2002,2003), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
-{'wmi': dw_id[4], 'vds': 'BA30G', 'model': 'MCV31', 'name': 'ES330','yrs': myr(2004,2006), 'eng': en_id[20], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[1], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
+{'wmi': dw_id[4], 'vds': 'BF30G', 'model': 'MCV30', 'name': 'ES300','yrs': myr(2002,2003), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[2], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
+{'wmi': dw_id[4], 'vds': 'BA30G', 'model': 'MCV31', 'name': 'ES330','yrs': myr(2004,2006), 'eng': en_id[20], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[2], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
 {'wmi': dw_id[4], 'vds': 'BJ46G', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2007,2009), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
 {'wmi': dw_id[4], 'vds': 'BK1EG', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2010,2012), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
 {'wmi': dw_id[4], 'vds': 'BW1GG', 'model': 'AVV60', 'name': 'ES300H','yrs':myr(2013,2018), 'eng': en_id[6],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[8], 'eaf': eaf_id[4],'caf': caf_id[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]},
@@ -409,18 +409,18 @@ var PrintHTMLVehicleData = function(data) {
     "<th>45678</th>" +
     "<th>Model</th>"+ 
     "<th>ModelName</th>"+
-    "<th>Bodystyle</th>"+
+    // "<th>Bodystyle</th>"+
     "<th>ModelYears</th>"+
 
     "<th>EngineNAME</th>"+
     "<th><SMALL>displacement</SMALL></th>"+
     
-    "<th>Engine Oil</th>"+
+    //"<th>Engine Oil</th>"+
     "<th>Oil_Filter</th>"+
     "<th>Engine_air_Filter</th>"+
     "<th>_Cabin_air_Filter</th>"+
     "<th>Battery</th>"+
-    "<th>Tire_Center___</th>"+
+    "<th>Tire_Size</th>"+
     "<th>Wipers</th>"+
   "</tr><tr>"+
     "<td>" + data.wmi + "</td>"+ 
@@ -431,13 +431,13 @@ var PrintHTMLVehicleData = function(data) {
     "<td>" + data.model + "</td>"+
     "<td>" + data.name +"</td>"+
 
-    "<td><small>" + data.bdy.name +"</small></td>"+
+    //"<td><small>" + data.bdy.name +"</small></td>"+
     "<td>" + data.yrs +"</td>"+
 
     "<td>" + data.eng.name + "</td>"+
     "<td>" + data.eng.displacement + "</td>"+
     
-    "<td>" + data.eng.oil + "</td>"+
+    //"<td>" + data.eng.oil + "</td>"+
     "<td><SMALL>" + data.eng.oilfilter + "</small>  </td>"+
     "<td>" + data.eaf + "</td>"+
     "<td>" + data.caf + "</td>" +
