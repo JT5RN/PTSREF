@@ -351,7 +351,8 @@ var lexusLFA = [
 {'wmi': dw_id[4], 'vds': 'HX8BH', 'model': 'LFA10', 'name':  'LFA', 'yrs': myr(2012,2012), 'eng': en_id[2], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'idk', 'eaf': 'idk', 'caf': 'IDK', 'wyp': wyp_id[13],'tyr': 'UNK'}];
     
 var lexusLc = [ // the fucking LC!
-{'wmi': dw_id[4], 'vds': 'BR1LC(?)', 'model': 'GWZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[28], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
+{'wmi': dw_id[4], 'vds': 'HP5AY', 'model': 'URZ100', 'name': 'LC500', 'yrs': myr(2018,2028), 'eng': en_id[14], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]},
+{'wmi': dw_id[4], 'vds': 'HH5AY(?)', 'model': 'GRZ100', 'name': 'LC500H', 'yrs': myr(2018,2028), 'eng': en_id[28], 'dln':dl_id[3], 'bdy': bs_id[5], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
 
 
 var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, lexusLc];
@@ -407,10 +408,10 @@ var PrintHTMLVehicleData = function(data) {
     "<th>VIN123</th>" +
 
     "<th>45678</th>" +
-    "<th>Model</th>"+ 
-    "<th>ModelName</th>"+
+    "<th>_Model</th>"+ 
+    "<th>ModelName </th>"+
     // "<th>Bodystyle</th>"+
-    "<th>ModelYears</th>"+
+    "<th>ModelYears </th>"+
 
     "<th>EngineNAME</th>"+
     "<th><SMALL>displacement</SMALL></th>"+
@@ -428,7 +429,7 @@ var PrintHTMLVehicleData = function(data) {
     
 
     "<td>" + data.vds + "</td>"+ 
-    "<td>" + data.model + "</td>"+
+    "<td>_" + data.model + "</td>"+
     "<td>" + data.name +"</td>"+
 
     //"<td><small>" + data.bdy.name +"</small></td>"+
