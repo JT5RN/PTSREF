@@ -59,6 +59,7 @@ var lexuspv = { // addt'l #s work so that it switches on the vds678
   "262": "Is2", //2g Is
   "192": "Is",
   "182": "Is",
+  "5AY": "Lc", //2018 LC500/h
   "32Y": "Sc"
 };
 var lexusmpv = {
@@ -80,6 +81,12 @@ var Ct = {
 var Hs = {
   BB: "ANF10"
 };
+
+var Lc = {
+  HP: "URZ100", //LC500
+  HH: "GRZ100" //LC500h (not sure yet)
+};
+
 var Es = {
   BA: "MCV31",
   BF: "MCV30",
@@ -220,9 +227,7 @@ var Sc = {
   FN: "UZZ40",
   UZ: "UZZ30"
 };
-var Lc = { //2018MY
-  UP: "UZZ50" // guessing~
-};
+
 //
 
 
@@ -249,7 +254,7 @@ function decodeVinNo(vin) {
     console.log(vin.toString() + " errors out during decodeVinNo.");
  }  else {
         thiscar.vin = vin;          // moved this up trying to catch errors. 
-        console.log(vin.toString() + " errors out during else of decodeVinNo.");
+        //console.log(vin.toString() + " errors out during else of decodeVinNo.");
     var thisCarsBodystyle = window[thisCarsWmi][vin678]; //pv or mpv with 3 digits in
     var thisCarsvds1 = window[thisCarsBodystyle][vin45]; //engine designation with known bodystyle
 
