@@ -22,7 +22,7 @@ var ty_sz = [ // defined in tyr_id - each tyr_id has many ty_sz's
 "265-65R17 X4",//8
 "265-60R18 X4",//9
 "225-65R17 X4",//10
-"225-60R16 X4",//11
+"225-70R16 X4",//11
 "225-60R18 X4",//12
 "275-70R16 X4",//13
 "275-60R18 X4",//14
@@ -48,11 +48,11 @@ var ty_sz = [ // defined in tyr_id - each tyr_id has many ty_sz's
 "275-35R20",//34 LCh f/r
 "235-40R21",//35 LCh f/r
 "275-35R21",//36 LCh f/r 2/8/17
-
+"225-45R17 x4",//37 for is250
 ];
 
 var tyr_id = [ //the map of what cars get what size tires defined in the main hash. order is important!// tire definitions can be cleaned up as needed! to do later
-{'id': 0, 'size': ty_sz[11]},  // this is the map - car to size(s) 
+{'id': 0, 'size': ty_sz[11]},  // Rx300
 {'id': 1, 'size': ty_sz[1] + " or " + ty_sz[10]},
 {'id': 2, 'size': ty_sz[0] + " or " + ty_sz[3]},
 {'id': 3, 'size': ty_sz[6] + " or " + ty_sz[7]},
@@ -67,10 +67,10 @@ var tyr_id = [ //the map of what cars get what size tires defined in the main ha
 {'id': 12,'size': ty_sz[4]},
 {'id': 13,'size': "UN-KNOWN"},
 {'id': 14,'size': ty_sz[24] + " and " + ty_sz[25] + " or " + ty_sz[30] + " and " + ty_sz[29]},//convertible
-{'id': 15,'size': ty_sz[21] + " and " + ty_sz[26]},
+{'id': 15,'size': ty_sz[24] + " and " + ty_sz[26] + " OR " + ty_sz[37]},// 1d2 is250
 {'id': 16,'size': ty_sz[18] + ", " + ty_sz[22] + " or " + ty_sz[23]},
 {'id': 17,'size': ty_sz[20] + " and " + ty_sz[21]},
-{'id': 18,'size': ty_sz[27] + " or " + ty_sz[28]},
+{'id': 18,'size': ty_sz[27] + " or " + ty_sz[28]}, 
 {'id': 19,'size': "205-65R16 or 225-60R16"},
 {'id': 20,'size': "225-60R16 or 225-55R17 or 245-45R18"},//LS TIRES
 {'id': 21,'size': ty_sz[32] + " or " + ty_sz[5]},
@@ -91,7 +91,7 @@ var wyp_id = [
 {'id': 1, 'sizes': displayWipers(24, 19)},
 {'id': 2, 'sizes': displayWipers("26PTB", "22PTB")}, 
 {'id': 3, 'sizes': displayWipers(24, 21)},
-{'id': 4, 'sizes': displayWipers(21, 18)},
+{'id': 4, 'sizes': displayWipers(26, 18)},
 {'id': 5, 'sizes': displayWipers(22, 21)},
 {'id': 6, 'sizes': displayWipers("26PTB2", "16PTB2")},
 {'id': 7, 'sizes': displayWipers(24, 22)},
@@ -100,7 +100,9 @@ var wyp_id = [
 {'id':10, 'sizes': displayWipers(24, 18)},
 {'id':11, 'sizes': displayWipers(24, 16)},
 {'id':12, 'sizes': displayWipers(24, 17)},
-{'id':13, 'sizes': displayWipers(26, 22)}
+{'id':13, 'sizes': displayWipers(26, 22)},
+{'id':14, 'sizes': displayWipers(21, 19)},
+{'id':15, 'sizes': displayWipers(22, 18)}
 ];
 
 
@@ -238,12 +240,12 @@ var lexusLx = [
 {'wmi': dw_id[3], 'vds': 'HJ88J', 'model': 'FZJ80',  'name': 'LX450','yrs': myr(1995,1997), 'eng': en_id[1], 'dln':dl_id[2], 'bdy': bs_id[9], 'bat': bt_id[2], 'eaf': 'IDK','caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[7]}];
 
 var lexusEs = [
-{'wmi': dw_id[5], 'vds': 'VV22T', 'model': 'VZV21', 'name': 'ES250','yrs': myr(1990,1991), 'eng': en_id[17], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[15],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[5], 'vds': 'VK13T', 'model': 'VCV10', 'name': 'ES300','yrs': myr(1992,1993), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[5], 'vds': 'GK13T', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1994,1995), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[5], 'vds': 'BF12G', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1996,1996), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[5], 'vds': 'BF22G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1997,1997), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
-{'wmi': dw_id[5], 'vds': 'BF28G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1998,2001), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'VV22T', 'model': 'VZV21', 'name': 'ES250','yrs': myr(1990,1991), 'eng': en_id[17], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[15],'caf': 'IDK', 'wyp': wyp_id[14],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'VK13T', 'model': 'VCV10', 'name': 'ES300','yrs': myr(1992,1993), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[14],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'GK13T', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1994,1995), 'eng': en_id[23], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[14],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'BF12G', 'model': 'MCV10', 'name': 'ES300','yrs': myr(1996,1996), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[14],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'BF22G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1997,1997), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[15],'tyr': tyr_id[9]},
+{'wmi': dw_id[5], 'vds': 'BF28G', 'model': 'MCV20', 'name': 'ES300','yrs': myr(1998,2001), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[14],'caf': 'IDK', 'wyp': wyp_id[15],'tyr': tyr_id[9]},
 {'wmi': dw_id[4], 'vds': 'BF30G', 'model': 'MCV30', 'name': 'ES300','yrs': myr(2002,2003), 'eng': en_id[0],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[2], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
 {'wmi': dw_id[4], 'vds': 'BA30G', 'model': 'MCV31', 'name': 'ES330','yrs': myr(2004,2006), 'eng': en_id[20], 'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[1],'caf': caf_id[2], 'wyp': wyp_id[8],'tyr': tyr_id[10]},
 {'wmi': dw_id[4], 'vds': 'BJ46G', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2007,2009), 'eng': en_id[8],  'dln':dl_id[1], 'bdy': bs_id[0], 'bat': bt_id[0], 'eaf': eaf_id[2],'caf': caf_id[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
