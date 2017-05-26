@@ -321,8 +321,8 @@ var lexusLs = [
 {'wmi': dw_id[4], 'vds': 'DL46F', 'model': 'USF46', 'name': 'LS460','yrs': myr(2007,2009), 'eng': en_id[4],'bat': pn00544[3], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
 {'wmi': dw_id[4], 'vds': 'DL5EF', 'model': 'USF46', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4],'bat': pn00544[3], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
 {'wmi': dw_id[4], 'vds': 'DL1EF', 'model': 'USF46', 'name': 'LS460','yrs': myr(2010,2017), 'eng': en_id[4],'bat': pn00544[3], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'wmi': dw_id[4], 'vds': 'DU46F', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2008,2009), 'eng': en_id[15],'bat': pn00544[8], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
-{'wmi': dw_id[4], 'vds': 'DU1EF', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2010,2015), 'eng': en_id[15],'bat': pn00544[8], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]}];
+{'wmi': dw_id[4], 'vds': 'DU46F', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2008,2009), 'eng': en_id[15],'bat':pn00544[8], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]},
+{'wmi': dw_id[4], 'vds': 'DU1EF', 'model': 'UVF46', 'name':'LS600HL','yrs':myr(2010,2015), 'eng': en_id[15],'bat':pn00544[8], 'eaf': pn17801[4], 'caf': pn87139[0], 'wyp': wyp_id[12],'tyr': tyr_id[21]}];
 
 var lexusSc = [
 {'wmi': dw_id[5], 'vds': 'JZ31C', 'model': 'JZZ31', 'name': 'SC300','yrs': myr(1992,2006), 'eng': en_id[13],  'bat': pn00544[2], 'eaf': pn17801[16], 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
