@@ -409,12 +409,12 @@ var PrintHTMLVehicleData = function(data) {
     "<th>ModelName </th>"+
     "<th>ModelYears </th>"+
     "<th>EngineNAME</th>"+
-    "<th>Water Pump</th>"+
+    "<th>Water_Pump</th>"+
     "<th>Oil_Filter</th>"+
     "<th>Engine_air_Filter</th>"+
     "<th>_Cabin_air_Filter</th>"+
-    "<th>Battery</th>"+
-    "<th>Tire_Size</th>"+
+    "<th>___Battery</th>"+
+    "<th>___Tire_Size</th>"+
     "<th>Wipers</th>"+
 
 
