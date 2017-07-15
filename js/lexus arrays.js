@@ -335,6 +335,7 @@ var lexusSc = [
 
 var lexusRc = [
 {'wmi': dw_id[4], 'vds': 'SE5BC', 'model': 'GSC15', 'name': 'RC350','yrs': myr(2015,2020), 'eng': en_id[9],  'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
+{'wmi': dw_id[4], 'vds': 'HE5BC', 'model': 'GSC10', 'name': 'RC350','yrs': myr(2015,2020), 'eng': en_id[9],  'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'SM5BC', 'model': 'GSC16', 'name': 'RC300','yrs': myr(2016,2020), 'eng': en_id[11], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'HP5BC', 'model': 'USC10', 'name': 'RC-F' ,'yrs': myr(2015,2020),  'eng': en_id[14],'bat': pn00544[4], 'eaf': pn17801[18], 'caf': pn87139[1], 'wyp': wyp_id[13],'tyr': tyr_id[23]},
 {'wmi': dw_id[4], 'vds': 'HA5BC', 'model': 'ASC10', 'name':'RC200T','yrs': myr(2015,2020), 'eng': en_id[25], 'bat': pn00544[4], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[13],'tyr': tyr_id[18]}];
