@@ -355,8 +355,7 @@ var lexusLc = [ //!
 
 
 var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, lexusLc];
-//var allpv = [lexusEs, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt];
-//var allmpv = [lexusNx, lexusGx, lexusRx, lexusLx];
+
 var l = allmodels; // l rules.
 
 
@@ -389,61 +388,58 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
             }
         }
     }
-}  
+}
+
+var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
+    var li = document.createElement("li");
+    li.innerHTML =
+        (
+
+            "<table>" +
+            "<tr>" +
+
+
+            "<th>VIN123</th>" +
+            "<th>45678</th>" +
+            "<th>_Model</th>"+
+            "<th>ModelName </th>"+
+            "<th>ModelYears </th>"+
+            "<th>EngineNAME</th>"+
+            "<th>Water_Pump</th>"+
+            "<th>Oil_Filter</th>"+
+            "<th>Engine_air_Filter</th>"+
+            "<th>_Cabin_air_Filter</th>"+
+            "<th>___Battery</th>"+
+            "<th>___Tire_Size</th>"+
+            "<th>Wipers</th>"+
+
+
+            "</tr><tr>"+
+            "<td>" + data.wmi + "</td>"+
+            "<td>" + data.vds + "</td>"+
+            "<td>_" + data.model + "</td>"+
+            "<td>" + data.name +"</td>"+
+            "<td>" + data.yrs +"</td>"+
+            "<td>" + data.eng.name + "</td>"+
+            "<td>" + data.eng.v16100 + "</td>"+
+            "<td><SMALL>" + data.eng.oilfilter + "</small>  </td>"+
+            "<td>" + data.eaf + "</td>"+
+            "<td>" + data.caf + "</td>" +
+            "<td>" + data.bat + "</td>" +
+            "<td>" + data.tyr.size + "</td>"+
+            "<td>" + data.wyp.sizes + "</td>"
+        );
 
 
 
 
+    var ul = document.getElementById("ppp");
+    ul.appendChild(li);};
 
-var PrintHTMLVehicleData = function(data) { 
-  var li = document.createElement("li"); 
-    li.innerHTML = 
-  (
-
-    "<table>" + 
-    "<tr>" + 
-
-
-    "<th>VIN123</th>" +
-    "<th>45678</th>" +
-    "<th>_Model</th>"+ 
-    "<th>ModelName </th>"+
-    "<th>ModelYears </th>"+
-    "<th>EngineNAME</th>"+
-    "<th>Water_Pump</th>"+
-    "<th>Oil_Filter</th>"+
-    "<th>Engine_air_Filter</th>"+
-    "<th>_Cabin_air_Filter</th>"+
-    "<th>___Battery</th>"+
-    "<th>___Tire_Size</th>"+
-    "<th>Wipers</th>"+
-
-
-  "</tr><tr>"+
-    "<td>" + data.wmi + "</td>"+ 
-    "<td>" + data.vds + "</td>"+ 
-    "<td>_" + data.model + "</td>"+
-    "<td>" + data.name +"</td>"+
-    "<td>" + data.yrs +"</td>"+
-    "<td>" + data.eng.name + "</td>"+
-    "<td>" + data.eng.v16100 + "</td>"+
-    "<td><SMALL>" + data.eng.oilfilter + "</small>  </td>"+
-    "<td>" + data.eaf + "</td>"+
-    "<td>" + data.caf + "</td>" +
-    "<td>" + data.bat + "</td>" +
-    "<td>" + data.tyr.size + "</td>"+ 
-    "<td>" + data.wyp.sizes + "</td>" 
-   );
-  
-
-
-
-var ul = document.getElementById("ppp"); 
-  ul.appendChild(li);};
 
 window.onload = init; // js for search box
-function init() { 
-  var button = document.getElementById("addButton"); 
+function init() {
+  var button = document.getElementById("addButton");
   button.onclick = handleButtonClick;}
 
 function handleButtonClick() { // search box
