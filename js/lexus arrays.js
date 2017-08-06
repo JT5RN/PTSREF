@@ -463,12 +463,9 @@ function DisplayItem(item) { // HTML menue driven data call v2.0
 
 
 function DisplayD3Item(d3item) { // HTML menue driven data call v3.0 170806
-
     console.log(d3item);
     var v2 = d3item + ".html";
     window.open(v2);
-
-
 };
 
 
