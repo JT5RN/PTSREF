@@ -459,8 +459,17 @@ function DisplayItem(item) { // HTML menue driven data call v2.0
   document.getElementById("ppp").innerHTML = "";
   var v2 = item.toUpperCase();
   var v3 = "17801-" + v2;
-  searchItem(v3);}; 
+  searchItem(v3);};
 
+
+function DisplayD3Item(d3item) { // HTML menue driven data call v3.0 170806
+
+    console.log(d3item);
+    var v2 = d3item + ".html";
+    window.open(v2);
+
+
+};
 
 
 function searchItem(v) {  // refined searches called from HTML web page // name 0-2 ie  RX LS model 0-3 ie MCU1
