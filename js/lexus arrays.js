@@ -160,7 +160,7 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn
             {'id':  3, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn04152[4], 'oil': en_id_oil[1],'v16100':pn16100[1]}, //not used
             {'id':  4, 'name': '1UR-FSE','displacement': '4.6L', 'oilfilter': pn04152[2], 'oil': en_id_oil[5],'v16100':"16100-39506"},
             {'id':  5, 'name': '1UZ-FE', 'displacement': '4.0L', 'oilfilter': pn04152[5], 'oil': en_id_oil[3],'v16100':pn16100[3]},
-            {'id':  6, 'name': '2AR-FXE','displacement':'2.8L(H)','oilfilter':pn04152[0], 'oil': en_id_oil[4],'v16100':"idk4"},//NX/ES300Hybrid
+            {'id':  6, 'name': '2AR-FXE','displacement':'2.8L(H)','oilfilter':pn04152[0], 'oil': en_id_oil[4],'v16100':"161A0-39025"},//NX/ES300Hybrid
             {'id':  7, 'name': '2AZ-FXE','displacement':'2.4L(H)','oilfilter':pn04152[6], 'oil': en_id_oil[4],'v16100':"16100-28041"},//HShit
             {'id':  8, 'name': '2GR-FE(0)', 'displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[2],'v16100':pn16100[0]},// (1) (Transverse) //GSU3#
             {'id':  9, 'name': '2GR-FSE(1)','displacement': '3.5L', 'oilfilter': pn04152[2], 'oil': en_id_oil[0],'v16100':pn16100[2]},// Gas 350 (2) (Longitudinal)
@@ -168,10 +168,10 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn
             {'id': 11, 'name': '2GR-FKS(3)','displacement': '3.5L', 'oilfilter': pn04152[2], 'oil': en_id_oil[0],'v16100':pn16100[2]}, //(2) long;
             {'id': 12, 'name': '2GR-FXS(4)','displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':pn16100[0]},  //GYL20
             {'id': 13, 'name': '2JZ-GE', 'displacement': '3.0L', 'oilfilter': pn04152[4], 'oil': en_id_oil[1],'v16100':pn16100[4    ]},// Straight 6
-            {'id': 14, 'name': '2UR-GSE','displacement': '5.0L', 'oilfilter': pn04152[1], 'oil': 'idk.','v16100':"idk8"},
-            {'id': 15, 'name': '2UR-FSE','displacement':'5.0L(H)','oilfilter':pn04152[1], 'oil': en_id_oil[0],'v16100':"idk9"},// Hybrid 600hL
+            {'id': 14, 'name': '2UR-GSE','displacement': '5.0L', 'oilfilter': pn04152[1], 'oil': 'idk.','v16100':"16100-39506"},
+            {'id': 15, 'name': '2UR-FSE','displacement':'5.0L(H)','oilfilter':pn04152[1], 'oil': en_id_oil[0],'v16100':"16100-39506"},// Hybrid 600hL
             {'id': 16, 'name': '2UZ-FE', 'displacement': '4.7L', 'oilfilter': pn04152[5], 'oil': en_id_oil[3],'v16100':pn16100[3]},
-            {'id': 17, 'name': '2VZ-FE', 'displacement': '2.5L', 'oilfilter': pn04152[4], 'oil': en_id_oil[1],'v16100':"idk10"},
+            {'id': 17, 'name': '2VZ-FE', 'displacement': '2.5L', 'oilfilter': pn04152[4], 'oil': en_id_oil[1],'v16100':"16100-69206"},
             {'id': 18, 'name': '2ZR-FXE','displacement':'1.8L(H)','oilfilter':pn04152[3], 'oil': en_id_oil[4],'v16100':"161A0-29015"},
             {'id': 19, 'name': '3GR-FSE(!)','displacement': '3.0L', 'oilfilter': pn04152[2], 'oil': en_id_oil[0],'v16100':pn16100[2]},// 2006GS Only motor
             {'id': 20, 'name': '3MZ-FE', 'displacement': '3.3L', 'oilfilter': pn04152[4], 'oil': en_id_oil[1],'v16100':pn16100[1]},
@@ -219,8 +219,8 @@ var lexusRx = [
 var lexusNx = [ // .... 2018 MY CHANGES... DO WE have to just change the name - is it or isnt it agz11&agz16? unknonwn 9-24-17
 {'wmi': dw_id[2], 'vds': 'YARBZ', 'model': 'AGZ10', 'name': 'NX200T','yrs': myr(2015,2017), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
 {'wmi': dw_id[2], 'vds': 'BARBZ', 'model': 'AGZ15', 'name': 'NX200T','yrs': myr(2015,2017), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
-{'wmi': dw_id[2], 'vds': 'YARBZ', 'model': 'AGZ10', 'name': 'NX300','yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
-{'wmi': dw_id[2], 'vds': 'BARBZ', 'model': 'AGZ15', 'name': 'NX300','yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
+{'wmi': dw_id[2], 'vds': 'YARBZ', 'model': 'AGZ10', 'name': 'NX300', 'yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
+{'wmi': dw_id[2], 'vds': 'BARBZ', 'model': 'AGZ15', 'name': 'NX300', 'yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
 {'wmi': dw_id[2], 'vds': 'YWRBZ', 'model': 'AYZ10', 'name': 'NX300H','yrs': myr(2015,2020), 'eng': en_id[6], 'bat': pn00544[8], 'eaf': pn17801[10],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]},
 {'wmi': dw_id[2], 'vds': 'BJRBZ', 'model': 'AYZ15', 'name': 'NX300H','yrs': myr(2015,2020), 'eng': en_id[6], 'bat': pn00544[8], 'eaf': pn17801[10],'caf': pn87139[0], 'wyp': wyp_id[6],'tyr': tyr_id[6]}];
 
@@ -266,13 +266,13 @@ var lexusIs = [
 {'wmi': dw_id[4], 'vds': 'FE2C2', 'model': 'GSE21', 'name':'IS350-C','yrs':myr(2010,2015), 'eng': en_id[9], 'bat': pn00544[1], 'eaf': pn17801[3], 'caf': pn87139[0], 'wyp': wyp_id[9],'tyr': tyr_id[14]},
 {'wmi': dw_id[4], 'vds': 'CE5C2', 'model': 'GSE26', 'name': 'IS350', 'yrs':myr(2010,2013), 'eng': en_id[9], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[0], 'wyp': wyp_id[9],'tyr': tyr_id[26]},
 
-{'wmi': dw_id[4], 'vds': 'BF1D2', 'model': 'GSE30', 'name': 'IS250','yrs': myr(2014,2020), 'eng': en_id[24],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'wmi': dw_id[4], 'vds': 'CF1D2', 'model': 'GSE35', 'name': 'IS250','yrs': myr(2014,2020), 'eng': en_id[24],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'wmi': dw_id[4], 'vds': 'BF1D2', 'model': 'GSE30', 'name': 'IS250','yrs': myr(2014,2015), 'eng': en_id[24],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
+{'wmi': dw_id[4], 'vds': 'CF1D2', 'model': 'GSE35', 'name': 'IS250','yrs': myr(2014,2015), 'eng': en_id[24],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
 {'wmi': dw_id[4], 'vds': 'BE1D2', 'model': 'GSE31', 'name': 'IS350','yrs': myr(2014,2020), 'eng': en_id[9], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
 {'wmi': dw_id[4], 'vds': 'CE1D2', 'model': 'GSE36', 'name': 'IS350','yrs': myr(2014,2020), 'eng': en_id[9], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
 {'wmi': dw_id[4], 'vds': 'CM1D2', 'model': 'GSE37', 'name': 'IS300','yrs': myr(2016,2017), 'eng': en_id[9], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
 {'wmi': dw_id[4], 'vds': 'BA1D2', 'model': 'ASE30', 'name':'IS200T','yrs': myr(2016,2017), 'eng': en_id[25],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]},
-{'wmi': dw_id[4], 'vds': 'BA1D2', 'model': 'ASE30', 'name':'IS300' ,'yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]}];//ase31?
+{'wmi': dw_id[4], 'vds': 'BA1D2', 'model': 'ASE30', 'name': 'IS300','yrs': myr(2018,2020), 'eng': en_id[25],'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[10],'tyr': tyr_id[15]}];//ase31?
 
 var lexusGs = [
 {'wmi': dw_id[5], 'vds': 'JS47E', 'model': 'JZS147', 'name': 'GS300','yrs': myr(1994,1994), 'eng': en_id[13],  'bat': pn00544[1], 'eaf': '17801-50020', 'caf': 'idk', 'wyp': wyp_id[13],'tyr': tyr_id[9]},
