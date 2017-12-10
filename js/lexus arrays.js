@@ -1,10 +1,10 @@
 var dw_id = [  //DISPLAY WMI IDENTIFICATION 
 "JT6/JTJ",//0
 "2T2/JTJ",//1
-"____JTJ",//2
-"____JT6",//3
-"____JTH",//4
-"____JT8",//5
+"JTJ",//2
+"JT6",//3
+"JTH",//4
+"JT8",//5
 "58A/JTH"//6 //2016-19 58abk1gg
 
 ];
@@ -184,7 +184,7 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn
             {'id': 27, 'name': '2GR-FKS(5)','displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[4],'v16100':"idk16"},
             {'id': 28, 'name': '8GR-FKS','displacement': '4.6L(H)(??)', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':"idk17"},// LCh
             {'id': 29, 'name':'2GR-FKS(6)','displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':pn16100[2]},//OILFILTER FKS
-            {'id': 30, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':pn04152[4], 'oil': en_id_oil[7],'v16100':pn16100[1]},//fixes '08mybrid'
+            {'id': 30, 'name': '3MZ-FE', 'displacement':'3.3L(H)','oilfilter':pn04152[4], 'oil': en_id_oil[7],'v16100':pn16100[1]},//fixes '08mybrid'//this seems unused 12-2017
             {'id': 31, 'name': '2GR-FE(7)', 'displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':pn16100[0]},// (1.1) (Transverse) //Dup for oil purposes 1-17
             {'id': 32, 'name': '2GR-FSE(8)','displacement': '3.5L', 'oilfilter': pn04152[2], 'oil': "idk.",'v16100':pn16100[2]},// Gas 350 (2) (Longitudinal 2013GS+)
             {'id': 33, 'name': '3MZ-FE', 'displacement': '3.3(H)', 'oilfilter': pn04152[4], 'oil': "IF MODEL YEAR" + myr(2006,2007) + en_id_oil[1] + "IF its a " + myr(2008,2008) + en_id_oil[7],'v16100':pn16100[1]},
@@ -292,8 +292,8 @@ var lexusGs = [
 {'wmi': dw_id[4], 'vds': 'CE1KS', 'model': 'GRS196', 'name': 'GS350','yrs': myr(2010,2011), 'eng':  en_id[9], 'bat': pn00544[1], 'eaf': pn17801[3], 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
 {'wmi': dw_id[4], 'vds': 'BC96S', 'model': 'GWS191', 'name':'GS450H','yrs': myr(2007,2009), 'eng': en_id[10], 'bat': pn00544[8], 'eaf': pn17801[12], 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
 {'wmi': dw_id[4], 'vds': 'BC1KS', 'model': 'GWS191', 'name':'GS450H','yrs': myr(2010,2011), 'eng': en_id[10], 'bat': pn00544[8], 'eaf': pn17801[12], 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'wmi': dw_id[4], 'vds': 'BL96S', 'model': 'URS190', 'name': 'GS460','yrs': myr(2008,2009), 'eng':  en_id[4], 'bat': pn00544[1], 'eaf': '17801-38040', 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
-{'wmi': dw_id[4], 'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460','yrs': myr(2010,2011), 'eng':  en_id[4], 'bat': pn00544[1], 'eaf': '17801-38040', 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'wmi': dw_id[4], 'vds': 'BL96S', 'model': 'URS190', 'name': 'GS460','yrs': myr(2008,2009), 'eng':  en_id[4], 'bat': pn00544[1], 'eaf':'17801-38040', 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
+{'wmi': dw_id[4], 'vds': 'BL1KS', 'model': 'URS190', 'name': 'GS460','yrs': myr(2010,2011), 'eng':  en_id[4], 'bat': pn00544[1], 'eaf':'17801-38040', 'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[17]},
     
 {'wmi': dw_id[4], 'vds': 'BA1BL', 'model': 'ARL10', 'name':'GS200T','yrs': myr(2016,2017), 'eng': en_id[25], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'BA1BL', 'model': 'ARL10', 'name':'GS300', 'yrs': myr(2018,2020), 'eng': en_id[25], 'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]}, //arl11?
@@ -301,7 +301,7 @@ var lexusGs = [
 {'wmi': dw_id[4], 'vds': 'BS1BL', 'model': 'GWL10', 'name':'GS450H','yrs': myr(2013,2015), 'eng': en_id[10], 'bat': pn00544[8], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'BZ1BL', 'model': 'GRL12', 'name': 'GS350','yrs': myr(2015,2015), 'eng': en_id[32]/*JFCeh? */,'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'BZ1BL', 'model': 'GRL12', 'name': 'GS350','yrs': myr(2016,2017), 'eng': en_id[29]/*/MFSOFB*/,'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
-{'wmi': dw_id[4], 'vds': 'CE1BL', 'model': 'GRL15', 'name': 'GS350','yrs': myr(2013,2015), 'eng': en_id[31],  'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
+{'wmi': dw_id[4], 'vds': 'CE1BL', 'model': 'GRL15', 'name': 'GS350','yrs': myr(2013,2015), 'eng': en_id[32],  'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'CZ1BL', 'model': 'GRL16', 'name': 'GS350','yrs': myr(2015,2017), 'eng': en_id[11],  'bat': pn00544[1], 'eaf': pn17801[6], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[18]},
 {'wmi': dw_id[4], 'vds': 'BP1BL', 'model': 'URL10', 'name': 'GS-F', 'yrs': myr(2016,2017), 'eng': en_id[14],  'bat': pn00544[4], 'eaf': pn17801[18], 'caf': pn87139[1], 'wyp': wyp_id[4],'tyr': tyr_id[23]}];
 
@@ -401,43 +401,37 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
 
 
 var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
+
     var li = document.createElement("li");
     var url1 = "http://google.com/search?q=";
-    //var url2 = "https://tires.tirerack.com/search?w=";
-    //console.log(url1);
+    
     li.innerHTML =
         (
-
             "<table>" +
             "<tr>" +
-
-            //THE HEADING
-
-            "<th>VIN_starts(1,2,3)</th>" +
-            "<th>VI#s_4-8(VDS)</th>" +
+            //THE HEADING - YOU NEED TO LINE THIS AND THE DATA & LINKS INSIDE TO MATCH OUTPUT
+            "<th>VIN(1,2,3)</th>" +
+            "<th>VIN_position 4thru8(VDS)</th>" +
             "<th>Model_Name </th>"+
             "<th>Model_Years </th>"+
             "<th>Model_Code</th>"+
-
-            "<th>Engine Name</th>"+
+            "<th>Engine_Name</th>"+
             "<th>" + data.eng.name + " Displacement</th>"+
             "<th>" + data.eng.name + " Water_Pump</th>"+
-            "<th>Oil__Filter</th>"+
+            "<th>" + data.eng.name + " Oil______Filter</th>"+
             "<th>Engine_Filter</th>"+
             "<th>Cabin__Filter</th>"+
             "<th>___________Battery</th>"+
             "<th>________Tire_Size</th>"+
             "<th>Wiper_Blade_Sizes</th>"+
-
+////        //end of the heading
             "</tr><tr>"+
             // THE DATA & LINKS INSIDE THE HEADING
-
             "<td>" + data.wmi + "</td>"+
             "<td>" + data.vds + "</td>"+
             '<td><a target="_blank"' + 'href="' + url1 + " LEXUS " + data.name + " " +  data.yrs + '">' + data.name + '</a></td>' +
             "<td>" + data.yrs +"</td>"+
             "<td>" + data.model + "</td>"+
-
             '<td><a target="_blank"' + 'href="' + url1 + data.eng.name + " Engine" + '">' + data.eng.name + '</a></td>' +
             "<td>" + data.eng.displacement +"</td>"+
             '<td><a target="_blank"' + 'href="' + url1 + "shop for waterpump " +  data.eng.v16100 + '">' +  data.eng.v16100 + '</a></td>' + 
@@ -447,11 +441,7 @@ var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thi
             '<td>' + data.bat + '</td>' +
             '<td>' + data.tyr.size + '</td>' +
             '<td><a target="_blank"' + 'href="' + url1 + data.wyp.sizes + ' Lexus Wiper BLades ">' + data.wyp.sizes + '</a></td>' 
-            
-
-
-
-
+   
 
         );
 
