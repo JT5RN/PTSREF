@@ -11,44 +11,44 @@ var dw_id = [  //DISPLAY WMI IDENTIFICATION
 
 var ty_sz = [ // defined in tyr_id - each tyr_id has many ty_sz's
 
-"235-60R18 X4",//0
-"235-55R18 X4",//1
-"215-55R17 X4",//2
-"235-55R19 X4",//3
-"215-45R17 X4",//4
-"235-45R18 X4",//5
-"235-50R20 X4",//6
-"235-65R18 X4",//7
-"265-65R17 X4",//8
-"265-60R18 X4",//9
-"225-65R17 X4",//10
-"225-70R16 X4",//11
-"225-60R18 X4",//12
-"275-70R16 X4",//13
-"275-60R18 X4",//14
-"285-50R20 X4",//15
-"205-65R15 X4",//16
-"205-60R16 X4",//17
-"215-60R16 X4",//18
-"225-45R18 X4",//19
-"225-50R17 X4",//20
-"245-40R18 X4",//21
-"225-55R16 X4",//22
-"235-45R17 X4",//23
-"225-40R18 X2frt",//24 // IS TIRES
-"255-40R18 X2rear",//25
-"255-35R18 X2rear",//26
-"235-45R18 x4",//27
-"245-45R19 x4",//28
-"245-45R17 x2rear",//29 RWD BASE CONVERT
-"225-45R17 x2rear",//30 awd17
-"235-50R18 x4",//31 LS460? I guess. 1-18-17
-"235-40R19 x4",//32 GS350F-Sport 
-"235-40R20",//33 LCh f/r
-"275-35R20",//34 LCh f/r
-"235-40R21",//35 LCh f/r
-"275-35R21",//36 LCh f/r 2/8/17
-"225-45R17 x4",//37 for is250
+"235/60R18 X4",//0
+"235/55R18 X4",//1
+"215/55R17 X4",//2
+"235/55R19 X4",//3
+"215/45R17 X4",//4
+"235/45R18 X4",//5
+"235/50R20 X4",//6
+"235/65R18 X4",//7
+"265/65R17 X4",//8
+"265/60R18 X4",//9
+"225/65R17 X4",//10
+"225/70R16 X4",//11
+"225/60R18 X4",//12
+"275/70R16 X4",//13
+"275/60R18 X4",//14
+"285/50R20 X4",//15
+"205/65R15 X4",//16
+"205/60R16 X4",//17
+"215/60R16 X4",//18
+"225/45R18 X4",//19
+"225/50R17 X4",//20
+"245/40R18 X4",//21
+"225/55R16 X4",//22
+"235/45R17 X4",//23
+"225/40R18 X2frt",//24 // IS TIRES
+"255/40R18 X2rear",//25
+"255/35R18 X2rear",//26
+"235/45R18 x4",//27
+"245/45R19 x4",//28
+"245/45R17 x2rear",//29 RWD BASE CONVERT
+"225/45R17 x2rear",//30 awd17
+"235/50R18 x4",//31 LS460? I guess. 1-18-17
+"235/40R19 x4",//32 GS350F-Sport 
+"235/40R20",//33 LCh f/r
+"275/35R20",//34 LCh f/r
+"235/40R21",//35 LCh f/r
+"275/35R21",//36 LCh f/r 2/8/17
+"225/45R17 x4",//37 for is250
 ];
 
 var tyr_id = [ //the map of what cars get what size tires defined in the main hash. order is important!// tire definitions can be cleaned up as needed! to do later
@@ -127,8 +127,8 @@ var en_id_oil = [eoc[3] + "qts " + eog[1] + '(*~~0)', // 6.3 5-30conv
                     ];
 
 var pn04152 = ['04152-YZZA1','04152-YZZA4','04152-YZZA5','04152-YZZA6','90915-YZZD1','90915-YZZD3','90915-YZZF1'];
-var pn87139 = ['87139-YZZ10', '87139-<B>YZZ38</B>', '87139-<B>YZZ03</B>', '87139-<B><LARGE>YZZ01</LARGE></B>', '87139-48020-83', '87139-<B>0E040</B>'];// formerly caf_id
-var pn00544 = ['00544-MF24F_575','00544-MF240_575','00544-MF27F_710','00544-MF70_750', '00544-MFH50', 'H6','00544-MF51R', 'Unique# with small posts', 'particular 28100'];
+var pn87139 = ['87139-YZZ10', '87139-YZZ38', '87139-YZZ03', '87139-YZZ01', '87139-48020-83', '87139-<B>0E040</B>'];// formerly caf_id
+var pn00544 = ['00544-MF24F-630','00544-MF240_575','00544-MF27F_710','00544-MF70_750', '00544-MFH50', 'H6','00544-MF51R', 'Unique# with small posts', 'particular 28100'];
 var pn16100 = ['16100-09442','16100-29085','16100-39436','16100-59275-83','16100-49846'];
 var pn17801 = ['17801-0P051','17801-0H010','17801-AD010','17801-31110','17801-0V020','17801-0P070','17801-31170','17801-38051','17801-20050','17801-50040','17801-37021','17801-50030','17801-50060','17801-38030','17801-03010','17801-46080', 'Unknown','17801-07020','17801-38021'];
 
@@ -396,44 +396,63 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
     }
 }
 
+
+
+
+
 var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
     var li = document.createElement("li");
+    var url1 = "http://google.com/search?q=";
+    //var url2 = "https://tires.tirerack.com/search?w=";
+    //console.log(url1);
     li.innerHTML =
         (
 
             "<table>" +
             "<tr>" +
 
+            //THE HEADING
 
-            "<th>VIN123</th>" +
-            "<th>45678</th>" +
-            "<th>_Model</th>"+
-            "<th>ModelName </th>"+
-            "<th>ModelYears </th>"+
-            "<th>EngineNAME</th>"+
-            "<th>Water_Pump</th>"+
-            "<th>Oil_Filter</th>"+
-            "<th>Engine_air_Filter</th>"+
-            "<th>_Cabin_air_Filter</th>"+
-            "<th>___Battery</th>"+
-            "<th>___Tire_Size</th>"+
-            "<th>Wipers</th>"+
+            "<th>VIN_starts(1,2,3)</th>" +
+            "<th>VI#s_4-8(VDS)</th>" +
+            "<th>Model_Name </th>"+
+            "<th>Model_Years </th>"+
+            "<th>Model_Code</th>"+
 
+            "<th>Engine Name</th>"+
+            "<th>" + data.eng.name + " Displacement</th>"+
+            "<th>" + data.eng.name + " Water_Pump</th>"+
+            "<th>Oil__Filter</th>"+
+            "<th>Engine_Filter</th>"+
+            "<th>Cabin__Filter</th>"+
+            "<th>___________Battery</th>"+
+            "<th>________Tire_Size</th>"+
+            "<th>Wiper_Blade_Sizes</th>"+
 
             "</tr><tr>"+
+            // THE DATA & LINKS INSIDE THE HEADING
+
             "<td>" + data.wmi + "</td>"+
             "<td>" + data.vds + "</td>"+
-            "<td>_" + data.model + "</td>"+
-            "<td>" + data.name +"</td>"+
+            '<td><a target="_blank"' + 'href="' + url1 + " LEXUS " + data.name + " " +  data.yrs + '">' + data.name + '</a></td>' +
             "<td>" + data.yrs +"</td>"+
-            "<td>" + data.eng.name + "</td>"+
-            "<td>" + data.eng.v16100 + "</td>"+
-            "<td><SMALL>" + data.eng.oilfilter + "</small>  </td>"+
-            "<td>" + data.eaf + "</td>"+
-            "<td>" + data.caf + "</td>" +
-            "<td>" + data.bat + "</td>" +
-            "<td>" + data.tyr.size + "</td>"+
-            "<td>" + data.wyp.sizes + "</td>"
+            "<td>" + data.model + "</td>"+
+
+            '<td><a target="_blank"' + 'href="' + url1 + data.eng.name + " Engine" + '">' + data.eng.name + '</a></td>' +
+            "<td>" + data.eng.displacement +"</td>"+
+            '<td><a target="_blank"' + 'href="' + url1 + "shop for waterpump " +  data.eng.v16100 + '">' +  data.eng.v16100 + '</a></td>' + 
+            '<td><a target="_blank"' + 'href="' + url1 + "shop for oilfilter "+ data.eng.oilfilter + '">' + data.eng.oilfilter + '</a></td>' + 
+            '<td><a target="_blank"' + 'href="' + url1 + "shop for engine air filter "+ data.eaf + '">' + data.eaf + '</a></td>' +
+            '<td><a target="_blank"' + 'href="' + url1 + "shop for cabin filter "+ data.caf + '">' + data.caf + '</a></td>' +
+            '<td>' + data.bat + '</td>' +
+            '<td>' + data.tyr.size + '</td>' +
+            '<td><a target="_blank"' + 'href="' + url1 + data.wyp.sizes + ' Lexus Wiper BLades ">' + data.wyp.sizes + '</a></td>' 
+            
+
+
+
+
+
         );
 
 
@@ -441,6 +460,8 @@ var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thi
 
     var ul = document.getElementById("ppp");
     ul.appendChild(li);};
+
+
 
 
 window.onload = init; // js for search box

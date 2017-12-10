@@ -55,6 +55,8 @@
         node.append("circle")
             .attr("id", function(d) { return "node-" + d.id; })
             .attr("r", function(d) { return d.r; })
+            //.style("fill", function(d) { return d.children ? color(d.depth) : d.data.fill; });
+            //.style("fill", function(d) { return color(d.depth); });
             .style("fill", function(d) { return color(d.depth); });
 
         var leaf = node.filter(function(d) { return !d.children; });
