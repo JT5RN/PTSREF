@@ -398,23 +398,25 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
 
 
 
-
-
 var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
 
     var li = document.createElement("li");
     var url1  = "http://google.com/search?q=";
     var url2 = "http://www.google.com/images?q=";
     //var url3 = "http://www.lexus.com/search?q=";
+    
     //var url4 = "http://drivers.lexus.com/lexusdrivers/search?searchKey=";
     // link to accessories http://www.lexus.com/models/GS/accessories?genuine=true
     // lexus search http://www.lexus.com/search?q=
     
+    var urlaccy = "https://www.lexusofnorthborough.com/FeaturesAccessories_D?p=2018_"; // 180420 
+
     li.innerHTML =
         (
             "<table>" +
             "<tr>" +
             //THE HEADING - YOU NEED TO LINE THIS AND THE DATA & LINKS INSIDE TO MATCH OUTPUT
+            // add some divs would yah
             "<th>VIN(1,2,3)</th>" +
             "<th>VIN_position 4thru8(VDS)</th>" +
             "<th>Model_Name </th>"+
@@ -429,7 +431,7 @@ var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thi
             "<th>Battery</th>"+
             "<th>Wiper_Blade_Sizes</th>"+
             "<th>__Tire_Size____</th>"+
-            //"<th>ACCY</th>"+
+            "<th>ACCY</th>"+
 ////        //end of the heading
             "</tr><tr>"+
             // THE DATA & LINKS INSIDE THE HEADING
@@ -448,9 +450,10 @@ var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thi
             '<td><a target="_blank"' + 'href="' + url1 + "SHOP lexus cabin filter "+ data.caf + '">' + data.caf + '</a></td>' +
             '<td>' + data.bat + '</td>' +
             '<td><a target="_blank"' + 'href="' + url1 + data.wyp.sizes + ' Lexus Wiper BLades ">' + data.wyp.sizes + '</a></td>' +
-            '<td>' + data.tyr.size + '</td>' 
-            //'<td><a target="_blank"' + 'href="' + url4 + data.name + '">' + data.name + ' Accy</a></td>' 
-            //'<td><a target="_blank"' + 'href="' + url3 + data.name + " Accessories" + '</a></td>' 
+            '<td>' + data.tyr.size + '</td>' +
+            //'<td>' + data.name.substring(0,2) + '</td>' 
+            '<td><a target="_blank"' + 'href="' + urlaccy + data.name.substring(0,2) + '">' + data.name.substring(0,2) + '</a></td>' 
+            //'<td><a target="_blank"' + 'href="' + url3 + data.name + " Accessories" + '</a></td>'  
             
    
 
