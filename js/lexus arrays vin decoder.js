@@ -2,6 +2,7 @@
 // 7-2-2016 coppied onto Laptop and down cape cod...
 // 1-4-2017 trying to slice this up and make it better.  
 // 1-14-217 have added wmi and model years dispaly to tabled html-good progress
+// 1-19-2019 have new cars to add.  LS500, ES350/300h 19+, UX200, 250h
 
 
 var veh = { // highest level direction for this.  would be 500 long with maps similar to these others.
@@ -16,6 +17,7 @@ var veh = { // highest level direction for this.  would be 500 long with maps si
 
 
 //original lexus-only below added toyota 7-7-2016
+//2019; have cars to add. 
 var lexuspv = { // addt'l #s work so that it switches on the vds678
   "5BH": "Ct",
   "1BA": "Hs",
