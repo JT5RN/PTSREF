@@ -1,0 +1,150 @@
+id,value
+flare,
+flare.ENGINE(1),
+flare.ENGINE(1).1x,
+flare.ENGINE(1).1x.13568,
+flare.ENGINE(1).1x.13568.timing belt/valvetrain,1
+flare.ENGINE(1).1x.17801,
+flare.ENGINE(1).1x.17801.Engine Air Filter,1
+flare.ENGINE(1).1x.16100,
+flare.ENGINE(1).1x.16100.Water Pump,1
+flare.ENGINE(1).1x.16400,
+flare.ENGINE(1).1x.16400.Radiator,1
+flare.ENGINE(1).1x.16041,
+flare.ENGINE(1).1x.16041.Radiator,1
+flare.ENGINE(1).1x.17410,
+flare.ENGINE(1).1x.17410.Front Exhaust Pipe,1
+flare.ENGINE(1).1x.17176,
+flare.ENGINE(1).1x.17176.Surge Tank Gasket,1
+flare.ENGINE(1).2x,
+flare.ENGINE(1).2x.27060,
+flare.ENGINE(1).2x.27060.Alternator,1
+flare.ENGINE(1).2x.28100,
+flare.ENGINE(1).2x.28100.Starter,1
+flare.ENGINE(1).2x.23209,
+flare.ENGINE(1).2x.23209.Fuel Injector,1
+flare.ENGINE(1).9x,
+flare.ENGINE(1).9x.90919,
+flare.ENGINE(1).9x.90919.Spark Plug,1
+flare.ENGINE(1).9x.90915,
+flare.ENGINE(1).9x.90915.Oil Filter,1
+flare.ENGINE(1).0x,
+flare.ENGINE(1).0x.04152,
+flare.ENGINE(1).0x.04152.Oil Filter,1
+flare.CHASSIS(2),
+flare.CHASSIS(2).0x,
+flare.CHASSIS(2).0x.04465,
+flare.CHASSIS(2).0x.04465.Front Pads,1
+flare.CHASSIS(2).0x.04945,
+flare.CHASSIS(2).0x.04945.Front Shims,1
+flare.CHASSIS(2).0x.04947,
+flare.CHASSIS(2).0x.04947.Front Fits,1
+flare.CHASSIS(2).0x.04466,
+flare.CHASSIS(2).0x.04466.Rear Pads,1
+flare.CHASSIS(2).0x.04946,
+flare.CHASSIS(2).0x.04946.Rear Shims,1
+flare.CHASSIS(2).0x.04948,
+flare.CHASSIS(2).0x.04948.Rear Fits,1
+flare.CHASSIS(2).3x,
+flare.CHASSIS(2).3x.30500,
+flare.CHASSIS(2).3x.30500.Transmission,1
+flare.CHASSIS(2).3x.32907,
+flare.CHASSIS(2).3x.32907.Transmission Cooler & Lines,1
+flare.CHASSIS(2).3x.37100,
+flare.CHASSIS(2).3x.37100.Propeller/Driveshaft,1
+flare.CHASSIS(2).4x,
+flare.CHASSIS(2).4x.42410,
+flare.CHASSIS(2).4x.42410.Axle,1
+flare.CHASSIS(2).4x.42431,
+flare.CHASSIS(2).4x.42431.Rear Rotor & Bearing,1
+flare.CHASSIS(2).4x.43512,
+flare.CHASSIS(2).4x.43512.Front Rotor & Bearing,1
+flare.CHASSIS(2).4x.42601,
+flare.CHASSIS(2).4x.42601.Wheels,1
+flare.CHASSIS(2).4x.42603,
+flare.CHASSIS(2).4x.42603.Wheels Center Cap,1
+flare.CHASSIS(2).4x.42607,
+flare.CHASSIS(2).4x.42607.TPMPS,1
+flare.CHASSIS(2).4x.45202,
+flare.CHASSIS(2).4x.45202.Lower Steering Shaft,1
+flare.CHASSIS(2).4x.48510,
+flare.CHASSIS(2).4x.48510.Front Struts/Suspension,1
+flare.CHASSIS(2).4x.48530,
+flare.CHASSIS(2).4x.48530.Rear Struts/Suspension,1
+flare.BODY(3),
+flare.BODY(3).5x,
+flare.BODY(3).5x.52119,
+flare.BODY(3).5x.52119.Front Bumper Cover,1
+flare.BODY(3).5x.52159,
+flare.BODY(3).5x.52159.Rear Bumper Cover,1
+flare.BODY(3).5x.52105,
+flare.BODY(3).5x.52105.Rear Bumper Cover,1
+flare.BODY(3).5x.53301,
+flare.BODY(3).5x.53301.Hood,1
+flare.BODY(3).5x.53801,
+flare.BODY(3).5x.53801.Fenders,1
+flare.BODY(3).6x,
+flare.BODY(3).6x.616,
+flare.BODY(3).6x.616.Quarter Panel,1
+flare.BODY(3).6x.63205,
+flare.BODY(3).6x.63205.Sunroof,1
+flare.BODY(3).6x.67001,
+flare.BODY(3).6x.67001.Front Door,1
+flare.BODY(3).6x.67003,
+flare.BODY(3).6x.67003.Rear Door,1
+flare.BODY(3).6x.67005,
+flare.BODY(3).6x.67005.Tailgate,1
+flare.BODY(3).6x.64401,
+flare.BODY(3).6x.64401.Trunk/Decklid,1
+flare.BODY(3).6x.68101,
+flare.BODY(3).6x.68101.Front Door Glass,1
+flare.BODY(3).7x,
+flare.BODY(3).7x.77740,
+flare.BODY(3).7x.77740.Evaportive Canister (Fuel Tank),1
+flare.BODY(3).7x.77300,
+flare.BODY(3).7x.77300.Gas Cap (Fuel Tank),1
+flare.BODY(3).7x.71700,
+flare.BODY(3).7x.71700.Seats,1
+flare.ELECTRICAL(4),
+flare.ELECTRICAL(4).0x,
+flare.ELECTRICAL(4).0x.00234,
+flare.ELECTRICAL(4).0x.00234.Misc Bulb,1
+flare.ELECTRICAL(4).2x,
+flare.ELECTRICAL(4).2x.28800,
+flare.ELECTRICAL(4).2x.28800.BatteryEPC,1
+flare.ELECTRICAL(4).8x,
+flare.ELECTRICAL(4).8x.81110,
+flare.ELECTRICAL(4).8x.81110.Headlamp,1
+flare.ELECTRICAL(4).8x.81150,
+flare.ELECTRICAL(4).8x.81150.Headlamp,1
+flare.ELECTRICAL(4).8x.89348,
+flare.ELECTRICAL(4).8x.89348.Partk-Assist Sensors,1
+flare.ELECTRICAL(4).8x.88460,
+flare.ELECTRICAL(4).8x.88460.AC Condenser,1
+flare.ELECTRICAL(4).8x.85214,
+flare.ELECTRICAL(4).8x.85214.Wiper Insert,1
+flare.ELECTRICAL(4).8x.85212,
+flare.ELECTRICAL(4).8x.85212.RH Wiper Blade,1
+flare.ELECTRICAL(4).8x.85222,
+flare.ELECTRICAL(4).8x.85222.LH Wiper Blade,1
+flare.ELECTRICAL(4).8x.85242,
+flare.ELECTRICAL(4).8x.85242.Rear Wiper Blade,1
+flare.ELECTRICAL(4).8x.87106,
+flare.ELECTRICAL(4).8x.87106.Air Contro Servo,1
+flare.ELECTRICAL(4).8x.87139,
+flare.ELECTRICAL(4).8x.87139.Cabin Air Fiilter,1
+flare.ELECTRICAL(4).8x.87910,
+flare.ELECTRICAL(4).8x.87910.Outside Rearview Mirror,1
+flare.ELECTRICAL(4).8x.82998,
+flare.ELECTRICAL(4).8x.82998.Wire Repair Terminal,1
+flare.ELECTRICAL(4).8x.89465,
+flare.ELECTRICAL(4).8x.89465.Oxygen Sensor,1
+flare.ELECTRICAL(4).8x.89467,
+flare.ELECTRICAL(4).8x.89467.Air-Fuel Ratio Sensor,1
+flare.ELECTRICAL(4).9x,
+flare.ELECTRICAL(4).9x.90919,
+flare.ELECTRICAL(4).9x.90919.Misc Sensors,1
+flare.ELECTRICAL(4).9x.90980,
+flare.ELECTRICAL(4).9x.90980.Wire repair connector,1
+flare.ELECTRICAL(4).9x.90981,
+flare.ELECTRICAL(4).9x.90981.Misc Bulbs,1

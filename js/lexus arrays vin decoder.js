@@ -62,6 +62,8 @@ var lexuspv = { // addt'l #s work so that it switches on the vds678
   "192": "Is",
   "182": "Is",
   "5AY": "Lc", //2018 LC500/h
+  "1B1": "Es", //2019 ES/ESh
+  "JBH": "Ux", //2019 UX/UXh
   "32Y": "Sc"
 };
 var lexusmpv = {
@@ -74,8 +76,15 @@ var lexusmpv = {
   "10U": "Rx",
   "31U": "Rx",
   "1BA": "Rx",
-  "MCA": "Rx"
+  "MCA": "Rx",
+  "KCA": "Rx" //LWB RX
 };
+
+var Ux = {
+  U9: "UX250", // need to add actual model no.
+  Y3: "UX200"
+};
+
 var Ct = {
   KD: "ZWA10"
 };
@@ -94,7 +103,9 @@ var Es = {
   BF: "MCV30",
   BJ: "GSV40",
   BK: "GSV60",
+  BZ: "GSV70", //2019 ES350 (DOUBLECK MODELNOS)
   BW: "AVV60",
+  B2: "AVV70", //2019 ESh
   GK: "MCV10",
   VK: "VCV10",
   VV: "VZV21" //1990
@@ -167,7 +178,8 @@ var Is3 = { // 1D2
   BF: "GSE30", // 
   CE: "GSE36",//350awd
   CF: "GSE35",//250awd thru 15
-  CM: "GSE37"//300awd
+  CM: "GSE37",//300awd
+  C8: "GSE37" // 2018/19 REDUX
 };
 var Ls = {
 
@@ -199,9 +211,11 @@ var Nx = {
 };
 var Rc = {
   HA: "ASC10", 
+  HZ: "GSC10", // 2019 RWD RC300 NOT 100% SURE ON MODELNO.
   HE: "GSC10",
   SE: "GSC15",
   SM: "GSC16",
+  S8: "GSC16", //2019 resdux
   HP: "USC10"
 };
 var Rx = {
@@ -209,6 +223,8 @@ var Rx = {
   BG: "GYL25", //16-~20rxh
   BZ: "GGL25", //16-~20rx
   BK: "GGL15", //10-15rx
+  DG: "GYL25", // ADDED FOR -L.  RECHECK/RECREUTATE MODELNO
+  DZ: "GGL25", // ADDED FOR -L.  RECHECK/RECREUTATE MODELNO 
   GA: "MCU33", //04-06rxFWD
   GF: "MCU10", //99-03rxFWD
   GK: "GSU30", //07-09rxFWD
