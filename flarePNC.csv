@@ -4,6 +4,8 @@ flare.ENGINE(1),
 flare.ENGINE(1).0xxxx-xxxxx,
 flare.ENGINE(1).0xxxx-xxxxx.04152,
 flare.ENGINE(1).0xxxx-xxxxx.04152.Oil Filter,1
+flare.ENGINE(1).0xxxx-xxxxx.00544,
+flare.ENGINE(1).0xxxx-xxxxx.00544.Battery,1
 flare.ENGINE(1).1xxxx-xxxxx,
 flare.ENGINE(1).1xxxx-xxxxx.11101,
 flare.ENGINE(1).1xxxx-xxxxx.11101.Cylinder Head,1
@@ -11,14 +13,15 @@ flare.ENGINE(1).1xxxx-xxxxx.12204,
 flare.ENGINE(1).1xxxx-xxxxx.12204.PCV Valve,1
 flare.ENGINE(1).1xxxx-xxxxx.13568,
 flare.ENGINE(1).1xxxx-xxxxx.13568.timing belt/valvetrain,1
+flare.ENGINE(1).1xxxx-xxxxx.16x,
+flare.ENGINE(1).1xxxx-xxxxx.16x.16100,
+flare.ENGINE(1).1xxxx-xxxxx.16x.16100.Water Pump,1
+flare.ENGINE(1).1xxxx-xxxxx.16x.16041,
+flare.ENGINE(1).1xxxx-xxxxx.16x.16041.Radiator,1
+flare.ENGINE(1).1xxxx-xxxxx.16x.16400,
+flare.ENGINE(1).1xxxx-xxxxx.16x.16400.Radiator,1
 flare.ENGINE(1).1xxxx-xxxxx.17801,
 flare.ENGINE(1).1xxxx-xxxxx.17801.Engine Air Filter,1
-flare.ENGINE(1).1xxxx-xxxxx.16100,
-flare.ENGINE(1).1xxxx-xxxxx.16100.Water Pump,1
-flare.ENGINE(1).1xxxx-xxxxx.16400,
-flare.ENGINE(1).1xxxx-xxxxx.16400.Radiator,1
-flare.ENGINE(1).1xxxx-xxxxx.16041,
-flare.ENGINE(1).1xxxx-xxxxx.16041.Radiator,1
 flare.ENGINE(1).1xxxx-xxxxx.17410,
 flare.ENGINE(1).1xxxx-xxxxx.17410.Front Exhaust Pipe,1
 flare.ENGINE(1).1xxxx-xxxxx.17176,
@@ -69,8 +72,8 @@ flare.CHASSIS(2).4x.42603,
 flare.CHASSIS(2).4x.42603.Wheels Center Cap,1
 flare.CHASSIS(2).4x.42607,
 flare.CHASSIS(2).4x.42607.TPMPS,1
-flare.CHASSIS(2).4x.45202,
-flare.CHASSIS(2).4x.45202.Lower Steering Shaft,1
+flare.CHASSIS(2).4x.4520,
+flare.CHASSIS(2).4x.4520.Steering Shaft,1
 flare.CHASSIS(2).4x.48510,
 flare.CHASSIS(2).4x.48510.Front Struts/Suspension,1
 flare.CHASSIS(2).4x.48530,
@@ -105,22 +108,20 @@ flare.BODY(3).6x.68101.Front Door Glass,1
 flare.BODY(3).7x,
 flare.BODY(3).7x.77740,
 flare.BODY(3).7x.77740.Evaportive Canister (Fuel Tank),1
-flare.BODY(3).7x.77300,
-flare.BODY(3).7x.77300.Gas Cap (Fuel Tank),1
-flare.BODY(3).7x.71700,
-flare.BODY(3).7x.71700.Seats,1
+flare.BODY(3).7x.773,
+flare.BODY(3).7x.773.Gas Cap (Fuel Tank),1
+flare.BODY(3).7x.717,
+flare.BODY(3).7x.717.Seats,1
 flare.ELECTRICAL(4),
 flare.ELECTRICAL(4).0x,
 flare.ELECTRICAL(4).0x.00234,
 flare.ELECTRICAL(4).0x.00234.Misc Bulb,1
 flare.ELECTRICAL(4).2x,
 flare.ELECTRICAL(4).2x.28800,
-flare.ELECTRICAL(4).2x.28800.BatteryEPC,1
+flare.ELECTRICAL(4).2x.28800.Battery00544,1
 flare.ELECTRICAL(4).8x,
 flare.ELECTRICAL(4).8x.81110,
 flare.ELECTRICAL(4).8x.81110.Headlamp,1
-flare.ELECTRICAL(4).8x.81150,
-flare.ELECTRICAL(4).8x.81150.Headlamp,1
 flare.ELECTRICAL(4).8x.89348,
 flare.ELECTRICAL(4).8x.89348.Partk-Assist Sensors,1
 flare.ELECTRICAL(4).8x.88460,

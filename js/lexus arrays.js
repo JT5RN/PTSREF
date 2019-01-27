@@ -101,7 +101,8 @@ var wyp_id = [
 {'id':12, 'sizes': displayWipers(24, 17)},
 {'id':13, 'sizes': displayWipers(26, 22)},
 {'id':14, 'sizes': displayWipers(21, 19)},
-{'id':15, 'sizes': displayWipers(22, 18)}
+{'id':15, 'sizes': displayWipers(22, 18)},
+{'id':16, 'sizes': displayWipers(26, 16)}
 ];
 
 
@@ -112,7 +113,7 @@ function displayWipers(left,right){
 
 
 var eoc = ['~5.5(0)', '~6.0(1)','~6.2(2)','~6.3(3)', '~7.2(4)', '~9.8+']
-var eog = ['0-20 Synthetic', '5-30 Conventional', '5-30 Synthetic'];
+var eog = ['0-20 Synthetic', '5-30 Conventional', '5-30 Synthetic', '0-16 Synthetic'];
 
 var en_id_oil = [eoc[3] + "qts " + eog[1] + '(*~~0)', // 6.3 5-30conv
                     eoc[0] + "qts " + eog[1] + '(*~1)',// 5.5 5-30conv
@@ -130,7 +131,7 @@ var pn04152 = ['04152-YZZA1','04152-YZZA4','04152-YZZA5','04152-YZZA6','90915-YZ
 var pn87139 = ['87139-YZZ10', '87139-YZZ38', '87139-YZZ03', '87139-YZZ01', '87139_48020_83', '87139-<B>0E040</B>'];// formerly caf_id
 var pn00544 = ['24F','240','27F','270', 'H5', 'H6','51R', 'Unique# with small posts', 'particular 28100#epc part'];
 var pn16100 = ['16100-09442','16100-29085','16100-39436','16100_59275_83','16100-49846'];
-var pn17801 = ['17801-0P051','17801-0H010','17801-AD010','17801-31110','17801-0V020','17801-0P070','17801-31170','17801-38051','17801-20050','17801-50040','17801-37021','17801-50030','17801-50060','17801-38030','17801-03010','17801-46080', 'Unknown','17801-07020','17801-38021','17801-50010-83'];
+var pn17801 = ['17801-0P051','17801-0H010','17801-AD010','17801-31110','17801-0V020','17801-0P070','17801-31170','17801-38051','17801-20050','17801-50040','17801-37021','17801-50030','17801-50060','17801-38030','17801-03010','17801-46080', 'Unknown','17801-07020','17801-38021','17801-50010-83','17801-77050',"17801-24040"];
 
 
 var pn43512 = ["43512-06150","43512-0E021","43512-0E030","43512-30310","43512-30320","43512-30350","43512-47040","43512-48031","43512-48081","43512-50220","43512-50240","43512-50250","43512-60151","43512-60180","43512-60191"];
@@ -188,9 +189,11 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn
             {'id': 31, 'name': '2GR-FE(2/2)', 'displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':pn16100[0]},// (1.1) (Transverse) //Dup for oil purposes 1-17//(formerly (7) )
             {'id': 32, 'name': '2GR-FSE(2/2)','displacement': '3.5L', 'oilfilter': pn04152[2], 'oil': "idk.",'v16100':pn16100[2]},// Gas 350 (2) (Longitudinal 2013GS+)//(formerly (8) )
             {'id': 33, 'name': '3MZ-FE', 'displacement': '3.3(H)', 'oilfilter': pn04152[4], 'oil': "IF MODEL YEAR" + myr(2006,2007) + en_id_oil[1] + "IF its a " + myr(2008,2008) + en_id_oil[7],'v16100':pn16100[1]},
-
-
-
+            {'id': 34, 'name': 'M20-AFKS', 'displacement': '0.0L', 'oilfilter': "_", 'oil': en_id_oil[3],'v16100':"unk"}, //190126 ux
+            {'id': 35, 'name': 'M20-AFXS', 'displacement': '0.0L', 'oilfilter': "_", 'oil': en_id_oil[3],'v16100':"unk"}, //190126 uxh
+            {'id': 36, 'name': 'M20-AFKS', 'displacement': '0.0L', 'oilfilter': "_", 'oil': en_id_oil[3],'v16100':"unk"}, //190126 esh
+            {'id': 37, 'name':'2GR-FKS(2019ES)','displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[6],'v16100':pn16100[2]},//es350
+            
 
 
 
@@ -247,7 +250,9 @@ var lexusEs = [
 {'wmi': dw_id[4], 'vds': 'BJ46G', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2007,2009), 'eng': en_id[8],  'bat': pn00544[0], 'eaf': pn17801[2],'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
 {'wmi': dw_id[4], 'vds': 'BK1EG', 'model': 'GSV40', 'name': 'ES350','yrs': myr(2010,2012), 'eng': en_id[8], 'bat': pn00544[0], 'eaf': pn17801[2],'caf': pn87139[0], 'wyp': wyp_id[1],'tyr': tyr_id[11]},
 {'wmi': dw_id[4], 'vds': 'BW1GG', 'model': 'AVV60', 'name': 'ES300H','yrs':myr(2013,2018), 'eng': en_id[6], 'bat': pn00544[8], 'eaf': pn17801[4],'caf': pn87139[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]},
-{'wmi': dw_id[6], 'vds': 'BK1GG', 'model': 'GSV60', 'name': 'ES350','yrs': myr(2013,2018), 'eng': en_id[31], 'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]}];
+{'wmi': dw_id[6], 'vds': 'BK1GG', 'model': 'GSV60', 'name': 'ES350','yrs': myr(2013,2018), 'eng': en_id[31], 'bat': pn00544[0], 'eaf': pn17801[0],'caf': pn87139[0], 'wyp': wyp_id[4],'tyr': tyr_id[11]},
+{'wmi': dw_id[4], 'vds': 'B21B1', 'model': 'AXZH10', 'name':'ES300H','yrs':myr(2019,2024), 'eng': en_id[36], 'bat': pn00544[8], 'eaf': "unk",'caf': pn87139[5], 'wyp': "unk",'tyr': "unk"},
+{'wmi': dw_id[6], 'vds': 'BZ1B1', 'model': 'GSZ10', 'name': 'ES350','yrs': myr(2019,2024), 'eng': en_id[37], 'bat': pn00544[0], 'eaf': "UNK!",'caf': pn87139[5], 'wyp': "unk",'tyr': "unk"}];
     
 var lexusIs = [
 {'wmi': dw_id[4], 'vds': 'BD182', 'model': 'JCE10', 'name': 'IS300','yrs': myr(2001,2001), 'eng': en_id[13], 'bat': pn00544[1], 'eaf': pn17801[15], 'caf': pn87139[4], 'wyp': wyp_id[9],'tyr': tyr_id[12]},
@@ -357,10 +362,20 @@ var lexusLc = [ //!
 {'wmi': dw_id[4], 'vds':'HP5AY', 'model':'URZ100', 'name': 'LC500', 'yrs': myr(2018,2028), 'eng': en_id[14], 'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]},
 {'wmi': dw_id[4], 'vds':'HH5AY(?)', 'model':'GRZ100','name':'LC500H','yrs':myr(2018,2028), 'eng': en_id[28],'bat': 'IDK', 'eaf': '17801-31150', 'caf': '87139-11010', 'wyp': wyp_id[4],'tyr': tyr_id[27]}];
 
+var lexusUx = [
+{'wmi': dw_id[4], 'vds':'Y3JBH', 'model': 'MZAA10', 'name': 'UX200','yrs': myr(2019,2020), 'eng': en_id[34],'bat': "unk", 'eaf': pn17801[20], 'caf': "87139-58010", 'wyp': wyp_id[16],'tyr': "not sure"},
+{'wmi': dw_id[4], 'vds':'U9JBH', 'model': 'MZAH15', 'name': 'UX250H','yrs':myr(2019,2020), 'eng': en_id[35],'bat': "unk2", 'eaf': pn17801[21], 'caf': "87139-58010", 'wyp': wyp_id[16],'tyr': "not sure2"}]
 
-var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, lexusLc];
+var allmodels = [lexusRx, lexusEs, lexusGx, lexusNx, lexusLx, lexusIs, lexusGs, lexusLs, lexusSc, lexusLFA, lexusRc, lexusHs, lexusCt, lexusLc,lexusUx];
 
 var l = allmodels; // l rules.
+
+
+
+// so i need to add '19 my stuff.  UX Engine,  ES300h/350 engine.  LWB RX.   #8   VDS 4-5. 190126
+//U9: "MZAH1#", // NOT SURE WHat Hybrid FWD is if thats a thing.
+// Y3: "MZAA10"
+
 
 
 function getData(v) { // Original call - search box - I give model number, get PrintHTMLVehicleData

@@ -81,8 +81,8 @@ var lexusmpv = {
 };
 
 var Ux = {
-  U9: "UX250", // need to add actual model no.
-  Y3: "UX200"
+  U9: "MZAH15", // NOT SURE WHat Hybrid FWD is if thats a thing. mzah10?
+  Y3: "MZAA10"
 };
 
 var Ct = {
