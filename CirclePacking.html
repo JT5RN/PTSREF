@@ -3,13 +3,13 @@
 <style>
 
     text {
-        font: 10px sans-serif;
+        font: 11px Times;
         text-anchor: middle;
     }
 
     .node--hover circle {
         stroke: #000;
-        stroke-width: 1.2px;
+        stroke-width: 2.9px;
     }
 
 </style>
@@ -23,7 +23,7 @@
 
     var format = d3.format(",d");
 
-    var color = d3.scaleSequential(d3.interpolateMagma)
+    var color = d3.scaleSequential(d3.interpolateViridis)
         .domain([-4, 4]);
 
     var stratify = d3.stratify()

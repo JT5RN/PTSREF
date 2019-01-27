@@ -35,7 +35,7 @@ flare.(1)ENGINE.2x.23209,
 flare.(1)ENGINE.2x.23209.Fuel Injector,1
 flare.(1)ENGINE.9x, 
 flare.(1)ENGINE.9x.90919,
-flare.(1)ENGINE.9x.90919.Spark Plug,1
+flare.(1)ENGINE.9x.90919.Cam Sensor, Coils & Plugs,1
 flare.(1)ENGINE.9x.90915,
 flare.(1)ENGINE.9x.90915.Oil Filter,1
 flare.(2)CHASSIS,
@@ -71,7 +71,7 @@ flare.(2)CHASSIS.4x.42601.Wheels,1
 flare.(2)CHASSIS.4x.42603,
 flare.(2)CHASSIS.4x.42603.Wheels Center Cap,1
 flare.(2)CHASSIS.4x.42607,
-flare.(2)CHASSIS.4x.42607.TPMPS,1
+flare.(2)CHASSIS.4x.42607.TPMS,1
 flare.(2)CHASSIS.4x.4520,
 flare.(2)CHASSIS.4x.4520.Steering Shaft,1
 flare.(2)CHASSIS.4x.48510,
@@ -86,6 +86,8 @@ flare.(3)BODY.5x.52159,
 flare.(3)BODY.5x.52159.Rear Bumper Cover,1
 flare.(3)BODY.5x.52105,
 flare.(3)BODY.5x.52105.Rear Bumper Cover,1
+flare.(3)BODY.5x.5311,
+flare.(3)BODY.5x.5311.Grille,1
 flare.(3)BODY.5x.53301,
 flare.(3)BODY.5x.53301.Hood,1
 flare.(3)BODY.5x.53801,

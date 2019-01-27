@@ -195,7 +195,7 @@ var en_id = [{'id': 0, 'name': '1MZ-FE', 'displacement': '3.0L', 'oilfilter': pn
             {'id': 35, 'name': 'M20-AFXS', 'displacement': '2.0L(H)', 'oilfilter': "90915-10009", 'oil': en_id_oil[8],'v16100':"idk"}, //190126 uxh
             {'id': 36, 'name':'2A5A-AFKS', 'displacement': '2.5L(H)', 'oilfilter': "90915-10009", 'oil': en_id_oil[8],'v16100':"not applicable"}, //190126 esh
             {'id': 37, 'name': '2GR-FKS','displacement': '3.5L', 'oilfilter': pn04152[0], 'oil': en_id_oil[8],'v16100':"16100-09690"},//es350
-            
+            //need  to add LS500 motor/s V35AFTS 3.5 24V  VXFA55 / VXFA50 RWD (?)
 
 
 
