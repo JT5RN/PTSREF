@@ -33,7 +33,7 @@
         .size([width - 2, height - 2])
         .padding(3);
 
-    d3.csv("flarelxbadnum.csv", function(error, data) {
+    d3.csv("flareVDS.csv", function(error, data) {
         if (error) throw error;
 
         var root = stratify(data)
