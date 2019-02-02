@@ -17,7 +17,10 @@ var veh = { // highest level direction for this.  would be 500 long with maps si
 
 
 //original lexus-only below added toyota 7-7-2016
-//2019; have cars to add. 
+//2019; have cars to add. // 10190201 b51ff,b5lff,c51ff,c5lff &&  hybrid  BY1FF,BYLFF,CY1FF,CYLFF
+
+// B5 = RWD  C5 = AWD  LS500 ---   BY=RWD, CY=AWD  LS500H
+
 var lexuspv = { // addt'l #s work so that it switches on the vds678
   "5BH": "Ct",
   "1BA": "Hs",
@@ -64,6 +67,8 @@ var lexuspv = { // addt'l #s work so that it switches on the vds678
   "5AY": "Lc", //2018 LC500/h
   "1B1": "Es", //2019 ES/ESh
   "JBH": "Ux", //2019 UX/UXh
+  "1FF": "Ls", //SAFETEY SYSTEM
+  "LFF": "Ls", //NON-SAFETY SYSTEM 
   "32Y": "Sc"
 };
 var lexusmpv = {
@@ -192,7 +197,7 @@ var Ls = {
   DL: "USF46",
   GL: "USF41",
   DU: "UVF46",
-  EU: "UVF5#", //PROJ Hybrid#
+  EU: "UVF5#", //PROJ Hybrid#  // 10190201 b51ff,b5lff,c51ff,c5lff &&  hybrid  BY1FF,BYLFF,CY1FF,CYLFF
   UF: "UCF20"
 };
 var Ls1 = {
