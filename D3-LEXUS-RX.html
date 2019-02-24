@@ -3,13 +3,13 @@
 <style>
 
     text {
-        font: 11px Nobel;
+        font: 14px Nobel;
         text-anchor: middle;
     }
 
     .node--hover circle {
         stroke: #000;
-        stroke-width: 2.9px;
+        stroke-width: 3.9px;
     }
 
 </style>
@@ -24,16 +24,16 @@
     var format = d3.format(",d");
 
     var color = d3.scaleSequential(d3.interpolateViridis)
-        .domain([-4, 4]);
+        .domain([-3, 10]);
 
     var stratify = d3.stratify()
         .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
 
     var pack = d3.pack()
-        .size([width - 2, height - 2])
+        .size([width - 10, height - 10])
         .padding(3);
 
-    d3.csv("flareVDS.csv", function(error, data) {
+    d3.csv("flareRX.csv", function(error, data) {
         if (error) throw error;
 
         var root = stratify(data)
@@ -55,8 +55,6 @@
         node.append("circle")
             .attr("id", function(d) { return "node-" + d.id; })
             .attr("r", function(d) { return d.r; })
-            //.style("fill", function(d) { return d.children ? color(d.depth) : d.data.fill; });
-            //.style("fill", function(d) { return color(d.depth); });
             .style("fill", function(d) { return color(d.depth); });
 
         var leaf = node.filter(function(d) { return !d.children; });
@@ -84,5 +82,6 @@
             d3.selectAll(d.ancestors().map(function(d) { return d.node; })).classed("node--hover", hover);
         };
     }
+
 
 </script>

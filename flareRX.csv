@@ -1,0 +1,24 @@
+id,value
+flare,
+flare.RX,
+flare.RX.G1,
+flare.RX.G2,
+flare.RX.G3,
+flare.RX.G4,
+flare.RX.G4.bzmca rx350AWD,5500
+flare.RX.G4.bgmca Rx450hAWD,1200
+flare.RX.G4.dgkca Rx450hL,1000
+flare.RX.G4.dzkca Rx350L,1000
+flare.RX.G4.zzmca Rx350-fwd,1200
+flare.RX.G3.zk1ba Rx350-fwd,2000
+flare.RX.G3.bk1ba rx350AWD,10000
+flare.RX.G3.bc1ba rx450hAWD,5500
+flare.RX.G3.zc1ba Rx450hfwd?,1000
+flare.RX.G2.hw31u Rx400hAWD,2500
+flare.RX.G2.hk31u rx350AWD,4500
+flare.RX.G2.ha31u rx330AWD,4500
+flare.RX.G2.gw31u Rx400h-fwd,1000
+flare.RX.G2.gk31u Rx350-fwd,1000
+flare.RX.G2.ga31u Rx330-fwd,1000
+flare.RX.G1.hf10u rx300AWD,5000
+flare.RX.G1.gf10u Rx300-fwd,1000

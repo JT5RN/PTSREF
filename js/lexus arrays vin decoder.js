@@ -48,7 +48,7 @@ var lexuspv = { // addt'l #s work so that it switches on the vds678
   "69S": "Gs", //2g Gs
   "68S": "Gs", //2g Gs
   "68X": "Gs", //2g Gs
-  "42S": "Gs1",  //freakshow 1year Gs1
+  "42S": "Gs1",//freakshow 1year Gs1
   "47E": "Gs", //Gs1
   "5BC": "Rc", 
   "48Y": "Sc", //430
@@ -188,6 +188,10 @@ var Is3 = { // 1D2
 };
 var Ls = {
 
+  B5: "LS500RWD",
+  BY: "LS500HRWD",
+  C5: "LS500AWD",
+  CY: "LS500HAWD",
   BH: "UCF20",
   BN: "UCF30",
   BL: "USF40",
@@ -265,7 +269,7 @@ var thiscar = {
   vds2: "",
   vin: ""
 };
-
+//190202 hey, add to the radial dendogram a space between final results of preliminary branch
 function decodeVinNo(vin) {
     var wmi = vin.toString().substring(0, 3);
     var vin678 = vin.toString().substring(5, 8);
