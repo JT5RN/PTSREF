@@ -3,13 +3,13 @@
 <style>
 
     text {
-        font: 14px Nobel;
+        font: 12px Nobel;
         text-anchor: middle;
     }
 
     .node--hover circle {
         stroke: #000;
-        stroke-width: 3.9px;
+        stroke-width: 1.9px;
     }
 
 </style>
@@ -24,7 +24,7 @@
     var format = d3.format(",d");
 
     var color = d3.scaleSequential(d3.interpolateViridis)
-        .domain([-3, 10]);
+        .domain([-2, 9]);
 
     var stratify = d3.stratify()
         .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
