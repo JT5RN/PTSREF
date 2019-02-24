@@ -1,0 +1,53 @@
+id,value
+flare,
+flare.RX,
+flare.RX.G1,
+flare.RX.G1.filter1,
+flare.RX.G1.filter2,
+flare.RX.G1.filter3,
+flare.RX.G1.filter4,
+flare.RX.G1.tire1,
+flare.RX.G2,
+flare.RX.G2.filter1,
+flare.RX.G2.filter2,
+flare.RX.G2.filter3,
+flare.RX.G2.filter4,
+flare.RX.G2.tire1,
+flare.RX.G3,
+flare.RX.G3.filter1,
+flare.RX.G3.filter2,
+flare.RX.G3.filter3,
+flare.RX.G3.filter4,
+flare.RX.G3.tire1,
+flare.RX.G4,
+flare.RX.G4.filter1,
+flare.RX.G4.filter2,
+flare.RX.G4.filter3,
+flare.RX.G4.filter4,
+flare.RX.G4.tire1,
+flare.RX.G1.1st gen 1999-2003 hf10u gf10u,500
+flare.RX.G1.filter1. 17801-03010,100
+flare.RX.G1.filter2. 87139-48020-83,100
+flare.RX.G1.filter4. 90915-yzzd1,100
+flare.RX.G1.tire1. 22570r16,100
+flare.RX.G2.2nd gen 2004-2009 ha31u hk31u hw31u ga/gk/gw,500
+flare.RX.G2.filter1. 17801-0h010,100
+flare.RX.G2.filter2. 87139-yzz03,200
+flare.RX.G2.filter3. 17801-20050 hybrid-hw31u,50
+flare.RX.G2.filter4. 04152-yzza1 350,100
+flare.RX.G2.filter4. 90915-yzzd1 330,400h,50
+flare.RX.G2.tire1. 23555r18,100
+flare.RX.G3.3rd gen 2010-2015 bk1ba bc1ba zk1ba,500
+flare.RX.G3.filter1. 17801-0p051,100
+flare.RX.G3.filter2. 87139-yzz10,200
+flare.RX.G3.filter3. 17801-0p070 hybrid-bc1ba,50
+flare.RX.G3.filter4. 04152-yzza1,100
+flare.RX.G3.tire1. 23560r18,100
+flare.RX.G3.tire1. 2355r19,50
+flare.RX.G4.4th gen 2016-2020 bzmca dzkca bgmca,500
+flare.RX.G4.filter1. 17801-0p051,100
+flare.RX.G4.filter2. 87139-0e040,200
+flare.RX.G4.filter3. 17801-0p090 hybrid-bgmca,50
+flare.RX.G4.filter4. 04152-yzza1,100
+flare.RX.G4.tire1. 23565r18,100
+flare.RX.G4.tire1. 2355r20,50
