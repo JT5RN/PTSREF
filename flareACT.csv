@@ -1,44 +1,61 @@
 id,value
 flare,
-flare.4700,
-flare.4700.4700,
-flare.4700.4700.4700 Parts customer pay ro,125
-flare.4720,
-flare.4720.4720,
-flare.4720.4720.4720 Parts Warranty ro sales Lexus,25
-flare.4725,
-flare.4725.4725,
-flare.4725.4725.4725 Tire sales Customer pay only,35
-flare.4755,
-flare.4755.4755,
-flare.4755.4755.4755 Tire sales Internal ro tires only,15
-flare.4730,
-flare.4730.4730,
-flare.4730.4730.4730 Parts Internal parts sales, 25
-flare.4740,
-flare.4740.4740,
-flare.4740.4740.4740 Parts Counter retail,20
-flare.4750,
-flare.4750.4750,
-flare.4750.4750.4750 Wholesale Lexus,25
-flare.4770,
-flare.4770.4770,
-flare.4770.4770.4770 Gas oil grease Sub-inventories Sources ___200 _201_ _202 Inventories 2430 2431 2432 ,25
-flare.4707,
-flare.4707.4707,
-flare.4707.4707.4707 Accessories Customer pay ro,5
-flare.4727,
-flare.4727.4727,
-flare.4727.4727.4727 Accessory  Warranty claims Lexus N-a,5
-flare.4737,
-flare.4737.4737,
-flare.4737.4737.4737 Accessories internal,5
-flare.4747,
-flare.4747.4747,
-flare.4747.4747.4747 Accessory  Counter retail sales Lexus,5
-flare.4757,
-flare.4757.4757,
-flare.4757.4757.4757 Parts and Accessories  other N-a,5
-flare.4767,
-flare.4767.4767,
-flare.4767.4767.4767 Accessories  Wholesale accessory - Lexus N-a,5
+flare.parts,
+flare.parts.parts,
+flare.parts.parts.4700,
+flare.parts.parts.4700.4700,
+flare.parts.parts.4700.4700.4700 Parts customer pay ro,60
+flare.parts.parts.4720,
+flare.parts.parts.4720.4720,
+flare.parts.parts.4720.4720.4720 Parts Warranty ro sales Lexus,20
+flare.parts.tires,
+flare.parts.tires.4725,
+flare.parts.tires.4725.4725,
+flare.parts.tires.4725.4725.4725 Tire sales Cp tires All but internal,10
+flare.parts.tires.4755,
+flare.parts.tires.4755.4755,
+flare.parts.tires.4755.4755.4755 Tire sales Internal,2
+flare.parts.parts.4730,
+flare.parts.parts.4730.4730,
+flare.parts.parts.4730.4730.4730 Parts Internal parts sales, 10
+flare.parts.parts.4740,
+flare.parts.parts.4740.4740,
+flare.parts.parts.4740.4740.4740 Parts Retail,2
+flare.parts.parts.4750,
+flare.parts.parts.4750.4750,
+flare.parts.parts.4750.4750.4750 Wholesale Lexus,20
+flare.parts.gog,
+flare.parts.gog.4770,
+flare.parts.gog.4770.4770,
+flare.parts.gog.4770.4770.4770 G o g A_2430 2431 2432 S_200 201 202 O5w30 gl5 0w20,10
+flare.parts.accessories,
+flare.parts.accessories.parts,
+flare.parts.accessories.parts.407,
+flare.parts.accessories.parts.407.4707,
+flare.parts.accessories.parts.407.4707.4707 Accy Cpro,2
+flare.parts.accessories.parts.427,
+flare.parts.accessories.parts.427.4727,
+flare.parts.accessories.parts.427.4727.4727 Accy  Wty,1
+flare.parts.accessories.parts.437,
+flare.parts.accessories.parts.437.4737,
+flare.parts.accessories.parts.437.4737.4737 Accy Int,1
+flare.parts.accessories.parts.447,
+flare.parts.accessories.parts.447.4747,
+flare.parts.accessories.parts.447.4747.4747 Accy Retail,1
+flare.parts.accessories.parts.457,
+flare.parts.accessories.parts.457.4757,
+flare.parts.accessories.parts.457.4757.4757 Other p & a,1
+flare.parts.accessories.parts.467,
+flare.parts.accessories.parts.467.4767,
+flare.parts.accessories.parts.467.4767.4767 Accy Whsl,1
+flare.service,
+flare.service.4400,
+flare.service.4400.4400 Customer mechanical labor Cp mech ro, 150
+flare.service.4420,
+flare.service.4420.4420 Warranty claims mechanical labor, 50
+flare.service.4430,
+flare.service.4430.4430 Internal mechanical labor,20
+flare.service.4440,
+flare.service.4440.4440 Pre-delivery service labor,20
+flare.service.4460,
+flare.service.4460.4460 Total sublet repairs,20

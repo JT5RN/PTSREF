@@ -24,14 +24,14 @@
     var format = d3.format(",d");
 
     var color = d3.scaleSequential(d3.interpolateViridis)
-        .domain([-3, 10]);
+        .domain([-5, 8]);
 
     var stratify = d3.stratify()
         .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
 
     var pack = d3.pack()
         .size([width - 10, height - 10])
-        .padding(3);
+        .padding(4);
 
     d3.csv("flareACT.csv", function(error, data) {
         if (error) throw error;
