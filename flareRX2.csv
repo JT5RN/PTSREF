@@ -34,23 +34,23 @@ flare.RX.G1.filter1. 17801-03010,100
 flare.RX.G1.filter2. 87139-48020-83,100
 flare.RX.G1.filter3. 90915-yzzd1,100
 flare.RX.G1.tire. 22570r16,100
-flare.RX.G1.wiper.18_24,
+flare.RX.G1.wiper.18&24,50
 flare.RX.G2.2gen 04-09 ha31u | hk31u | hw31u Aka _______ rx330 | rx350 | rx400h Aka _____ mcu38 | gsu38 | mcu38,2000
 flare.RX.G2.filter1. 17801-0h010,200
 flare.RX.G2.filter1. -20050 Hybrid,25
 flare.RX.G2.filter2. 87139-yzz03,200
-flare.RX.G2.filter3. a1,25
-flare.RX.G2.filter3. d1,25
+flare.RX.G2.filter3. A1 Rx350,25
+flare.RX.G2.filter3. D1 Rx330 Rx400h,25
 flare.RX.G2.tire. 23555r18,200
-flare.RX.G2.wiper.22" 26",
-flare.RX.G3.3gen 10-15 bk1ba | bc1ba |__ zk1ba Aka _________ rx350 |_| rx450h |_| rx350fwd Aka _____   ggl15  |__| gyl15 |___| ggl10,3500
+flare.RX.G2.wiper.22&26,50
+flare.RX.G3.3gen 10-15 bk1ba ___| bc1ba |___| zk1ba Aka ______ rx350 |__| rx450h |__| rx350fwd Aka _____   ggl15  |__| gyl15 |___| ggl10,3500
 flare.RX.G3.filter1. 17801-0p051,300
 flare.RX.G3.filter1. -0p070 Hybrid,25
 flare.RX.G3.filter2. 87139-yzz10,200
 flare.RX.G3.filter4. 04152-yzza1,100
-flare.RX.G3.tire. 23560r18,100
-flare.RX.G3.tire. 2355r19,50
-flare.RX.G3.wiper.22" 26",
+flare.RX.G3.tire. 2356018,125
+flare.RX.G3.tire. 235519,51
+flare.RX.G3.wiper.22&26,50
 flare.RX.G4.4gen 16-20 _bzmca | dzkca | bgmca | dgkca Aka ________| rx350 | rx350-l | rx450h | rx450h-l Aka _____| ggl25 | ggl26 | gyl25 | gyl26,3500
 flare.RX.G4.filter1. 17801-0p051,300
 flare.RX.G4.filter1. -0p090 Hybrid,25
@@ -58,4 +58,4 @@ flare.RX.G4.filter2. 87139-0e040,200
 flare.RX.G4.filter4. 04152-yzza1,100
 flare.RX.G4.tire. 23565r18,100
 flare.RX.G4.tire. 2355r20,50
-flare.RX.G4.wiper.22" 26" ptb,
+flare.RX.G4.wiper.22&26Ptb,50

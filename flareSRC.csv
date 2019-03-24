@@ -4,19 +4,19 @@ flare.2410,
 flare.2410.100,
 flare.2410.100.100 - lexus sbm 0 Account 2410,100
 flare.2410.101,
-flare.2410.101.101 - lexus sbm 1 Account 2410,100
+flare.2410.101.101 - lexus sbm 1 escalatedAccount 2410,100
 flare.2410.102,
-flare.2410.102.102 - lexus sbm 2 Account 2410,100
+flare.2410.102.102 - lexus sbm 2 escalatedAccount 2410,100
 flare.2410.103,
-flare.2410.103.103 - lexus sbm 3 Account 2410,100
+flare.2410.103.103 - lexus sbm 3 escalatedAccount 2410,100
 flare.2410.104,
-flare.2410.104.104 - lexus sbm 4 Account 2410,100
+flare.2410.104.104 - lexus sbm 4 escalatedAccount 2410,100
 flare.2410.105,
-flare.2410.105.105 - lexus sbm 5 Account 2410,100
+flare.2410.105.105 - lexus sbm 5 escalatedAccount 2410,100
 flare.2410.109,
-flare.2410.109.109 - lexus fixed price6 Account 2410,50
+flare.2410.109.109 - lexus fixed sale price at price6Account 2410,75
 flare.2410.110,
-flare.2410.110.110 - lexus fixed list Account 2410,25
+flare.2410.110.110 - lexus fixed sale price at list priceAccount 2410,75
 flare.2410.111,
 flare.2410.111.111 - lexus 4707Accessories Account 2410 ,25
 flare.2410.112,
