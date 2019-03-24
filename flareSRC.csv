@@ -2,36 +2,36 @@ id,value
 flare,
 flare.2410,
 flare.2410.100,
-flare.2410.100.100 - lexus sbm 0 Account 2410,100
+flare.2410.100.100Lexus sbm 0 Account 2410,100
 flare.2410.101,
-flare.2410.101.101 - lexus sbm 1 escalatedAccount 2410,100
+flare.2410.101.101Lexus sbm 1 escalatedAccount 2410,100
 flare.2410.102,
-flare.2410.102.102 - lexus sbm 2 escalatedAccount 2410,100
+flare.2410.102.102Lexus sbm 2 escalatedAccount 2410,100
 flare.2410.103,
-flare.2410.103.103 - lexus sbm 3 escalatedAccount 2410,100
+flare.2410.103.103Lexus sbm 3 escalatedAccount 2410,100
 flare.2410.104,
-flare.2410.104.104 - lexus sbm 4 escalatedAccount 2410,100
+flare.2410.104.104Lexus sbm 4 escalatedAccount 2410,100
 flare.2410.105,
-flare.2410.105.105 - lexus sbm 5 escalatedAccount 2410,100
+flare.2410.105.105Lexus sbm 5 escalatedAccount 2410,100
 flare.2410.109,
-flare.2410.109.109 - lexus fixed sale price at price6Account 2410,75
+flare.2410.109.109Lexus fixed sale price at price6Account 2410,75
 flare.2410.110,
-flare.2410.110.110 - lexus fixed sale price at list priceAccount 2410,75
+flare.2410.110.110Lexus fixed sale price at list priceAccount 2410,75
 flare.2410.111,
-flare.2410.111.111 - lexus 4707Accessories Account 2410 ,25
+flare.2410.111.111Lexus 4707Accessories Account 2410 ,25
 flare.2410.112,
-flare.2410.112.112 - lexus ns Account 2410,10
+flare.2410.112.112Lexus ns Account 2410,10
 flare.2410.113,
-flare.2410.113.113 - lexus mo Account 2410,10
+flare.2410.113.113Lexus mo Account 2410,10
 flare.2430,
 flare.2430.200,
-flare.2430.200.200 - 2430Bulk 5-30,5
+flare.2430.200.200Bulk 5-30 Account 2430,11
 flare.2430.201,
-flare.2430.201.201 - 2431Gl5,3
+flare.2430.201.201Gl5 Account 2431,10
 flare.2430.202,
-flare.2430.202.202 - 2432Bulk 0-20,10
+flare.2430.202.202Bulk 0-20 Account 2432,20
 flare.2411,
 flare.2411.300,
-flare.2411.300.300 - 2411Tires Tires go to 2411 Tires go to account 2411  Source 300 fills 2411 bucket Tires = 2411,75
+flare.2411.300.300Tires Tires go to 2411 Tires go to account 2411  Source 300 fills 2411 bucket Tires = 2411 Account 2411,75
 flare.2410.500,
-flare.2410.500.500-508 - Aftermarket Account 2410,10
+flare.2410.500.500-508Aftermarket Account 2410,10
