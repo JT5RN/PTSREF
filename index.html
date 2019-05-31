@@ -57,12 +57,44 @@ and open the template in the editor.
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a id="RX2" href="#" onclick="DisplayVehicle('RX');return false;">RX Reference .<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-RadialPNCmobil');return false;">PNCs<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-LEXUS-VDS-1');return false;">VDSs<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-LEXUS-RX2');return false;">RX<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-LEXUS-SRC2');return false;" >SRC<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-LEXUS-ACT');return false;" >ACT<span class="sr-only">(current)</span></a></li>
-          <li class="active"><a id="RX2" href="#" onclick="DisplayD3Item('D3-LEXUS-BIN');return false;" >BIN<span class="sr-only">(current)</span></a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  D3  <span class="caret"></span></a>
+            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <li class="divider"></li>
+          
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">all the pretty pictures</a>
+                <ul class="dropdown-menu">
+                  <li><a id="LS" href="#" onclick="DisplayD3Item('D3-RadialPNCmobil');return false;">PNC chart <span class="sr-only">(current)</span></a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-VDS-1');return false;">VDS chart</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-RX2');return false;">RX Modelology</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-SRC2');return false;">LON-I Source Setup</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-ACT');return false;">TL Account Setup</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-BIN');return false;">Bin Locations</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">radial dendograms</a>
+                <ul class="dropdown-menu">
+                  <li><a id="LS" href="#" onclick="DisplayD3Item('D3-RadialPNCmobil');return false;">PNC chart <span class="sr-only">(current)</span></a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-VDS-1');return false;">VDS chart</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">circle packing</a>
+                <ul class="dropdown-menu">
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-RX2');return false;">RX Modelology</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-SRC2');return false;">LON-I Source Setup</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-ACT');return false;">TL Account Setup</a></li>
+                  <li><a id="LSA" href="#" onclick="DisplayD3Item('D3-LEXUS-BIN');return false;">Bin Locations</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Lexus Car data <span class="caret"></span></a>
@@ -140,6 +172,9 @@ and open the template in the editor.
             </li>
           </ul>
         </li>
+
+
+
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Lexus SUV data<span class="caret"></span></a>
