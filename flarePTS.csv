@@ -1,0 +1,12 @@
+id,value
+flare,
+flare.collision,
+flare.collision.anytown  collision,5500
+flare.collision.randys auto body, 55555
+flare.collision.optional auto body, 5555
+flare.mechanical,
+flare.mechanical.mechanical,1300 
+flare.mechanical.Dover,1300
+flare.mechanical.offers,1300
+flare.mechanical.Advantage,1300
+flare.mechanical.Davis,1300

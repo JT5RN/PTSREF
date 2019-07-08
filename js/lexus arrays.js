@@ -436,16 +436,18 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
 var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
 
     var li = document.createElement("li");
-    var url1  = "http://google.com/search?q=";
+    var url1  = "https://parts.lexusofnorthborough.com/productSearch.aspx?searchTerm=";
     var url2 = "http://www.google.com/images?q=";
+    var urlaccy = "https://www.lexusofnorthborough.com/FeaturesAccessories_D?p=2019_"; 
+
+    // backup 190707var url2 = "http://www.google.com/images?q=";
     //var url3 = "http://www.lexus.com/search?q=";
-    
+    // 190707 PPP MEET LONLINE LOL https://parts.lexusofnorthborough.com/productSearch.aspx?searchTerm=
     //var url4 = "http://drivers.lexus.com/lexusdrivers/search?searchKey=";
     // link to accessories http://www.lexus.com/models/GS/accessories?genuine=true
     // lexus search http://www.lexus.com/search?q=
     
-    var urlaccy = "https://www.lexusofnorthborough.com/FeaturesAccessories_D?p=2018_"; // 180420 
-
+    
     li.innerHTML =
         (
             "<table>" +
@@ -479,12 +481,12 @@ var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thi
             "<td>" + data.model + "</td>"+
             '<td><a target="_blank"' + 'href="' + url2 + data.eng.name + " Engine" + '">' + data.eng.name + '</a></td>' +
             "<td>" + data.eng.displacement +"</td>"+
-            '<td><a target="_blank"' + 'href="' + url1 + "SHOP lexus waterpump " +  data.eng.v16100 + '">' +  data.eng.v16100 + '</a></td>' + 
-            '<td><a target="_blank"' + 'href="' + url1 + "SHOP lexus oilfilter "+ data.eng.oilfilter + '">' + data.eng.oilfilter + '</a></td>' + 
-            '<td><a target="_blank"' + 'href="' + url1 + "SHOP lexus engine air filter "+ data.eaf + '">' + data.eaf + '</a></td>' +
-            '<td><a target="_blank"' + 'href="' + url1 + "SHOP lexus cabin filter "+ data.caf + '">' + data.caf + '</a></td>' +
+            '<td><a target="_blank"' + 'href="' + url1 + data.eng.v16100 + '">' +  data.eng.v16100 + '</a></td>' + 
+            '<td><a target="_blank"' + 'href="' + url1 + data.eng.oilfilter + '">' + data.eng.oilfilter + '</a></td>' + 
+            '<td><a target="_blank"' + 'href="' + url1 + data.eaf + '">' + data.eaf + '</a></td>' +
+            '<td><a target="_blank"' + 'href="' + url1 + data.caf + '">' + data.caf + '</a></td>' +
             '<td>' + data.bat + '</td>' +
-            '<td><a target="_blank"' + 'href="' + url1 + data.wyp.sizes + ' Lexus Wiper BLades ">' + data.wyp.sizes + '</a></td>' +
+            '<td><a target="_blank"' + 'href="' + url2 + data.wyp.sizes + ' Lexus Wiper Blades ">' + data.wyp.sizes + '</a></td>' +
             '<td>' + data.tyr.size + '</td>' +
             //'<td>' + data.name.substring(0,2) + '</td>' 
             '<td><a target="_blank"' + 'href="' + urlaccy + data.name.substring(0,2) + '">' + data.name.substring(0,2) + '</a></td>' 
