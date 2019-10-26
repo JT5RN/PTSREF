@@ -1,12 +1,40 @@
 id,value
 flare,
-flare.collision,
-flare.collision.anytown  collision,5500
-flare.collision.randys auto body, 55555
-flare.collision.optional auto body, 5555
-flare.mechanical,
-flare.mechanical.mechanical,1300 
-flare.mechanical.Dover,1300
-flare.mechanical.offers,1300
-flare.mechanical.Advantage,1300
-flare.mechanical.Davis,1300
+flare.CUSTOMER_PAY,
+flare.CUSTOMER_PAY.4700 LexusParts Line 1,50000
+flare.CUSTOMER_PAY.4751 OtherParts Line 13,4000
+flare.CUSTOMER_PAY.4707 LexusAccy Line 26,5000
+flare.CUSTOMER_PAY.4771 OtherAccy Line 33,4000
+flare.CUSTOMER_PAY.4725 TiresLexus Line 2,5000
+flare.CUSTOMER_PAY.4756 TiresOther Line 14,4000
+flare.WARRANTY_PAY,
+flare.WARRANTY_PAY.4720 WarrantyLexus Line 5,5000
+flare.WARRANTY_PAY.4754 WarrantyOther Line 17,4000
+flare.WARRANTY_PAY.4727 WarrantyLexusAccessory Line 28,5000
+flare.WARRANTY_PAY.4773 WarrantyOtherAccessory Line 35,4000
+flare.INTERNAL_PAY,
+flare.INTERNAL_PAY.4730 InternalSalesLexus Line 3,10000
+flare.INTERNAL_PAY.4761 InternalSalesOther Line 15,4000
+flare.INTERNAL_PAY.4737 InternalLexusAccy Line 27,5000
+flare.INTERNAL_PAY.4774 InternalOtherAccy Line 34,4000
+flare.INTERNAL_PAY.4755 InternalTireSalesLexus Line 4,5000
+flare.INTERNAL_PAY.4758 InternalTireSalesOther Line 16,4000
+flare.INVOICE_WHSL,
+flare.INVOICE_WHSL.4750 CounterWholesaleLexusMechanical Line 7, 20000
+flare.INVOICE_WHSL.4958 CounterWholesaleLexusCollision Line 8, 20000
+flare.INVOICE_WHSL.4766 CounterWholesaleOtherMechanical Line 19, 5000
+flare.INVOICE_WHSL.4765 CounterWholesaleOtherCollision Line 20, 5000
+flare.INVOICE_WHSL.4767 CounterWholesaleLexusAccessories Line 29, 5000
+flare.INVOICE_WHSL.4777 CounterWholesaleOtherAccessories Line 36, 5000
+flare.INVOICE_RETAIL,
+flare.INVOICE_RETAIL.4740 CounterRetailLexus Line 10, 5000
+flare.INVOICE_RETAIL.4763 CounterRetailOther Line 22, 5000
+flare.INVOICE_RETAIL.4747 CounterRetailLexusAccessories Line 30, 5000
+flare.INVOICE_RETAIL.4776 CounterRetailOtherAccessories Line 37, 5000
+flare.INVOICE_ONLINE,
+flare.INVOICE_ONLINE.4789 OnlineRetailLexus Line 11, 5000
+flare.INVOICE_ONLINE.4764 OnlineRetailOther Line 23, 5000
+flare.INVOICE_ONLINE.4731 OnlineWholesaleLexus Line 9, 5000
+flare.INVOICE_ONLINE.4762 OnlineWholesaleOther Line 21, 5000
+flare.INVOICE_ONLINE.4778 OnlineRetailAccessoriesLexus Line 31, 5000
+flare.INVOICE_ONLINE.4772 OnlineRetailAccessoriesOther Line 38, 5000
