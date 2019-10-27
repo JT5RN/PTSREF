@@ -23,8 +23,8 @@
 
     var format = d3.format(",d");
 
-    var color = d3.scaleSequential(d3.interpolateViridis)
-        .domain([-3, 10]);
+    var color = d3.scaleSequential(d3.interpolateCubehelixDefault)
+        .domain([-1, 10]);
 
     var stratify = d3.stratify()
         .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });

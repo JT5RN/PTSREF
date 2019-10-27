@@ -2,36 +2,49 @@ id,value
 flare,
 flare.2410,
 flare.2410.100,
-flare.2410.100.100Lexus sbm 0 Account 2410,100
+flare.2410.100.100Lexus sbm 0 Account 2410Non escalated,100
 flare.2410.101,
-flare.2410.101.101Lexus sbm 1 escalatedAccount 2410,100
+flare.2410.101.101Lexus sbm 1 EscalatedAccount 2410,100
 flare.2410.102,
-flare.2410.102.102Lexus sbm 2 escalatedAccount 2410,100
+flare.2410.102.102Lexus sbm 2 EscalatedAccount 2410,100
 flare.2410.103,
-flare.2410.103.103Lexus sbm 3 escalatedAccount 2410,100
+flare.2410.103.103Lexus sbm 3 EscalatedAccount 2410,100
 flare.2410.104,
-flare.2410.104.104Lexus sbm 4 escalatedAccount 2410,100
+flare.2410.104.104Lexus sbm 4 EscalatedAccount 2410,100
 flare.2410.105,
-flare.2410.105.105Lexus sbm 5 escalatedAccount 2410,100
+flare.2410.105.105Lexus sbm 5 EscalatedAccount 2410,100
+flare.2410.106,
+flare.2410.106.106Lexus sbm 6 EscalatedAccount 2410,100
+flare.2410.107,
+flare.2410.107.107Lexus sbm 7 EscalatedAccount 2410 Will be the fastest-fast moving source,200
+flare.2410.108,
+flare.2410.108.108Lexus do not stock Non-escalatedAccount 2410Do not stock Will replace 112 113 soon,97
 flare.2410.109,
-flare.2410.109.109Lexus fixed sale price at price6Account 2410,75
+flare.2410.109.109Lexus Fixed sale price at price6Price6 source Account 2410,98
 flare.2410.110,
-flare.2410.110.110Lexus fixed sale price at list priceAccount 2410,75
-flare.2410.111,
-flare.2410.111.111Lexus 4707Accessories Account 2410 ,25
+flare.2410.110.110Lexus Fixed sale price at list priceMsrp sourceAccount 2410,99
+flare.2413,
+flare.2413.111,
+flare.2413.111.111Lexus accessory inventory Account 2413 ,200   
 flare.2410.112,
-flare.2410.112.112Lexus ns Account 2410,10
+flare.2410.112.112Lexus ns Account 2410,50
 flare.2410.113,
-flare.2410.113.113Lexus mo Account 2410,10
+flare.2410.113.113Lexus mo Account 2410,50
 flare.2430,
 flare.2430.200,
-flare.2430.200.200Bulk 5-30 Account 2430,11
+flare.2430.200.200Bulk 5-30 Account 2430,50
 flare.2430.201,
-flare.2430.201.201Gl5 Account 2431,10
+flare.2430.201.201Gl5 Account 2431,50
 flare.2430.202,
-flare.2430.202.202Bulk 0-20 Account 2432,20
+flare.2430.202.202Bulk 0-20 Account 2432,100
 flare.2411,
 flare.2411.300,
-flare.2411.300.300Tires Tires go to 2411 Tires go to account 2411  Source 300 fills 2411 bucket Tires = 2411 Account 2411,75
-flare.2410.500,
-flare.2410.500.500-508Aftermarket Account 2410,10
+flare.2411.300.300All stocked tires Tires go to 2411 Tires go to account 2411  Tires = 2411 Account 2411,75
+flare.2411.301,
+flare.2411.301.301Nonlexus nonstock tires Purchased via vip And not stockedTires goto 2411 both Source 300 and 301,75
+flare.2415,
+flare.2415.511,
+flare.2415.511.511 Non lexus Accessory inventory Account 2415,100
+flare.2419,
+flare.2419.500,
+flare.2419.500.500-508Non lexus inventory Account 2419,100
