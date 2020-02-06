@@ -51,7 +51,9 @@ flare.RX.G3.filter4. 04152-yzza1,100
 flare.RX.G3.tire. 2356018,125
 flare.RX.G3.tire. 235519,51
 flare.RX.G3.wiper.22&26,50
-flare.RX.G4.4gen 16-20 _bzmca | dzkca | bgmca | dgkca Aka ________| rx350 | rx350-l | rx450h | rx450h-l Aka _____| ggl25 | ggl26 | gyl25 | gyl26,3500
+flare.RX.G4.4gen 16-19 _bzmca | dzkca | bgmca | dgkca Aka ________| rx350 | rx350-l | rx450h | rx450h-l Aka _____| ggl25 | ggl26 | gyl25 | gyl26,2500
+flare.RX.G4.4gen 20-2x _hzmda | dzkca | jzmda | szmda Aka ________| rx350 | rx350-l | rx450h | rx450h-l Aka _____| ggl25 | ggl26 | gyl25 | gyl26,2500
+flare.RX.G4.4gen 20-2x _hzkfa | azkfa | azmda | yzmda Aka ________| rx350 | rx350-l | rx450h | rx450h-l Aka _____| ggl25 | ggl26 | gyl25 | gyl26,2500
 flare.RX.G4.filter1. 17801-0p051,300
 flare.RX.G4.filter1. -0p090 Hybrid,25
 flare.RX.G4.filter2. 87139-0e040,200
