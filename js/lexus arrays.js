@@ -526,7 +526,7 @@ function DisplayVehicle(model) { // HTML menue driven data call
 function DisplayItem(item) { // HTML menue driven data call v2.0
   document.getElementById("ppp").innerHTML = "";
   var v2 = item.toUpperCase();
-  var v3 = "17801-" + v2;
+  var v3 = "17801" + v2;
   searchItem(v3);};
 
 
