@@ -1,25 +1,25 @@
 id,value
 flare,
 flare.CUSTOMER_PAY,
-flare.CUSTOMER_PAY.4700 Repair order slsLexusParts Customer pay (100-110, 500-508),30000
-flare.CUSTOMER_PAY.4752 Repair order slsLexusPREPAID Maintenance (100-110, 500-508),10000
+flare.CUSTOMER_PAY.4700 Repair order slsLexusParts Customer pay (100-110 500-508),50000
+flare.CUSTOMER_PAY.4752 Repair order slsLexusPrepaidMainteneance (100-110 500-508),20000
 flare.CUSTOMER_PAY.4707 Repair order slsLexusAccessory(111),8000
-flare.CUSTOMER_PAY.4725 Repair order slsCP Tires Lexus (300),8000
+flare.CUSTOMER_PAY.4725 Repair order slsTires Lexus (300),12000
+flare.INVOICE_WHSL,
+flare.INVOICE_WHSL.4750 Counter invoice Wholesale Lexus Mechanical (100-110), 20000
+flare.INVOICE_WHSL.4958 Counter invoice Wholesale Lexus Collision (100-110), 20000
+flare.INVOICE_WHSL.4767 Counter invoice Wholesale Lexus Accessory (111), 8000
+flare.INVOICE_RETAIL,
+flare.INVOICE_RETAIL.4740 Counter invoice Retail Lexus(100-110 500-508),8000
+flare.INVOICE_RETAIL.4747 Counter invoice Retail Lexus accessory (111),8000
+flare.INVOICE_ONLINE,
+flare.INVOICE_ONLINE.4789 Counter invoice Online Retail Lexus (100-110),10000
+flare.INVOICE_ONLINE.4731 Counter invoice Online Wholesale Lexus (100-110),8000
+flare.INVOICE_ONLINE.4778 Counter invoice Online Accessory Lexus (111),10000
+flare.INTERNAL_PAY,
+flare.INTERNAL_PAY.4730 Repair order slsInternal salesLexus(100-110 500-508),20000
+flare.INTERNAL_PAY.4755 Repair order slsInternal tire salesLexus tires(300),8000
+flare.INTERNAL_PAY.4737 Repair order slsInternal salexLexus accessory (111),8000
 flare.WARRANTY_PAY,
 flare.WARRANTY_PAY.4720 Repair order slsWarrantyLexus Parts(100-110),20000
 flare.WARRANTY_PAY.4727 Repair order slsWarrantyLexus Accessory(111),8000
-flare.INTERNAL_PAY,
-flare.INTERNAL_PAY.4730 Repair order slsInternal salesLexus(100-110, 500-508),20000
-flare.INTERNAL_PAY.4737 Repair order slsInternal salexLexus accessory (111),8000
-flare.INTERNAL_PAY.4755 Repair order slsInternal tire salesLexus tires(300),8000
-flare.INVOICE_WHSL,
-flare.INVOICE_WHSL.4750 Counter invoice Wholesale Lexus Mechanical (100-110, 500-508), 20000
-flare.INVOICE_WHSL.4958 Counter invoice Wholesale Lexus Collision (100-110, 500-508), 20000
-flare.INVOICE_WHSL.4767 Counter invoice Wholesale Lexus Accessory (111), 8000
-flare.INVOICE_RETAIL,
-flare.INVOICE_RETAIL.4740 Counter invoice Retail Lexus parts (100-110, 500-508), 20000
-flare.INVOICE_RETAIL.4747 Counter invoice Retail Lexus accessory (111) 8000
-flare.INVOICE_ONLINE,
-flare.INVOICE_ONLINE.4789 Counter invoice Online Retail Lexus (100-110, 500-508), 10000
-flare.INVOICE_ONLINE.4731 Counter invoice Online Wholesale Lexus (100-110, 500-508), 10000
-flare.INVOICE_ONLINE.4778 Counter invoice Online Accessory Lexus (111), 10000
