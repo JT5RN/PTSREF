@@ -1,22 +1,26 @@
 id,value
 flare,
 flare.CUSTOMER,
-flare.CUSTOMER.4700 Repair order slsLexusParts Customer pay (100-110 500-508),50000
-flare.CUSTOMER.4752 Repair order slsLexusPrepaidMainteneance (100-110 500-508),20000
-flare.CUSTOMER.4707 Repair order slsLexusAccessory(111),8000
-flare.CUSTOMER.4725 Repair order slsTires Lexus (300),12000
-flare.CUSTOMER.4750 Counter invoice Wholesale Lexus Mechanical (100-110), 20000
-flare.CUSTOMER.4958 Counter invoice Wholesale Lexus Collision (100-110), 20000
-flare.CUSTOMER.4767 Counter invoice Wholesale Lexus Accessory (111), 8000
-flare.CUSTOMER.4731 Counter invoice Online Wholesale Lexus (100-110),8000
-flare.CUSTOMER.4740 Counter invoice Retail Lexus(100-110 500-508),8000
-flare.CUSTOMER.4747 Counter invoice Retail Lexus accessory (111),8000
-flare.CUSTOMER.4789 Counter invoice Online Retail Lexus (100-110),10000
-flare.CUSTOMER.4778 Counter invoice Online Accessory Lexus (111),10000
+flare.CUSTOMER.RO,
+flare.CUSTOMER.RO.4700 Ro slsParts Customer pay,250000
+flare.CUSTOMER.RO.4752 Ro sls PPM,15000
+flare.CUSTOMER.RO.4707 Ro slsAccessory,8000
+flare.CUSTOMER.RO.4725 Ro slsTires,20000
+flare.CUSTOMER.INVOICE,
+flare.CUSTOMER.INVOICE.RETAIL,
+flare.CUSTOMER.INVOICE.WHOLESALE,
+flare.CUSTOMER.INVOICE.WHOLESALE.4750 InvoiceWholesale  Mechanical, 20000
+flare.CUSTOMER.INVOICE.WHOLESALE.4958 InvoiceWholesale  Collision, 20000
+flare.CUSTOMER.INVOICE.WHOLESALE.4767 InvoiceWholesale  Accessory, 8000
+flare.CUSTOMER.INVOICE.WHOLESALE.4731 InvoiceOnline Wholesale ,8000
+flare.CUSTOMER.INVOICE.RETAIL.4740 InvoiceRetail part,8000
+flare.CUSTOMER.INVOICE.RETAIL.4747 InvoiceRetail  accessory,8000
+flare.CUSTOMER.INVOICE.RETAIL.4789 InvoiceOnline retail part,10000
+flare.CUSTOMER.INVOICE.RETAIL.4778 InvoiceOnline accessory ,10000
 flare.DEALER,
-flare.DEALER.4730 Repair order slsInternal salesLexus(100-110 500-508),20000
-flare.DEALER.4755 Repair order slsInternal tire salesLexus tires(300),8000
-flare.DEALER.4737 Repair order slsInternal salexLexus accessory (111),8000
+flare.DEALER.4730 Ro slsInternal sales,20000
+flare.DEALER.4755 Ro slsInternal tire sales tires,10000
+flare.DEALER.4737 Ro slsInternal salex accessory,8000
 flare.MANUFACTURER,
-flare.MANUFACTURER.4720 Repair order slsWarrantyLexus Parts(100-110),20000
-flare.MANUFACTURER.4727 Repair order slsWarrantyLexus Accessory(111),8000
+flare.MANUFACTURER.4720 Ro slsWarranty Parts,10000
+flare.MANUFACTURER.4727 Ro slsWarranty Accessory,8000
