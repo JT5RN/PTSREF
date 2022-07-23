@@ -2,7 +2,7 @@ id,value
 flare,
 flare.CUSTOMER,
 flare.CUSTOMER.RO,
-flare.CUSTOMER.RO.4700 Ro slsParts Customer pay,250000
+flare.CUSTOMER.RO.4700 Ro slsParts Customer pay,550000
 flare.CUSTOMER.RO.4752 Ro sls PPM,15000
 flare.CUSTOMER.RO.4707 Ro slsAccessory,8000
 flare.CUSTOMER.RO.4725 Ro slsTires,20000
@@ -11,16 +11,20 @@ flare.CUSTOMER.INVOICE.RETAIL,
 flare.CUSTOMER.INVOICE.WHOLESALE,
 flare.CUSTOMER.INVOICE.WHOLESALE.4750 InvoiceWholesale  Mechanical, 20000
 flare.CUSTOMER.INVOICE.WHOLESALE.4958 InvoiceWholesale  Collision, 20000
-flare.CUSTOMER.INVOICE.WHOLESALE.4767 InvoiceWholesale  Accessory, 8000
-flare.CUSTOMER.INVOICE.WHOLESALE.4731 InvoiceOnline Wholesale ,8000
-flare.CUSTOMER.INVOICE.RETAIL.4740 InvoiceRetail part,8000
-flare.CUSTOMER.INVOICE.RETAIL.4747 InvoiceRetail  accessory,8000
-flare.CUSTOMER.INVOICE.RETAIL.4789 InvoiceOnline retail part,10000
-flare.CUSTOMER.INVOICE.RETAIL.4778 InvoiceOnline accessory ,10000
+flare.CUSTOMER.INVOICE.WHOLESALE.4767 InvoiceWholesale  Accessory, 10000
+flare.CUSTOMER.INVOICE.WHOLESALE.4731 InvoiceOnline Wholesale ,10000
+flare.CUSTOMER.INVOICE.RETAIL.4740 InvoiceRetail part,10000
+flare.CUSTOMER.INVOICE.RETAIL.4747 InvoiceRetail acy,10000
+flare.CUSTOMER.INVOICE.RETAIL.4789 InvoiceOnline part,10000
+flare.CUSTOMER.INVOICE.RETAIL.4778 InvoiceOnline acy,10000
 flare.DEALER,
-flare.DEALER.4730 Ro slsInternal sales,20000
-flare.DEALER.4755 Ro slsInternal tire sales tires,10000
-flare.DEALER.4737 Ro slsInternal salex accessory,8000
+flare.DEALER.4730 Ro slsDealer part sls Internal,30000
+flare.DEALER.4755 Ro slsDealer tire sls Internal,10000
+flare.DEALER.4737 Ro slsDealer acy sls Internal,10000
 flare.MANUFACTURER,
-flare.MANUFACTURER.4720 Ro slsWarranty Parts,10000
-flare.MANUFACTURER.4727 Ro slsWarranty Accessory,8000
+flare.MANUFACTURER.4720 Ro slsMfg part sls Warranty,35000
+flare.MANUFACTURER.4727 Ro slsMfg acy sls Warranty,15000
+flare.GASOILGREASE,
+flare.GASOILGREASE.Gas oil Grease Ro sls 4770,35000
+flare.PURCHASEDISCOUNT,
+flare.PURCHASEDISCOUNT.Cost ofSale 6799,15000
