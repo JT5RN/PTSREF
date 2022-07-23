@@ -43,13 +43,13 @@ var lexuspv = { // addt'l #s work so that it switches on the vds678
   "22F": "Ls",
   "11E": "Ls1",
   "1BL": "Gs4", //4th gen GS
-  "1KS": "Gs3", //3rd gen GS
+  "1KS": "Gs3", //3rd gen GS // WHY no jthbn69s show up in search for 3g gs
   "96S": "Gs3", //3g Gs
   "69S": "Gs", //2g Gs
   "68S": "Gs", //2g Gs
   "68X": "Gs", //2g Gs
   "42S": "Gs1",//freakshow 1year Gs1
-  "47E": "Gs", //Gs1
+  "47E": "Gs", //Gs1 is wierd. right?
   "5BC": "Rc", 
   "48Y": "Sc", //430
   "45Y": "Sc", //430
@@ -87,7 +87,7 @@ var lexusmpv = {
 
 var Ux = {
   U9: "MZAH15", // NOT SURE WHat Hybrid FWD is if thats a thing. mzah10?
-  Y3: "MZAA10"
+  Y3: "MZAA10" // most of this UX went in, 2019 and its dumped on by 2020 vin# mods
 };
 
 var Ct = {
