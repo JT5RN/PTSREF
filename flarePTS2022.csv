@@ -6,6 +6,8 @@ flare.CUSTOMER.RO.4700 Ro slsParts Customer pay,550000
 flare.CUSTOMER.RO.4752 Ro sls PPM,15000
 flare.CUSTOMER.RO.4707 Ro slsAccessory,8000
 flare.CUSTOMER.RO.4725 Ro slsTires,20000
+flare.CUSTOMER.GOG,
+flare.CUSTOMER.GOG.4770 Ro slsGog,10000
 flare.CUSTOMER.INVOICE,
 flare.CUSTOMER.INVOICE.RETAIL,
 flare.CUSTOMER.INVOICE.WHOLESALE,
@@ -18,13 +20,11 @@ flare.CUSTOMER.INVOICE.RETAIL.4747 InvoiceRetail acy,10000
 flare.CUSTOMER.INVOICE.RETAIL.4789 InvoiceOnline part,10000
 flare.CUSTOMER.INVOICE.RETAIL.4778 InvoiceOnline acy,10000
 flare.DEALER,
-flare.DEALER.4730 Ro slsDealer part sls Internal,30000
-flare.DEALER.4755 Ro slsDealer tire sls Internal,10000
+flare.DEALER.4730 Ro and invoice slsDealer parts Internal,30000
+flare.DEALER.4755 Ro slsDealer tire  Internal,10000
 flare.DEALER.4737 Ro slsDealer acy sls Internal,10000
 flare.MANUFACTURER,
 flare.MANUFACTURER.4720 Ro slsMfg part sls Warranty,35000
 flare.MANUFACTURER.4727 Ro slsMfg acy sls Warranty,15000
-flare.GASOILGREASE,
-flare.GASOILGREASE.Gas oil Grease Ro sls 4770,35000
 flare.PURCHASEDISCOUNT,
 flare.PURCHASEDISCOUNT.Cost ofSale 6799,15000
