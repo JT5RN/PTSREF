@@ -435,11 +435,12 @@ function getData2(v) {  // refined searches called from HTML web page // name 0-
 var PrintHTMLVehicleData = function(data) { // I Want to Re-Do theis display-thing.... idk how !
 
     var li = document.createElement("li");
-    var url1  = "https://parts.lexusofnorthborough.com/productSearch.aspx?searchTerm=";
+    var url1  = "https://parts.lexus.com/search?search_query=";
     var url2 = "http://www.google.com/images?q=";
-    var urlaccy = "https://www.lexusofnorthborough.com/FeaturesAccessories_D?p=2019_"; 
+    var urlaccy = "https://parts.lexus.com/search?search_query="; 
 
     // backup 190707var url2 = "http://www.google.com/images?q=";
+    // 10-2026 Cchanged  URL from Northborough to just lexus -  they unsubscribed
     //var url3 = "http://www.lexus.com/search?q=";
     // 190707 PPP MEET LONLINE LOL https://parts.lexusofnorthborough.com/productSearch.aspx?searchTerm=
     //var url4 = "http://drivers.lexus.com/lexusdrivers/search?searchKey=";
